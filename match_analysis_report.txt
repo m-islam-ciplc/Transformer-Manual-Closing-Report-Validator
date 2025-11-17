@@ -1,0 +1,1985 @@
+================================================================================
+MATCH ANALYSIS REPORT
+Generated: 2025-11-17 11:56:40
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total Odoo records: 2591
+Total Manual records: 798
+Full matches (all criteria): 89
+Name matches but other differences: 412
+Potential matches if criteria relaxed: 501
+
+ANALYSIS BY DIFFERENCE TYPE
+--------------------------------------------------------------------------------
+1. Product Code differences: 281
+2. Unit differences: 245
+3. Quantity/Value differences: 10
+
+================================================================================
+DETAILED: Product Name matches but Product Code differs
+================================================================================
+
+1. Item Name: '10/14 MVA XFR. Marshaling Box. Size: 1100X750X300mm - 9Nos'
+   Odoo (Row 6): Code='TRM- 328', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 500): Code='TRM-328', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 328' vs 'TRM-328'
+
+2. Item Name: '100kva Complete Tank With Corrugated Radiator'
+   Odoo (Row 7): Code='TRM- 322', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 494): Code='TRM-322', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 322' vs 'TRM-322', Unit: 'KG' vs 'PCS'
+
+3. Item Name: '400kva Complete Tank With Corrugated Radiator'
+   Odoo (Row 10): Code='TRM- 319', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 491): Code='TRM-319', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 319' vs 'TRM-319', Unit: 'KG' vs 'PCS'
+
+4. Item Name: 'Aircell Bag (10MVA-OCTC)'
+   Odoo (Row 37): Code='TRM- 180', Unit='NOS', Opening Qty=15.0, Opening Value=536749.82
+   Manual (Row 353): Code='TRM-180', Unit='NOS', Opening Qty=15, Opening Value=536749.82
+   Differences: Product Code: 'TRM- 180' vs 'TRM-180'
+
+5. Item Name: 'Amorphous Core 10kva'
+   Odoo (Row 61): Code='SRM- 149', Unit='KG', Opening Qty=52.0, Opening Value=568536.6
+   Manual (Row 154): Code='SRM-149', Unit='PCS', Opening Qty=52, Opening Value=568536.6011764706
+   Differences: Product Code: 'SRM- 149' vs 'SRM-149', Unit: 'KG' vs 'PCS'
+
+6. Item Name: 'Amorphous Core 125kva'
+   Odoo (Row 62): Code='SRM- 155', Unit='KG', Opening Qty=18.0, Opening Value=1266627.42
+   Manual (Row 160): Code='SRM-155', Unit='PCS', Opening Qty=18, Opening Value=1266627.42
+   Differences: Product Code: 'SRM- 155' vs 'SRM-155', Unit: 'KG' vs 'PCS'
+
+7. Item Name: 'Amorphous Core 15kva'
+   Odoo (Row 63): Code='SRM- 150', Unit='KG', Opening Qty=68.0, Opening Value=990672.96
+   Manual (Row 155): Code='SRM-150', Unit='PCS', Opening Qty=68, Opening Value=990672.96
+   Differences: Product Code: 'SRM- 150' vs 'SRM-150', Unit: 'KG' vs 'PCS'
+
+8. Item Name: 'Amorphous Core 25kva'
+   Odoo (Row 64): Code='SRM- 151', Unit='KG', Opening Qty=134.0, Opening Value=1885708.3
+   Manual (Row 156): Code='SRM-151', Unit='PCS', Opening Qty=134, Opening Value=1885708.3
+   Differences: Product Code: 'SRM- 151' vs 'SRM-151', Unit: 'KG' vs 'PCS'
+
+9. Item Name: 'Amorphous Core 37.5kva'
+   Odoo (Row 65): Code='SRM- 152', Unit='KG', Opening Qty=44.0, Opening Value=1179648.8
+   Manual (Row 157): Code='SRM-152', Unit='PCS', Opening Qty=44, Opening Value=1179648.8
+   Differences: Product Code: 'SRM- 152' vs 'SRM-152', Unit: 'KG' vs 'PCS'
+
+10. Item Name: 'Amorphous Core 50kva'
+   Odoo (Row 66): Code='SRM- 153', Unit='KG', Opening Qty=36.0, Opening Value=1188589.68
+   Manual (Row 158): Code='SRM-153', Unit='PCS', Opening Qty=36, Opening Value=1188589.68
+   Differences: Product Code: 'SRM- 153' vs 'SRM-153', Unit: 'KG' vs 'PCS'
+
+11. Item Name: 'Amorphous Core 5kva'
+   Odoo (Row 67): Code='SRM- 148', Unit='KG', Opening Qty=32.0, Opening Value=218162.88
+   Manual (Row 153): Code='SRM-148', Unit='PCS', Opening Qty=32, Opening Value=218162.88
+   Differences: Product Code: 'SRM- 148' vs 'SRM-148', Unit: 'KG' vs 'PCS'
+
+12. Item Name: 'Amorphous Core 75kva'
+   Odoo (Row 68): Code='SRM- 154', Unit='KG', Opening Qty=22.0, Opening Value=1470893.16
+   Manual (Row 159): Code='SRM-154', Unit='PCS', Opening Qty=22, Opening Value=1470893.16
+   Differences: Product Code: 'SRM- 154' vs 'SRM-154', Unit: 'KG' vs 'PCS'
+
+13. Item Name: 'Amorphous Ribbon 142mm'
+   Odoo (Row 69): Code='SRM- 156', Unit='KG', Opening Qty=44188.9, Opening Value=8779450.65
+   Manual (Row 161): Code='SRM-156', Unit='KG', Opening Qty=44188.9, Opening Value=8779450.652
+   Differences: Product Code: 'SRM- 156' vs 'SRM-156'
+
+14. Item Name: 'Amorphous Ribbon 170mm'
+   Odoo (Row 70): Code='SRM- 157', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 162): Code='SRM-157', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 157' vs 'SRM-157'
+
+15. Item Name: 'Amorphous Ribbon 213mm'
+   Odoo (Row 71): Code='SRM- 158', Unit='KG', Opening Qty=8274.7, Opening Value=2041782.23
+   Manual (Row 163): Code='SRM-158', Unit='KG', Opening Qty=8274.7, Opening Value=2041782.225
+   Differences: Product Code: 'SRM- 158' vs 'SRM-158'
+
+16. Item Name: 'Ampere Tube 1no'
+   Odoo (Row 79): Code='SRM- 101', Unit='Meter', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 106): Code='SRM-101', Unit='Meter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 101' vs 'SRM-101'
+
+17. Item Name: 'Ampere Tube 3no'
+   Odoo (Row 81): Code='SRM- 110', Unit='Meter', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 115): Code='SRM-110', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 110' vs 'SRM-110', Unit: 'Meter' vs 'PCS'
+
+18. Item Name: 'Apex Piping'
+   Odoo (Row 101): Code='TRM- 311', Unit='NOS', Opening Qty=325.0, Opening Value=1032950.01
+   Manual (Row 483): Code='TRM-311', Unit='Nos', Opening Qty=325, Opening Value=1032950.0118144035
+   Differences: Product Code: 'TRM- 311' vs 'TRM-311'
+
+19. Item Name: 'Auto PFI Plant 1200kvar'
+   Odoo (Row 119): Code='TRM- 121', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 295): Code='TRM-121', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 121' vs 'TRM-121'
+
+20. Item Name: 'BP. C/A For Phenolic Epoxy 1L'
+   Odoo (Row 125): Code='TRM- 433', Unit='Unit(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 605): Code='TRM-433', Unit='Litter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 433' vs 'TRM-433', Unit: 'Unit(s)' vs 'Litter'
+
+21. Item Name: 'BP. C/A for FRX A/C Coating 1 liter'
+   Odoo (Row 126): Code='TRM- 432', Unit='Unit(s)', Opening Qty=28.0, Opening Value=21472.0
+   Manual (Row 604): Code='TRM-432', Unit='Litter', Opening Qty=28, Opening Value=21471.996
+   Differences: Product Code: 'TRM- 432' vs 'TRM-432', Unit: 'Unit(s)' vs 'Litter'
+
+22. Item Name: 'BP. FRX A/C Coating Grey 4L'
+   Odoo (Row 127): Code='TRM- 434', Unit='Unit(s)', Opening Qty=112.0, Opening Value=78015.95
+   Manual (Row 606): Code='TRM-434', Unit='Litter', Opening Qty=112, Opening Value=78015.952
+   Differences: Product Code: 'TRM- 434' vs 'TRM-434', Unit: 'Unit(s)' vs 'Litter'
+
+23. Item Name: 'BP. Phenolic Epoxy HBTL Grey 3.2L'
+   Odoo (Row 128): Code='TRM- 435', Unit='Unit(s)', Opening Qty=54.0, Opening Value=56289.6
+   Manual (Row 607): Code='TRM-435', Unit='Litter', Opening Qty=54, Opening Value=56289.600000000006
+   Differences: Product Code: 'TRM- 435' vs 'TRM-435', Unit: 'Unit(s)' vs 'Litter'
+
+24. Item Name: 'Bottom Drain Valve Flange With Pipe'
+   Odoo (Row 447): Code='TRM- 287', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 459): Code='TRM-287', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 287' vs 'TRM-287', Unit: 'Pieces' vs 'PCS'
+
+25. Item Name: 'Bottom Oil Drain Valve'
+   Odoo (Row 450): Code='TRM- 174', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 347): Code='TRM-174', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 174' vs 'TRM-174'
+
+26. Item Name: 'Bottom Oil Filter Valve'
+   Odoo (Row 451): Code='TRM- 170', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 343): Code='TRM-170', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 170' vs 'TRM-170'
+
+27. Item Name: 'Buchholz Relay Set'
+   Odoo (Row 500): Code='TRM- 106', Unit='Pieces', Opening Qty=65.0, Opening Value=2096205.33
+   Manual (Row 280): Code='TRM-106', Unit='PCS', Opening Qty=65, Opening Value=2096205.3272727274
+   Differences: Product Code: 'TRM- 106' vs 'TRM-106', Unit: 'Pieces' vs 'PCS'
+
+28. Item Name: 'Bushing & Isolator Set (12kV/1000A)'
+   Odoo (Row 503): Code='TRM- 140', Unit='Set', Opening Qty=55.0, Opening Value=1472138.8
+   Manual (Row 313): Code='TRM-140', Unit='SET', Opening Qty=55, Opening Value=1472138.8
+   Differences: Product Code: 'TRM- 140' vs 'TRM-140'
+
+29. Item Name: 'Bushing & Isolator Set (36kV/630A)'
+   Odoo (Row 504): Code='TRM- 138', Unit='Set', Opening Qty=32.0, Opening Value=746381.12
+   Manual (Row 311): Code='TRM-138', Unit='SET', Opening Qty=32, Opening Value=746381.12
+   Differences: Product Code: 'TRM- 138' vs 'TRM-138'
+
+30. Item Name: 'Bushing (12kv/1000amp)'
+   Odoo (Row 505): Code='TRM- 139', Unit='Set', Opening Qty=57.0, Opening Value=751629.36
+   Manual (Row 312): Code='TRM-139', Unit='SET', Opening Qty=57, Opening Value=751629.36
+   Differences: Product Code: 'TRM- 139' vs 'TRM-139'
+
+31. Item Name: 'Bushing (36kv/630amp)'
+   Odoo (Row 506): Code='TRM- 137', Unit='Set', Opening Qty=7.0, Opening Value=65742.18
+   Manual (Row 310): Code='TRM-137', Unit='SET', Opening Qty=7, Opening Value=65742.18
+   Differences: Product Code: 'TRM- 137' vs 'TRM-137'
+
+32. Item Name: 'Butterfly Valve'
+   Odoo (Row 512): Code='TRM- 305', Unit='NOS', Opening Qty=44.0, Opening Value=84215.12
+   Manual (Row 477): Code='TRM-305', Unit='PCS', Opening Qty=44, Opening Value=84215.12
+   Differences: Product Code: 'TRM- 305' vs 'TRM-305', Unit: 'NOS' vs 'PCS'
+
+33. Item Name: 'CRGO (23PHD080)'
+   Odoo (Row 539): Code='SRM- 103', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 108): Code='SRM-103', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 103' vs 'SRM-103'
+
+34. Item Name: 'CRGO (23QG085)'
+   Odoo (Row 540): Code='SRM- 168', Unit='KG', Opening Qty=82551.0, Opening Value=26864905.84
+   Manual (Row 173): Code='SRM-168', Unit='KG', Opening Qty=82551, Opening Value=26864905.84296093
+   Differences: Product Code: 'SRM- 168' vs 'SRM-168'
+
+35. Item Name: 'CRGO 23HP090'
+   Odoo (Row 541): Code='SRM- 104', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 109): Code='SRM-104', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 104' vs 'SRM-104'
+
+36. Item Name: 'CRGO 23HP85'
+   Odoo (Row 542): Code='SRM- 142', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 147): Code='SRM-142', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 142' vs 'SRM-142'
+
+37. Item Name: 'CRGO 23HP85D'
+   Odoo (Row 543): Code='SRM- 114', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 119): Code='SRM-114', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 114' vs 'SRM-114'
+
+38. Item Name: 'CRGO 23HP90D'
+   Odoo (Row 544): Code='SRM- 115', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 120): Code='SRM-115', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 115' vs 'SRM-115'
+
+39. Item Name: 'CRGO 23JGH085'
+   Odoo (Row 545): Code='SRM- 167', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 172): Code='SRM-167', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 167' vs 'SRM-167'
+
+40. Item Name: 'CRGO 23JGHE085'
+   Odoo (Row 546): Code='SRM- 147', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 152): Code='SRM-147', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 147' vs 'SRM-147'
+
+41. Item Name: 'CRGO 23JGSD080'
+   Odoo (Row 549): Code='SRM- 128', Unit='KG', Opening Qty=3885.0, Opening Value=760100.25
+   Manual (Row 133): Code='SRM-128', Unit='KG', Opening Qty=3885, Opening Value=760100.25
+   Differences: Product Code: 'SRM- 128' vs 'SRM-128'
+
+42. Item Name: 'CRGO 23JGSD080'
+   Odoo (Row 549): Code='SRM- 128', Unit='KG', Opening Qty=3885.0, Opening Value=760100.25
+   Manual (Row 631): Code='TRM-459', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 128' vs 'TRM-459', Opening Qty: 3885.0 vs 0, Opening Value: 760100.25 vs 0, Closing Qty: 3885.0 vs 0, Closing Value: 760100.25 vs 0
+
+43. Item Name: 'CRGO 23PH080'
+   Odoo (Row 551): Code='SRM- 145', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 150): Code='SRM-145', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 145' vs 'SRM-145'
+
+44. Item Name: 'CRGO 23PH085'
+   Odoo (Row 557): Code='SRM- 146', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 151): Code='SRM-146', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 146' vs 'SRM-146'
+
+45. Item Name: 'CRGO 23PH085'
+   Odoo (Row 557): Code='SRM- 146', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 616): Code='TRM-444', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 146' vs 'TRM-444'
+
+46. Item Name: 'CRGO 23PHO90'
+   Odoo (Row 559): Code='SRM- 111', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 116): Code='SRM-111', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 111' vs 'SRM-111'
+
+47. Item Name: 'CRGO 23ZH85'
+   Odoo (Row 562): Code='SRM- 140', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 145): Code='SRM-140', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 140' vs 'SRM-140'
+
+48. Item Name: 'CRGO 27GH100 (3Phase)'
+   Odoo (Row 563): Code='TRM- 248', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 420): Code='TRM-248', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 248' vs 'TRM-248'
+
+49. Item Name: 'CRGO 27HP90D (3Phase)'
+   Odoo (Row 564): Code='TRM- 246', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 418): Code='TRM-246', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 246' vs 'TRM-246'
+
+50. Item Name: 'CRGO 27JGH100 (3Phase)'
+   Odoo (Row 565): Code='TRM- 243', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 415): Code='TRM-243', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 243' vs 'TRM-243'
+
+51. Item Name: 'CRGO 27PH100 (3Phase)'
+   Odoo (Row 566): Code='TRM- 244', Unit='KG', Opening Qty=2775.0, Opening Value=531658.1
+   Manual (Row 416): Code='TRM-244', Unit='KG', Opening Qty=2775, Opening Value=531658.103399911
+   Differences: Product Code: 'TRM- 244' vs 'TRM-244'
+
+52. Item Name: 'CRGO 27PHD085 (3Phase)'
+   Odoo (Row 567): Code='TRM- 306', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 478): Code='TRM-306', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 306' vs 'TRM-306'
+
+53. Item Name: 'CRGO 27PHD090 (3Phase)'
+   Odoo (Row 568): Code='TRM- 245', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 417): Code='TRM-245', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 245' vs 'TRM-245'
+
+54. Item Name: 'CRGO 27ZH90 (3Phase)'
+   Odoo (Row 569): Code='TRM- 247', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 419): Code='TRM-247', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 247' vs 'TRM-247'
+
+55. Item Name: 'CRGO 30JGH105 (3Phase)'
+   Odoo (Row 570): Code='TRM- 249', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 421): Code='TRM-249', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 249' vs 'TRM-249'
+
+56. Item Name: 'CRGO B23P090'
+   Odoo (Row 571): Code='SRM- 107', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 112): Code='SRM-107', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 107' vs 'SRM-107'
+
+57. Item Name: 'CRGO H085-23 (3Phase)'
+   Odoo (Row 572): Code='TRM- 240', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 412): Code='TRM-240', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 240' vs 'TRM-240'
+
+58. Item Name: 'CRGO H090-23 (3Phase)'
+   Odoo (Row 573): Code='TRM- 241', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 413): Code='TRM-241', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 241' vs 'TRM-241'
+
+59. Item Name: 'CRGO H100-23 (3Phase)'
+   Odoo (Row 574): Code='TRM- 242', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 414): Code='TRM-242', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 242' vs 'TRM-242'
+
+60. Item Name: 'CRGO JGHO85 (120)'
+   Odoo (Row 575): Code='SRM- 163', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 168): Code='SRM-163', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 163' vs 'SRM-163'
+
+61. Item Name: 'CRGO ZDKH80'
+   Odoo (Row 576): Code='SRM- 113', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 118): Code='SRM-113', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 113' vs 'SRM-113'
+
+62. Item Name: 'CT Terminal Brass Fitting (Cast Resin)'
+   Odoo (Row 579): Code='TRM- 380', Unit='Pieces', Opening Qty=271.0, Opening Value=109305.14
+   Manual (Row 552): Code='TRM-380', Unit='PCS', Opening Qty=271, Opening Value=109305.14
+   Differences: Product Code: 'TRM- 380' vs 'TRM-380', Unit: 'Pieces' vs 'PCS'
+
+63. Item Name: 'Capacitor 25 KVAR'
+   Odoo (Row 664): Code='Con- 1881', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 707): Code='Sub-38', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'Con- 1881' vs 'Sub-38', Unit: 'Pieces' vs 'PCS'
+
+64. Item Name: 'Confidence Power Bogura Ltd.'
+   Odoo (Row 767): Code='TRM- 310', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 482): Code='TRM-310', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 310' vs 'TRM-310'
+
+65. Item Name: 'Confidence Power Rangpur Ltd.'
+   Odoo (Row 769): Code='TRM- 308', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 480): Code='TRM-308', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 308' vs 'TRM-308'
+
+66. Item Name: 'Conservator Filter Valve'
+   Odoo (Row 774): Code='TRM- 168', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 341): Code='TRM-168', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 168' vs 'TRM-168'
+
+67. Item Name: 'Contract Plate 250KVA (BPDP)'
+   Odoo (Row 777): Code='TRM- 5543', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 798): Code='TRM-5543', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 5543' vs 'TRM-5543', Unit: 'Pieces' vs 'PCS'
+
+68. Item Name: 'Cooling Fan Safety Guard'
+   Odoo (Row 793): Code='TRM- 367', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 539): Code='TRM-367', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 367' vs 'TRM-367', Unit: 'Pieces' vs 'Set'
+
+69. Item Name: 'Copper Bar 100X10mm'
+   Odoo (Row 796): Code='TRM- 110', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 284): Code='TRM-110', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 110' vs 'TRM-110'
+
+70. Item Name: 'Copper Bar 25X6mm'
+   Odoo (Row 797): Code='TRM- 118', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 292): Code='TRM-118', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 118' vs 'TRM-118'
+
+71. Item Name: 'Copper Bar 30X10mm'
+   Odoo (Row 798): Code='TRM- 117', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 291): Code='TRM-117', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 117' vs 'TRM-117'
+
+72. Item Name: 'Copper Bar 40X10mm'
+   Odoo (Row 799): Code='TRM- 116', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 290): Code='TRM-116', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 116' vs 'TRM-116'
+
+73. Item Name: 'Copper Bar 40X12mm'
+   Odoo (Row 800): Code='TRM- 131', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 304): Code='TRM-131', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 131' vs 'TRM-131'
+
+74. Item Name: 'Copper Bar 40X6mm'
+   Odoo (Row 802): Code='TRM- 194', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 366): Code='TRM-194', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 194' vs 'TRM-194'
+
+75. Item Name: 'Copper Bar 50X10mm'
+   Odoo (Row 803): Code='TRM- 115', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 289): Code='TRM-115', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 115' vs 'TRM-115'
+
+76. Item Name: 'Copper Bar 60X10mm'
+   Odoo (Row 806): Code='TRM- 114', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 288): Code='TRM-114', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 114' vs 'TRM-114'
+
+77. Item Name: 'Copper Bar 60X5mm'
+   Odoo (Row 807): Code='TRM- 130', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 303): Code='TRM-130', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 130' vs 'TRM-130'
+
+78. Item Name: 'Copper Bar 80X10mm'
+   Odoo (Row 813): Code='TRM- 113', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 287): Code='TRM-113', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 113' vs 'TRM-113'
+
+79. Item Name: 'Copper Pipe'
+   Odoo (Row 814): Code='TRM- 232', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 404): Code='TRM-232', Unit='Feet', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 232' vs 'TRM-232', Unit: 'KG' vs 'Feet'
+
+80. Item Name: 'Copper Rod 10mm'
+   Odoo (Row 817): Code='TRM- 272', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 444): Code='TRM-272', Unit='KG', Opening Qty=9.09494701772928e-12, Opening Value=0
+   Differences: Product Code: 'TRM- 272' vs 'TRM-272'
+
+81. Item Name: 'Copper Strip (Power)'
+   Odoo (Row 822): Code='SRM- 166', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 171): Code='SRM-166', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 166' vs 'SRM-166'
+
+82. Item Name: 'Copper Strip 100kva'
+   Odoo (Row 824): Code='SRM- 132', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 137): Code='SRM-132', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 132' vs 'SRM-132'
+
+83. Item Name: 'Copper Strip 10kva'
+   Odoo (Row 825): Code='SRM- 122', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 127): Code='SRM-122', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 122' vs 'SRM-122'
+
+84. Item Name: 'Copper Strip 15kva'
+   Odoo (Row 826): Code='SRM- 127', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 132): Code='SRM-127', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 127' vs 'SRM-127'
+
+85. Item Name: 'Copper Strip 25kva'
+   Odoo (Row 827): Code='SRM- 123', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 128): Code='SRM-123', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 123' vs 'SRM-123'
+
+86. Item Name: 'Copper Strip 3.5X1.25mm'
+   Odoo (Row 828): Code='SRM- 100', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 105): Code='SRM-100', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 100' vs 'SRM-100'
+
+87. Item Name: 'Copper Strip 37.5kva'
+   Odoo (Row 829): Code='SRM- 124', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 129): Code='SRM-124', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 124' vs 'SRM-124'
+
+88. Item Name: 'Copper Strip 50kva'
+   Odoo (Row 832): Code='SRM- 125', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 130): Code='SRM-125', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 125' vs 'SRM-125'
+
+89. Item Name: 'Copper Strip 5kva'
+   Odoo (Row 833): Code='SRM- 126', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 131): Code='SRM-126', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 126' vs 'SRM-126'
+
+90. Item Name: 'Copper Strip 75kva'
+   Odoo (Row 834): Code='SRM- 133', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 138): Code='SRM-133', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 133' vs 'SRM-133'
+
+91. Item Name: 'Crepe Paper Pad (3.0 (0.75)X30)mm'
+   Odoo (Row 881): Code='TRM- 252', Unit='KG', Opening Qty=813.1, Opening Value=341713.41
+   Manual (Row 424): Code='TRM-252', Unit='KG', Opening Qty=813.1, Opening Value=341713.406
+   Differences: Product Code: 'TRM- 252' vs 'TRM-252'
+
+92. Item Name: 'Crimping Tool With Tensioner'
+   Odoo (Row 883): Code='SRM- 130', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 135): Code='SRM-130', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 130' vs 'SRM-130', Unit: 'Pieces' vs 'PCS'
+
+93. Item Name: 'Current Transformer (LT Ring Varnished C.T)'
+   Odoo (Row 886): Code='TRM- 227', Unit='NOS', Opening Qty=10.0, Opening Value=29824.8
+   Manual (Row 399): Code='TRM-227', Unit='Nos', Opening Qty=10, Opening Value=29824.8
+   Differences: Product Code: 'TRM- 227' vs 'TRM-227'
+
+94. Item Name: 'Densified Wood Board 4'X8'X25mm'
+   Odoo (Row 927): Code='TRM- 250', Unit='KG', Opening Qty=5634.7, Opening Value=1039771.19
+   Manual (Row 422): Code='TRM-250', Unit='KG', Opening Qty=5634.7, Opening Value=1039771.191
+   Differences: Product Code: 'TRM- 250' vs 'TRM-250'
+
+95. Item Name: 'Densified Wood Board 4'X8'X50mm'
+   Odoo (Row 928): Code='TRM- 251', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 423): Code='TRM-251', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 251' vs 'TRM-251'
+
+96. Item Name: 'Densified Wood Board 4'X8'X6mm'
+   Odoo (Row 929): Code='SRM- 121', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 126): Code='SRM-121', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 121' vs 'SRM-121', Unit: 'Pieces' vs 'KG'
+
+97. Item Name: 'Densified Wood Ring (50x480x800mm)'
+   Odoo (Row 930): Code='TRM- 458', Unit='Pieces', Opening Qty=50.0, Opening Value=958848.0
+   Manual (Row 630): Code='TRM-458', Unit='PCS', Opening Qty=50, Opening Value=958848
+   Differences: Product Code: 'TRM- 458' vs 'TRM-458', Unit: 'Pieces' vs 'PCS'
+
+98. Item Name: 'Densified Wood Sheet (2000mmX1000mmX50mm)'
+   Odoo (Row 931): Code='TRM- 495', Unit='Pieces', Opening Qty=17.0, Opening Value=575502.02
+   Manual (Row 667): Code='TRM-495', Unit='Pcs', Opening Qty=17, Opening Value=575502.02
+   Differences: Product Code: 'TRM- 495' vs 'TRM-495', Unit: 'Pieces' vs 'Pcs'
+
+99. Item Name: 'Double Key Spacer (2X40X78)mm'
+   Odoo (Row 990): Code='TRM- 479', Unit='NOS', Opening Qty=28000.0, Opening Value=153839.53
+   Manual (Row 651): Code='TRM-479', Unit='Nos', Opening Qty=28000, Opening Value=153839.52666666667
+   Differences: Product Code: 'TRM- 479' vs 'TRM-479'
+
+100. Item Name: 'Double Key Spacer (2X50X74)mm'
+   Odoo (Row 991): Code='TRM- 150', Unit='NOS', Opening Qty=23800.0, Opening Value=117334.0
+   Manual (Row 323): Code='TRM-150', Unit='Nos', Opening Qty=23800, Opening Value=117334
+   Differences: Product Code: 'TRM- 150' vs 'TRM-150'
+
+101. Item Name: 'Double Key Spacer (2X50X74.5)mm'
+   Odoo (Row 992): Code='TRM- 478', Unit='NOS', Opening Qty=13700.0, Opening Value=94089.35
+   Manual (Row 650): Code='TRM-478', Unit='Nos', Opening Qty=13700, Opening Value=94089.3538372093
+   Differences: Product Code: 'TRM- 478' vs 'TRM-478'
+
+102. Item Name: 'Double Key Spacer 2X40X77.5mm'
+   Odoo (Row 993): Code='TRM- 269', Unit='NOS', Opening Qty=43800.0, Opening Value=0.0
+   Manual (Row 441): Code='TRM-269', Unit='Nos', Opening Qty=43800, Opening Value=0
+   Differences: Product Code: 'TRM- 269' vs 'TRM-269'
+
+103. Item Name: 'Double Key Spacer 2X50X74mm'
+   Odoo (Row 994): Code='TRM- 153', Unit='NOS', Opening Qty=37833.0, Opening Value=423108.0
+   Manual (Row 326): Code='TRM-153', Unit='Nos', Opening Qty=25550, Opening Value=211553.99999999997
+   Differences: Product Code: 'TRM- 153' vs 'TRM-153', Opening Qty: 37833.0 vs 25550, Opening Value: 423108.0 vs 211553.99999999997, Closing Qty: 37833.0 vs 25550, Closing Value: 423108.0 vs 211553.99999999997
+
+104. Item Name: 'Double Key Spacer 2X50X74mm'
+   Odoo (Row 994): Code='TRM- 153', Unit='NOS', Opening Qty=37833.0, Opening Value=423108.0
+   Manual (Row 442): Code='TRM-270', Unit='Nos', Opening Qty=12283, Opening Value=211553.99999999997
+   Differences: Product Code: 'TRM- 153' vs 'TRM-270', Opening Qty: 37833.0 vs 12283, Opening Value: 423108.0 vs 211553.99999999997, Closing Qty: 37833.0 vs 12283, Closing Value: 423108.0 vs 211553.99999999997
+
+105. Item Name: 'Double Key Spacer 3X40X77.5mm'
+   Odoo (Row 995): Code='TRM- 151', Unit='NOS', Opening Qty=16800.0, Opening Value=106680.0
+   Manual (Row 324): Code='TRM-151', Unit='Nos', Opening Qty=16800, Opening Value=106680
+   Differences: Product Code: 'TRM- 151' vs 'TRM-151'
+
+106. Item Name: 'Double Key Spacer 3X50X74mm'
+   Odoo (Row 996): Code='TRM- 152', Unit='NOS', Opening Qty=10500.0, Opening Value=95235.0
+   Manual (Row 325): Code='TRM-152', Unit='Nos', Opening Qty=10500, Opening Value=95235
+   Differences: Product Code: 'TRM- 152' vs 'TRM-152'
+
+107. Item Name: 'Dovetail Runner (1300X20X6mm)'
+   Odoo (Row 997): Code='TRM- 264', Unit='NOS', Opening Qty=3410.0, Opening Value=1000459.9
+   Manual (Row 436): Code='TRM-264', Unit='Nos', Opening Qty=3410, Opening Value=1000459.8999999999
+   Differences: Product Code: 'TRM- 264' vs 'TRM-264'
+
+108. Item Name: 'Dovetail Runner 6X20X940mm'
+   Odoo (Row 998): Code='TRM- 481', Unit='NOS', Opening Qty=2085.0, Opening Value=223032.45
+   Manual (Row 653): Code='TRM-481', Unit='Nos', Opening Qty=2085, Opening Value=223032.45
+   Differences: Product Code: 'TRM- 481' vs 'TRM-481'
+
+109. Item Name: 'Dovetail Spacer (3X30X74)mm_Single Key'
+   Odoo (Row 999): Code='TRM- 303', Unit='NOS', Opening Qty=5736.0, Opening Value=33002.41
+   Manual (Row 475): Code='TRM-303', Unit='Nos', Opening Qty=5736, Opening Value=33002.408818181815
+   Differences: Product Code: 'TRM- 303' vs 'TRM-303'
+
+110. Item Name: 'Drain Valve Round Type'
+   Odoo (Row 1001): Code='TRM- 337', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 509): Code='TRM-337', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 337' vs 'TRM-337', Unit: 'Pieces' vs 'PCS'
+
+111. Item Name: 'Electrode Rod Vortic Marine 3.2mm'
+   Odoo (Row 1029): Code='Con- 1987', Unit='Unit(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 14): Code='SRM-09', Unit='Pkt', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'Con- 1987' vs 'SRM-09', Unit: 'Unit(s)' vs 'Pkt'
+
+112. Item Name: 'Enamel Paint Olive Grey'
+   Odoo (Row 1051): Code='Con- 1877', Unit='Liter(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 608): Code='TRM-436', Unit='Litter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'Con- 1877' vs 'TRM-436', Unit: 'Liter(s)' vs 'Litter'
+
+113. Item Name: 'Epoxy Resin Cast Bushing (1.1kv/5000amps)'
+   Odoo (Row 1071): Code='TRM- 274', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 446): Code='TRM-274', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 274' vs 'TRM-274', Unit: 'Pieces' vs 'Nos'
+
+114. Item Name: 'Felt 12mm'
+   Odoo (Row 1082): Code='TRM- 336', Unit='lbs', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 508): Code='TRM-336', Unit='KG', Opening Qty=0, Opening Value=None
+   Differences: Product Code: 'TRM- 336' vs 'TRM-336', Unit: 'lbs' vs 'KG', Receive Qty: 100.0 vs 0, Receive Value: 127000.0 vs 0, Closing Qty: 100.0 vs 0, Closing Value: 127000.0 vs 0
+
+115. Item Name: 'Ferrule'
+   Odoo (Row 1091): Code='TRM- 225', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 397): Code='TRM-225', Unit='Box', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 225' vs 'TRM-225', Unit: 'Pieces' vs 'Box'
+
+116. Item Name: 'Fixing Lug 12X25mm'
+   Odoo (Row 1104): Code='SRM- 109', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 114): Code='SRM-109', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 109' vs 'SRM-109', Unit: 'Pieces' vs 'PCS'
+
+117. Item Name: 'Flexible Cable Bare Copper 1X120rm'
+   Odoo (Row 1124): Code='TRM- 323', Unit='Meter', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 495): Code='TRM-323', Unit='Meter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 323' vs 'TRM-323'
+
+118. Item Name: 'Flexible Cable Bare Copper 1X70rm'
+   Odoo (Row 1125): Code='TRM- 185', Unit='Meter', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 358): Code='TRM-185', Unit='Coil', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 185' vs 'TRM-185', Unit: 'Meter' vs 'Coil'
+
+119. Item Name: 'Gas Collection Device'
+   Odoo (Row 1239): Code='TRM- 338', Unit='NOS', Opening Qty=16.0, Opening Value=346949.44
+   Manual (Row 510): Code='TRM-338', Unit='Nos', Opening Qty=16, Opening Value=346949.44
+   Differences: Product Code: 'TRM- 338' vs 'TRM-338'
+
+120. Item Name: 'Glass Fiber Sheet 4'X8'X1.5mm'
+   Odoo (Row 1265): Code='TRM- 425', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 597): Code='TRM-425', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 425' vs 'TRM-425'
+
+121. Item Name: 'Glass Fiber Sheet 4'X8'X1mm'
+   Odoo (Row 1266): Code='TRM- 424', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 596): Code='TRM-424', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 424' vs 'TRM-424'
+
+122. Item Name: 'HT Bushing Set (250/400amps)'
+   Odoo (Row 1307): Code='SRM- 159', Unit='Pieces', Opening Qty=3573.0, Opening Value=1171372.32
+   Manual (Row 164): Code='SRM-159', Unit='PCS', Opening Qty=3573, Opening Value=1171372.3199999998
+   Differences: Product Code: 'SRM- 159' vs 'SRM-159', Unit: 'Pieces' vs 'PCS'
+
+123. Item Name: 'HT Connector 10MVA'
+   Odoo (Row 1314): Code='TRM- 314', Unit='Pieces', Opening Qty=24.0, Opening Value=47912.64
+   Manual (Row 486): Code='TRM-314', Unit='PCS', Opening Qty=24, Opening Value=47912.63999999999
+   Differences: Product Code: 'TRM- 314' vs 'TRM-314', Unit: 'Pieces' vs 'PCS'
+
+124. Item Name: 'HT Connector set (HT Pin 1pcs, Nut 3pcs,Cap 1pcs, Connector Cap 1set 12mm, Washer 1pcs,Lug 1pcs,Screw Bolt 5X10mm 1pcs Nut 5mm 1pcs & HT Rubber Ball/Gutka 1pcs)'
+   Odoo (Row 1315): Code='TRM- 417', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 589): Code='TRM-417', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 417' vs 'TRM-417'
+
+125. Item Name: 'HT Pin Set'
+   Odoo (Row 1324): Code='TRM- 260', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 432): Code='TRM-260', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 260' vs 'TRM-260', Unit: 'Pieces' vs 'SET'
+
+126. Item Name: 'HT Punja Set'
+   Odoo (Row 1325): Code='TRM- 233', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 405): Code='TRM-233', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 233' vs 'TRM-233', Unit: 'Pieces' vs 'PCS'
+
+127. Item Name: 'HV Bushing CT 33KV, CT 400/5 A, 15VA, 5P20'
+   Odoo (Row 1327): Code='TRM- 496', Unit='Pieces', Opening Qty=27.0, Opening Value=380846.88
+   Manual (Row 668): Code='TRM-496', Unit='PCS', Opening Qty=27, Opening Value=380846.88
+   Differences: Product Code: 'TRM- 496' vs 'TRM-496', Unit: 'Pieces' vs 'PCS'
+
+128. Item Name: 'HV Copper Strip (PICC) 12.10x3.0 (PC 0.5):12.60x3.5'
+   Odoo (Row 1328): Code='SRM- 5547', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 802): Code='SRM-5547', Unit='Kg', Opening Qty=0, Opening Value=None
+   Differences: Product Code: 'SRM- 5547' vs 'SRM-5547'
+
+129. Item Name: 'HV Copper Strip (PICC) 9.80x3.10 (PC 0.5):10.30x3.60'
+   Odoo (Row 1329): Code='TRM- 492', Unit='Unit(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 664): Code='TRM-492', Unit='Kg', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 492' vs 'TRM-492', Unit: 'Unit(s)' vs 'Kg'
+
+130. Item Name: 'HV ID Cylinder (3X804X2115)mm'
+   Odoo (Row 1332): Code='TRM- 484', Unit='Pieces', Opening Qty=21.0, Opening Value=65447.76
+   Manual (Row 656): Code='TRM-484', Unit='Nos', Opening Qty=21, Opening Value=65447.76
+   Differences: Product Code: 'TRM- 484' vs 'TRM-484', Unit: 'Pieces' vs 'Nos'
+
+131. Item Name: 'HV ID Cylinder 3X802X2090mm'
+   Odoo (Row 1333): Code='TRM- 477', Unit='NOS', Opening Qty=12.0, Opening Value=42855.29
+   Manual (Row 649): Code='TRM-477', Unit='Nos', Opening Qty=12, Opening Value=42855.293333333335
+   Differences: Product Code: 'TRM- 477' vs 'TRM-477'
+
+132. Item Name: 'Hexagonal Brass Bar (OD-35mm)'
+   Odoo (Row 1393): Code='TRM- 387', Unit='KG', Opening Qty=13.8, Opening Value=13110.0
+   Manual (Row 559): Code='TRM-387', Unit='KG', Opening Qty=13.8, Opening Value=13110
+   Differences: Product Code: 'TRM- 387' vs 'TRM-387'
+
+133. Item Name: 'IV Cylinder 3X804X2133mm'
+   Odoo (Row 1441): Code='TRM- 267', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 439): Code='TRM-267', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 267' vs 'TRM-267'
+
+134. Item Name: 'IV Cylinder 3X955X1275.108mm'
+   Odoo (Row 1442): Code='TRM- 268', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 440): Code='TRM-268', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 268' vs 'TRM-268'
+
+135. Item Name: 'Industrial Cooling Fan'
+   Odoo (Row 1448): Code='TRM- 327', Unit='NOS', Opening Qty=26.0, Opening Value=397979.75
+   Manual (Row 499): Code='TRM-327', Unit='Nos', Opening Qty=26, Opening Value=397979.75100000005
+   Differences: Product Code: 'TRM- 327' vs 'TRM-327'
+
+136. Item Name: 'Insulation Adhesive P-80'
+   Odoo (Row 1461): Code='TRM- 175', Unit='KG', Opening Qty=100.0, Opening Value=173920.32
+   Manual (Row 348): Code='TRM-175', Unit='POT', Opening Qty=100, Opening Value=173920.321021277
+   Differences: Product Code: 'TRM- 175' vs 'TRM-175', Unit: 'KG' vs 'POT'
+
+137. Item Name: 'Intaf Polygalas Tape Class (F 0.33mm)'
+   Odoo (Row 1474): Code='TRM- 256', Unit='KG', Opening Qty=445.0, Opening Value=429122.4
+   Manual (Row 428): Code='TRM-256', Unit='Kg', Opening Qty=445, Opening Value=429122.39999999997
+   Differences: Product Code: 'TRM- 256' vs 'TRM-256'
+
+138. Item Name: 'Intaf Polyglass Tape'
+   Odoo (Row 1475): Code='TRM- 176', Unit='Pieces', Opening Qty=5.0, Opening Value=32500.0
+   Manual (Row 349): Code='TRM-176', Unit='Meter', Opening Qty=5, Opening Value=32500
+   Differences: Product Code: 'TRM- 176' vs 'TRM-176', Unit: 'Pieces' vs 'Meter'
+
+139. Item Name: 'Intaf Putty H-200'
+   Odoo (Row 1476): Code='TRM- 177', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 350): Code='TRM-177', Unit='Liter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 177' vs 'TRM-177', Unit: 'Pieces' vs 'Liter'
+
+140. Item Name: 'Isotape 51350 PV3 Class B (0.06X20mm) (3Phase)'
+   Odoo (Row 1546): Code='TRM- 255', Unit='KG', Opening Qty=466.0, Opening Value=557634.24
+   Manual (Row 427): Code='TRM-255', Unit='KG', Opening Qty=466, Opening Value=557634.24
+   Differences: Product Code: 'TRM- 255' vs 'TRM-255'
+
+141. Item Name: 'Jensolin 2 Pack PU Hardener 4L'
+   Odoo (Row 1549): Code='TRM- 221', Unit='Liter(s)', Opening Qty=205.6, Opening Value=315548.71
+   Manual (Row 393): Code='TRM-221', Unit='Liters', Opening Qty=205.6, Opening Value=315548.71199999994
+   Differences: Product Code: 'TRM- 221' vs 'TRM-221', Unit: 'Liter(s)' vs 'Liters'
+
+142. Item Name: 'Jensolin C/A for Epoxy Hardener'
+   Odoo (Row 1550): Code='TRM- 218', Unit='Unit(s)', Opening Qty=70.0, Opening Value=47412.4
+   Manual (Row 390): Code='TRM-218', Unit='Litter', Opening Qty=70, Opening Value=47412.4
+   Differences: Product Code: 'TRM- 218' vs 'TRM-218', Unit: 'Unit(s)' vs 'Litter'
+
+143. Item Name: 'Jensolin Epoxy Z/P Primer'
+   Odoo (Row 1551): Code='TRM- 217', Unit='Liter(s)', Opening Qty=1499.8, Opening Value=1015244.62
+   Manual (Row 389): Code='TRM-217', Unit='Litter', Opening Qty=1499.8, Opening Value=1015244.6159999999
+   Differences: Product Code: 'TRM- 217' vs 'TRM-217', Unit: 'Liter(s)' vs 'Litter'
+
+144. Item Name: 'Jensolin Polyurethane Paint New Olive Gray 4L'
+   Odoo (Row 1552): Code='TRM- 220', Unit='Liter(s)', Opening Qty=826.0, Opening Value=736659.84
+   Manual (Row 392): Code='TRM-220', Unit='Litter', Opening Qty=826, Opening Value=736659.8400000001
+   Differences: Product Code: 'TRM- 220' vs 'TRM-220', Unit: 'Liter(s)' vs 'Litter'
+
+145. Item Name: 'Jensolin Proctmastic White Base 4L'
+   Odoo (Row 1553): Code='TRM- 215', Unit='gal(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 387): Code='TRM-215', Unit='Gallon', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 215' vs 'TRM-215', Unit: 'gal(s)' vs 'Gallon'
+
+146. Item Name: 'Jensolin Proctmastic White C/A 4L'
+   Odoo (Row 1554): Code='TRM- 216', Unit='gal(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 388): Code='TRM-216', Unit='Gallon', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 216' vs 'TRM-216', Unit: 'gal(s)' vs 'Gallon'
+
+147. Item Name: 'Jensolin Thinner T-8 4L'
+   Odoo (Row 1555): Code='TRM- 222', Unit='Liter(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 394): Code='TRM-222', Unit='Litter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 222' vs 'TRM-222', Unit: 'Liter(s)' vs 'Litter'
+
+148. Item Name: 'Jointless Tank Seal Gasket (RC Sheet Gasket)'
+   Odoo (Row 1559): Code='TRM- 181', Unit='NOS', Opening Qty=7.0, Opening Value=150281.53
+   Manual (Row 354): Code='TRM-181', Unit='PCS', Opening Qty=7, Opening Value=150281.53
+   Differences: Product Code: 'TRM- 181' vs 'TRM-181', Unit: 'NOS' vs 'PCS'
+
+149. Item Name: 'Kraft Paper 2mm'
+   Odoo (Row 1567): Code='TRM- 147', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 320): Code='TRM-147', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 147' vs 'TRM-147'
+
+150. Item Name: 'Kraft Paper 3mm'
+   Odoo (Row 1568): Code='TRM- 148', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 321): Code='TRM-148', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 148' vs 'TRM-148'
+
+151. Item Name: 'Kraft Paper 5mm'
+   Odoo (Row 1569): Code='TRM- 149', Unit='KG', Opening Qty=523.0, Opening Value=103103.49
+   Manual (Row 322): Code='TRM-149', Unit='KG', Opening Qty=523, Opening Value=103103.48588491719
+   Differences: Product Code: 'TRM- 149' vs 'TRM-149'
+
+152. Item Name: 'LT Bushing Set 250amps'
+   Odoo (Row 1633): Code='SRM- 137', Unit='Pieces', Opening Qty=16276.0, Opening Value=2064122.32
+   Manual (Row 142): Code='SRM-137', Unit='SET', Opening Qty=16276, Opening Value=2064122.3199999996
+   Differences: Product Code: 'SRM- 137' vs 'SRM-137', Unit: 'Pieces' vs 'SET'
+
+153. Item Name: 'LT Bushing Set 400amps'
+   Odoo (Row 1634): Code='SRM- 165', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 170): Code='SRM-165', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 165' vs 'SRM-165', Unit: 'Pieces' vs 'SET'
+
+154. Item Name: 'LT Cap Eye Bolt Set (5-15kva)'
+   Odoo (Row 1637): Code='SRM- 138', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 143): Code='SRM-138', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 138' vs 'SRM-138'
+
+155. Item Name: 'LT Connector 10MVA'
+   Odoo (Row 1640): Code='TRM- 315', Unit='Pieces', Opening Qty=36.0, Opening Value=91080.0
+   Manual (Row 487): Code='TRM-315', Unit='PCS', Opening Qty=36, Opening Value=91080
+   Differences: Product Code: 'TRM- 315' vs 'TRM-315', Unit: 'Pieces' vs 'PCS'
+
+156. Item Name: 'LT Connector Set ( LT Rod16X175mm 1pcs, Nut 2pcs,washer 16mm 1pcs, Disk washer 16mm 1pcs, Connector Cap 1set)'
+   Odoo (Row 1641): Code='TRM- 418', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 590): Code='TRM-418', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 418' vs 'TRM-418'
+
+157. Item Name: 'LT Pin Set (2000-2500 kva)'
+   Odoo (Row 1653): Code='TRM- 271', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 443): Code='TRM-271', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 271' vs 'TRM-271'
+
+158. Item Name: 'LT Punja Set (1000-1250 kva)'
+   Odoo (Row 1654): Code='TRM- 100', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 274): Code='TRM-100', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 100' vs 'TRM-100', Unit: 'Pieces' vs 'PCS'
+
+159. Item Name: 'LT Punja Set (2000 kva)'
+   Odoo (Row 1655): Code='TRM- 105', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 279): Code='TRM-105', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 105' vs 'TRM-105', Unit: 'Pieces' vs 'PCS'
+
+160. Item Name: 'LT Rod 38X300mm (Rod 01pcs,Nut 05pcs, Connector 01set, Washer 01pcs, Cap With Rubber Ball 01pcs)'
+   Odoo (Row 1656): Code='TRM- 437', Unit='Set', Opening Qty=5.0, Opening Value=37500.0
+   Manual (Row 609): Code='TRM-437', Unit='Set', Opening Qty=5, Opening Value=37500
+   Differences: Product Code: 'TRM- 437' vs 'TRM-437'
+
+161. Item Name: 'LT Switch Gear 3200A'
+   Odoo (Row 1658): Code='TRM- 120', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 294): Code='TRM-120', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 120' vs 'TRM-120'
+
+162. Item Name: 'LT-HT Connector 10MVA'
+   Odoo (Row 1664): Code='TRM- 195', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 367): Code='TRM-195', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 195' vs 'TRM-195', Unit: 'Set' vs 'PCS'
+
+163. Item Name: 'LV Bushing CT 11KV, CT 1200/5 A, 15VA, 5P20'
+   Odoo (Row 1666): Code='TRM- 497', Unit='Pieces', Opening Qty=30.0, Opening Value=726938.7
+   Manual (Row 669): Code='TRM-497', Unit='PCS', Opening Qty=30, Opening Value=726938.7
+   Differences: Product Code: 'TRM- 497' vs 'TRM-497', Unit: 'Pieces' vs 'PCS'
+
+164. Item Name: 'LV Copper Strip (PICC) 10.70x1.90 (PC 0.5):11.20x2.4'
+   Odoo (Row 1667): Code='SRM- 5545', Unit='Unit(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 800): Code='SRM-5545', Unit='Kg', Opening Qty=0, Opening Value=None
+   Differences: Product Code: 'SRM- 5545' vs 'SRM-5545', Unit: 'Unit(s)' vs 'Kg'
+
+165. Item Name: 'LV Copper Strip (PICC) 14.20x2.40 (PC 0.5):14.70x2.9'
+   Odoo (Row 1668): Code='TRM- 494', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 666): Code='TRM-494', Unit='Kg', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 494' vs 'TRM-494'
+
+166. Item Name: 'LV ID Cylinder 3X872X1520mm'
+   Odoo (Row 1669): Code='TRM- 475', Unit='NOS', Opening Qty=12.0, Opening Value=32965.61
+   Manual (Row 647): Code='TRM-475', Unit='Nos', Opening Qty=12, Opening Value=32965.61333333333
+   Differences: Product Code: 'TRM- 475' vs 'TRM-475'
+
+167. Item Name: 'LV Lightning Arrester 11kva, 10kap'
+   Odoo (Row 1670): Code='TRM- 125', Unit='NOS', Opening Qty=66.0, Opening Value=1123021.02
+   Manual (Row 299): Code='TRM-125', Unit='Nos', Opening Qty=66, Opening Value=1123021.02
+   Differences: Product Code: 'TRM- 125' vs 'TRM-125'
+
+168. Item Name: 'LV OD Cylinder 3X802X2055mm'
+   Odoo (Row 1671): Code='TRM- 476', Unit='NOS', Opening Qty=18.0, Opening Value=61810.52
+   Manual (Row 648): Code='TRM-476', Unit='Nos', Opening Qty=18, Opening Value=61810.52
+   Differences: Product Code: 'TRM- 476' vs 'TRM-476'
+
+169. Item Name: 'Lightning Arrester 33kv, With insulating bas, Class 2 LA as per BREB spec'
+   Odoo (Row 1694): Code='TRM- 490', Unit='NOS', Opening Qty=78.0, Opening Value=2816320.26
+   Manual (Row 662): Code='TRM-490', Unit='Nos', Opening Qty=78, Opening Value=2816320.26
+   Differences: Product Code: 'TRM- 490' vs 'TRM-490'
+
+170. Item Name: 'Lock Plier 12"'
+   Odoo (Row 1703): Code='TRM- 190', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 363): Code='TRM-190', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 190' vs 'TRM-190', Unit: 'Pieces' vs 'PCS'
+
+171. Item Name: 'MS Bolt 30X220mm'
+   Odoo (Row 1779): Code='TRM- 199', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 371): Code='TRM-199', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 199' vs 'TRM-199', Unit: 'KG' vs 'PCS'
+
+172. Item Name: 'MS Bolt 8X20mm'
+   Odoo (Row 1782): Code='TRM- 196', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 368): Code='TRM-196', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 196' vs 'TRM-196', Unit: 'KG' vs 'PCS'
+
+173. Item Name: 'MS Galvanized Full Thread Rod Dia: 16mm'
+   Odoo (Row 1821): Code='TRM- 467', Unit='KG', Opening Qty=10.5, Opening Value=1705.0
+   Manual (Row 639): Code='TRM-467', Unit='KG', Opening Qty=10.5, Opening Value=1705
+   Differences: Product Code: 'TRM- 467' vs 'TRM-467'
+
+174. Item Name: 'MS Galvanized Nut Bolt 10X40mm (Bolt with Nut 01pcs, Plain Washer 02pcs, & Spring Washer 01pcs)'
+   Odoo (Row 1822): Code='TRM- 5542', Unit='KG', Opening Qty=500.0, Opening Value=100000.0
+   Manual (Row 797): Code='TRM-5542', Unit='Kg', Opening Qty=500, Opening Value=100000
+   Differences: Product Code: 'TRM- 5542' vs 'TRM-5542'
+
+175. Item Name: 'MS Galvanized Nut Bolt 12X60mm (Bolt with Nut 01pcs, Plain Washer 02pcs, & Spring Washer 01pcs)'
+   Odoo (Row 1823): Code='TRM- 331', Unit='KG', Opening Qty=120.0, Opening Value=20400.0
+   Manual (Row 503): Code='TRM-331', Unit='KG', Opening Qty=120, Opening Value=20400
+   Differences: Product Code: 'TRM- 331' vs 'TRM-331'
+
+176. Item Name: 'MS Galvanized Nut Bolt Washer 16X50mm (N-3,W-3,SP W-3)'
+   Odoo (Row 1826): Code='TRM- 201', Unit='KG', Opening Qty=160.0, Opening Value=32000.0
+   Manual (Row 373): Code='TRM-201', Unit='PCS', Opening Qty=160, Opening Value=32000
+   Differences: Product Code: 'TRM- 201' vs 'TRM-201', Unit: 'KG' vs 'PCS'
+
+177. Item Name: 'MS Nut 12mm (Galvanized)'
+   Odoo (Row 1829): Code='SRM- 160', Unit='KG', Opening Qty=3025.0, Opening Value=514250.0
+   Manual (Row 165): Code='SRM-160', Unit='KG', Opening Qty=3025, Opening Value=514250
+   Differences: Product Code: 'SRM- 160' vs 'SRM-160'
+
+178. Item Name: 'MS Nut 16mm'
+   Odoo (Row 1830): Code='TRM- 388', Unit='KG', Opening Qty=30.0, Opening Value=4110.0
+   Manual (Row 560): Code='TRM-388', Unit='KG', Opening Qty=30, Opening Value=4110
+   Differences: Product Code: 'TRM- 388' vs 'TRM-388'
+
+179. Item Name: 'MS Nut 25mm'
+   Odoo (Row 1831): Code='TRM- 439', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 611): Code='TRM-439', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 439' vs 'TRM-439'
+
+180. Item Name: 'MS Nut Bolt (12X45mm)'
+   Odoo (Row 1835): Code='TRM- 111', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 285): Code='TRM-111', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 111' vs 'TRM-111'
+
+181. Item Name: 'MS Nut Bolt (16X150mm)'
+   Odoo (Row 1848): Code='TRM- 787', Unit='KG', Opening Qty=1465.0, Opening Value=241725.0
+   Manual (Row 789): Code='TRM-787', Unit='Kg', Opening Qty=1465, Opening Value=241725
+   Differences: Product Code: 'TRM- 787' vs 'TRM-787'
+
+182. Item Name: 'MS Nut Bolt (16X50mm) With Flat Washer- 2Pcs, Spring Washer- 1Pcs'
+   Odoo (Row 1850): Code='TRM- 200', Unit='KG', Opening Qty=190.0, Opening Value=2945.0
+   Manual (Row 372): Code='TRM-200', Unit='KG', Opening Qty=190, Opening Value=2945
+   Differences: Product Code: 'TRM- 200' vs 'TRM-200'
+
+183. Item Name: 'MS Nut Bolt 10X95mm (Full Thread Without top with nut-1 nos, Plain Washer-1 nos, Spring Washer-1 nos)'
+   Odoo (Row 1861): Code='TRM- 334', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 506): Code='TRM-334', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 334' vs 'TRM-334', Unit: 'KG' vs 'Set'
+
+184. Item Name: 'MS Nut Bolt 12X80mm'
+   Odoo (Row 1864): Code='TRM- 293', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 465): Code='TRM-293', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 293' vs 'TRM-293', Unit: 'KG' vs 'PCS'
+
+185. Item Name: 'MS Nut Bolt 12X95mm (Full Thread Without top with nut-1 nos, Plain Washer-1 nos, Spring Washer-1 nos)'
+   Odoo (Row 1865): Code='TRM- 335', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 507): Code='TRM-335', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 335' vs 'TRM-335', Unit: 'KG' vs 'Set'
+
+186. Item Name: 'MS Nut Bolt 16X65mm with Double Flat washer & Spring Washer'
+   Odoo (Row 1867): Code='TRM- 207', Unit='KG', Opening Qty=292.0, Opening Value=49908.64
+   Manual (Row 379): Code='TRM-207', Unit='KG', Opening Qty=292, Opening Value=49908.64
+   Differences: Product Code: 'TRM- 207' vs 'TRM-207'
+
+187. Item Name: 'MS Nut Bolt Washer (6X40mm)'
+   Odoo (Row 1883): Code='TRM- 203', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 375): Code='TRM-203', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 203' vs 'TRM-203'
+
+188. Item Name: 'MS Nut Bolt Washer (8X40mm)'
+   Odoo (Row 1884): Code='TRM- 202', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 374): Code='TRM-202', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 202' vs 'TRM-202'
+
+189. Item Name: 'MS Nut Bolt With Double Washer + Spring Washer (16X70mm)'
+   Odoo (Row 1885): Code='TRM- 198', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 370): Code='TRM-198', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 198' vs 'TRM-198', Unit: 'KG' vs 'PCS'
+
+190. Item Name: 'MS Nut Bolt With Washer 10X65mm(Galvanized)'
+   Odoo (Row 1887): Code='TRM- 438', Unit='Unit(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 610): Code='TRM-438', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 438' vs 'TRM-438', Unit: 'Unit(s)' vs 'KG'
+
+191. Item Name: 'MS Nut Bolt With Washer 10X75mm'
+   Odoo (Row 1888): Code='TRM- 329', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 501): Code='TRM-329', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 329' vs 'TRM-329', Unit: 'Pieces' vs 'KG'
+
+192. Item Name: 'MS Nut Bolt with Washer 12X30mm'
+   Odoo (Row 1893): Code='SRM- 141', Unit='KG', Opening Qty=300.0, Opening Value=42093.0
+   Manual (Row 146): Code='SRM-141', Unit='KG', Opening Qty=300, Opening Value=42093
+   Differences: Product Code: 'SRM- 141' vs 'SRM-141'
+
+193. Item Name: 'MS Nut Bolt with Washer 12X65mm'
+   Odoo (Row 1895): Code='TRM- 487', Unit='KG', Opening Qty=84.0, Opening Value=2473.5
+   Manual (Row 659): Code='TRM-487', Unit='Kg', Opening Qty=84, Opening Value=2473.4976
+   Differences: Product Code: 'TRM- 487' vs 'TRM-487'
+
+194. Item Name: 'MS Nut/Bolt (10X25mm) with Double Washer'
+   Odoo (Row 1904): Code='TRM- 204', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 376): Code='TRM-204', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 204' vs 'TRM-204', Unit: 'KG' vs 'PCS'
+
+195. Item Name: 'MS Nut/Bolt (6X25) with Double Washer'
+   Odoo (Row 1905): Code='TRM- 205', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 377): Code='TRM-205', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 205' vs 'TRM-205', Unit: 'KG' vs 'PCS'
+
+196. Item Name: 'MS Nut/Bolt (6X30) with Double Washer'
+   Odoo (Row 1906): Code='TRM- 206', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 378): Code='TRM-206', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 206' vs 'TRM-206', Unit: 'KG' vs 'PCS'
+
+197. Item Name: 'MS Plate 12mm'
+   Odoo (Row 1923): Code='TRM- 259', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 431): Code='TRM-259', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 259' vs 'TRM-259'
+
+198. Item Name: 'MS Plate 4'X8'X6mm'
+   Odoo (Row 1934): Code='TRM- 368', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 540): Code='TRM-368', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 368' vs 'TRM-368'
+
+199. Item Name: 'MS Sheet 3mm (3x1250mm)'
+   Odoo (Row 1953): Code='SRM- 105', Unit='KG', Opening Qty=22170.0, Opening Value=1789988.72
+   Manual (Row 110): Code='SRM-105', Unit='KG', Opening Qty=22170, Opening Value=1789988.717041004
+   Differences: Product Code: 'SRM- 105' vs 'SRM-105'
+
+200. Item Name: 'MS Sheet 5mm (5*1250/1500)'
+   Odoo (Row 1960): Code='SRM- 169', Unit='KG', Opening Qty=25537.0, Opening Value=2118682.31
+   Manual (Row 174): Code='SRM-169', Unit='KG', Opening Qty=25537, Opening Value=2118682.3123999997
+   Differences: Product Code: 'SRM- 169' vs 'SRM-169'
+
+201. Item Name: 'MS Washer 10mm'
+   Odoo (Row 1976): Code='TRM- 294', Unit='KG', Opening Qty=53.0, Opening Value=7950.0
+   Manual (Row 466): Code='TRM-294', Unit='KG', Opening Qty=53, Opening Value=7950
+   Differences: Product Code: 'TRM- 294' vs 'TRM-294'
+
+202. Item Name: 'MS Washer 12mm'
+   Odoo (Row 1977): Code='SRM- 789', Unit='KG', Opening Qty=50.0, Opening Value=7750.0
+   Manual (Row 791): Code='SRM-789', Unit='Kg', Opening Qty=50, Opening Value=7750
+   Differences: Product Code: 'SRM- 789' vs 'SRM-789'
+
+203. Item Name: 'MS Washer 30mm'
+   Odoo (Row 1978): Code='TRM- 398', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 570): Code='TRM-398', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 398' vs 'TRM-398'
+
+204. Item Name: 'Magnetic Contactor 25A 220V'
+   Odoo (Row 2002): Code='TRM- 193', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 365): Code='TRM-193', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 193' vs 'TRM-193', Unit: 'Pieces' vs 'PCS'
+
+205. Item Name: 'Moisture Holder (1 Kg)'
+   Odoo (Row 2084): Code='TRM- 141', Unit='Pieces', Opening Qty=10.0, Opening Value=319412.6
+   Manual (Row 314): Code='TRM-141', Unit='PCS', Opening Qty=10, Opening Value=319412.6
+   Differences: Product Code: 'TRM- 141' vs 'TRM-141', Unit: 'Pieces' vs 'PCS'
+
+206. Item Name: 'Moisture Holder (3 Kg)'
+   Odoo (Row 2085): Code='TRM- 791', Unit='Pieces', Opening Qty=10.0, Opening Value=260756.1
+   Manual (Row 793): Code='TRM-791', Unit='PCS', Opening Qty=10, Opening Value=260756.1
+   Differences: Product Code: 'TRM- 791' vs 'TRM-791', Unit: 'Pieces' vs 'PCS'
+
+207. Item Name: 'Mounting Bolt & Butterfly Valve'
+   Odoo (Row 2098): Code='TRM- 366', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 538): Code='TRM-366', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 366' vs 'TRM-366'
+
+208. Item Name: 'Mounting Bolt/Radiator Bolt'
+   Odoo (Row 2099): Code='TRM- 182', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 355): Code='TRM-182', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 182' vs 'TRM-182', Unit: 'Pieces' vs 'SET'
+
+209. Item Name: 'Name Plate 150kva (3Phase)'
+   Odoo (Row 2110): Code='TRM- 234', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 406): Code='TRM-234', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 234' vs 'TRM-234', Unit: 'NOS' vs 'PCS'
+
+210. Item Name: 'Name Plate 2000kva (3Phase)'
+   Odoo (Row 2112): Code='TRM- 102', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 276): Code='TRM-102', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 102' vs 'TRM-102', Unit: 'NOS' vs 'PCS'
+
+211. Item Name: 'Name Plate 750kva (3Phase)'
+   Odoo (Row 2124): Code='TRM- 101', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 275): Code='TRM-101', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 101' vs 'TRM-101', Unit: 'NOS' vs 'PCS'
+
+212. Item Name: 'Nut Bolt with Double washer 6X15mm'
+   Odoo (Row 2146): Code='TRM- 197', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 369): Code='TRM-197', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 197' vs 'TRM-197', Unit: 'KG' vs 'PCS'
+
+213. Item Name: 'OTI-10 MVA'
+   Odoo (Row 2163): Code='TRM- 236', Unit='Pieces', Opening Qty=12.0, Opening Value=0.0
+   Manual (Row 408): Code='TRM-236', Unit='PCS', Opening Qty=12, Opening Value=0
+   Differences: Product Code: 'TRM- 236' vs 'TRM-236', Unit: 'Pieces' vs 'PCS'
+
+214. Item Name: 'Oil Level Indicator / Magnetic Oil Gauge'
+   Odoo (Row 2171): Code='TRM- 135', Unit='Pieces', Opening Qty=18.0, Opening Value=484162.2
+   Manual (Row 308): Code='TRM-135', Unit='PCS', Opening Qty=18, Opening Value=484162.2
+   Differences: Product Code: 'TRM- 135' vs 'TRM-135', Unit: 'Pieces' vs 'PCS'
+
+215. Item Name: 'Oil Temperature Indicator (OTI)'
+   Odoo (Row 2190): Code='TRM- 237', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 409): Code='TRM-237', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 237' vs 'TRM-237', Unit: 'NOS' vs 'PCS'
+
+216. Item Name: 'Online UPS 2000VA'
+   Odoo (Row 2198): Code='TRM- 226', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 398): Code='TRM-226', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 226' vs 'TRM-226', Unit: 'NOS' vs 'PCS'
+
+217. Item Name: 'Overload Relay 10A'
+   Odoo (Row 2217): Code='TRM- 192', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 364): Code='TRM-192', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 192' vs 'TRM-192', Unit: 'Pieces' vs 'PCS'
+
+218. Item Name: 'PVC Cable 1X1.5rm BYA'
+   Odoo (Row 2233): Code='TRM- 332', Unit='Meter', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 504): Code='TRM-332', Unit='Meter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 332' vs 'TRM-332'
+
+219. Item Name: 'PVC Cable 1X2.5rm BYA'
+   Odoo (Row 2240): Code='TRM- 333', Unit='Meter', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 505): Code='TRM-333', Unit='Meter', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 333' vs 'TRM-333'
+
+220. Item Name: 'Phase Failure Relay'
+   Odoo (Row 2339): Code='TRM- 382', Unit='Pieces', Opening Qty=1.0, Opening Value=3000.0
+   Manual (Row 554): Code='TRM-382', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 382' vs 'TRM-382', Unit: 'Pieces' vs 'PCS', Opening Qty: 1.0 vs 0, Opening Value: 3000.0 vs 0, Closing Qty: 1.0 vs 0, Closing Value: 3000.0 vs 0
+
+221. Item Name: 'Plain Runner 6X20X2120mm'
+   Odoo (Row 2368): Code='TRM- 304', Unit='NOS', Opening Qty=755.0, Opening Value=193381.24
+   Manual (Row 476): Code='TRM-304', Unit='Nos', Opening Qty=755, Opening Value=193381.24046666673
+   Differences: Product Code: 'TRM- 304' vs 'TRM-304'
+
+222. Item Name: 'Plain Runner 6X20X950mm'
+   Odoo (Row 2369): Code='TRM- 154', Unit='NOS', Opening Qty=70.0, Opening Value=6764.1
+   Manual (Row 327): Code='TRM-154', Unit='Nos', Opening Qty=70, Opening Value=6764.099999999999
+   Differences: Product Code: 'TRM- 154' vs 'TRM-154'
+
+223. Item Name: 'Polyglass Tape (Thic: 0.30mm, Width: 30mm, Length: 200mtr)'
+   Odoo (Row 2420): Code='TRM- 485', Unit='Roll', Opening Qty=6.0, Opening Value=41711.28
+   Manual (Row 657): Code='TRM-485', Unit='Roll', Opening Qty=6, Opening Value=41711.28
+   Differences: Product Code: 'TRM- 485' vs 'TRM-485'
+
+224. Item Name: 'Press Board 3mm'
+   Odoo (Row 2450): Code='SRM- 139', Unit='KG', Opening Qty=13146.9, Opening Value=5127291.0
+   Manual (Row 144): Code='SRM-139', Unit='KG', Opening Qty=13146.9, Opening Value=5127291
+   Differences: Product Code: 'SRM- 139' vs 'SRM-139'
+
+225. Item Name: 'Press Board 6mm'
+   Odoo (Row 2451): Code='TRM- 146', Unit='KG', Opening Qty=297.0, Opening Value=80973.63
+   Manual (Row 319): Code='TRM-146', Unit='KG', Opening Qty=297, Opening Value=80973.63152999998
+   Differences: Product Code: 'TRM- 146' vs 'TRM-146'
+
+226. Item Name: 'Press Board-1mm'
+   Odoo (Row 2453): Code='TRM- 143', Unit='KG', Opening Qty=1051.0, Opening Value=162079.54
+   Manual (Row 316): Code='TRM-143', Unit='KG', Opening Qty=1051, Opening Value=162079.5446
+   Differences: Product Code: 'TRM- 143' vs 'TRM-143'
+
+227. Item Name: 'Press Board-2mm'
+   Odoo (Row 2454): Code='TRM- 144', Unit='KG', Opening Qty=1103.5, Opening Value=700465.27
+   Manual (Row 317): Code='TRM-144', Unit='KG', Opening Qty=1103.5, Opening Value=700465.27415
+   Differences: Product Code: 'TRM- 144' vs 'TRM-144'
+
+228. Item Name: 'Press Board-3mm'
+   Odoo (Row 2455): Code='TRM- 145', Unit='KG', Opening Qty=512.6, Opening Value=376118.44
+   Manual (Row 318): Code='TRM-145', Unit='KG', Opening Qty=512.6, Opening Value=376118.43503789813
+   Differences: Product Code: 'TRM- 145' vs 'TRM-145'
+
+229. Item Name: 'Pressure Releases Valve'
+   Odoo (Row 2467): Code='SRM- 136', Unit='Pieces', Opening Qty=24200.0, Opening Value=4286062.0
+   Manual (Row 141): Code='SRM-136', Unit='PCS', Opening Qty=24200, Opening Value=4286062
+   Differences: Product Code: 'SRM- 136' vs 'SRM-136', Unit: 'Pieces' vs 'PCS'
+
+230. Item Name: 'Pressure Relief Device (VP50)'
+   Odoo (Row 2468): Code='TRM- 134', Unit='Pieces', Opening Qty=10.0, Opening Value=296955.17
+   Manual (Row 307): Code='TRM-134', Unit='PCS', Opening Qty=10, Opening Value=296955.1666666667
+   Differences: Product Code: 'TRM- 134' vs 'TRM-134', Unit: 'Pieces' vs 'PCS'
+
+231. Item Name: 'Radiator (As Per Sample)'
+   Odoo (Row 2504): Code='TRM- 132', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 305): Code='TRM-132', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 132' vs 'TRM-132', Unit: 'KG' vs 'SET'
+
+232. Item Name: 'Radiator Flange With Pipe'
+   Odoo (Row 2508): Code='TRM- 286', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 458): Code='TRM-286', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 286' vs 'TRM-286', Unit: 'Pieces' vs 'PCS'
+
+233. Item Name: 'Rectifier 3000A'
+   Odoo (Row 2519): Code='TRM- 229', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 401): Code='TRM-229', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 229' vs 'TRM-229', Unit: 'NOS' vs 'SET'
+
+234. Item Name: 'Rubber Bond Plug in dia 20mm'
+   Odoo (Row 2582): Code='TRM- 385', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 557): Code='TRM-385', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 385' vs 'TRM-385', Unit: 'Pieces' vs 'PCS'
+
+235. Item Name: 'Rubber Gasket 75-100kva'
+   Odoo (Row 2594): Code='SRM- 108', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 113): Code='SRM-108', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 108' vs 'SRM-108', Unit: 'Pieces' vs 'PCS'
+
+236. Item Name: 'Rubberised cork Gasket (Joined) (3900X1320X10mm)'
+   Odoo (Row 2614): Code='TRM- 161', Unit='NOS', Opening Qty=23.0, Opening Value=274472.0
+   Manual (Row 334): Code='TRM-161', Unit='Nos', Opening Qty=23, Opening Value=274471.99500000005
+   Differences: Product Code: 'TRM- 161' vs 'TRM-161'
+
+237. Item Name: 'S.S Full Thread Rod Dia 16mm'
+   Odoo (Row 2615): Code='TRM- 5540', Unit='Meter', Opening Qty=22.0, Opening Value=14300.0
+   Manual (Row 795): Code='TRM-5540', Unit='Meter', Opening Qty=22, Opening Value=14300
+   Differences: Product Code: 'TRM- 5540' vs 'TRM-5540'
+
+238. Item Name: 'S.S Nut dia 16mm 1pc, Flat washer 1pc, Spring washer 1pc'
+   Odoo (Row 2616): Code='TRM- 5541', Unit='Set', Opening Qty=288.0, Opening Value=6336.0
+   Manual (Row 481): Code='TRM-5541', Unit='SET', Opening Qty=288, Opening Value=6336
+   Differences: Product Code: 'TRM- 5541' vs 'TRM-5541'
+
+239. Item Name: 'SO4 Magnetic Oil Level Gauge'
+   Odoo (Row 2633): Code='TRM- 445', Unit='Pieces', Opening Qty=8.0, Opening Value=42570.12
+   Manual (Row 617): Code='TRM-445', Unit='PCS', Opening Qty=8, Opening Value=42570.12
+   Differences: Product Code: 'TRM- 445' vs 'TRM-445', Unit: 'Pieces' vs 'PCS'
+
+240. Item Name: 'SS Ball Valve 16mm'
+   Odoo (Row 2638): Code='TRM- 258', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 430): Code='TRM-258', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 258' vs 'TRM-258', Unit: 'Pieces' vs 'PCS'
+
+241. Item Name: 'SS Name Plate 10/14 MVA'
+   Odoo (Row 2646): Code='TRM- 223', Unit='Set', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 395): Code='TRM-223', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 223' vs 'TRM-223'
+
+242. Item Name: 'SS Nut Bolt 16X100mm'
+   Odoo (Row 2649): Code='TRM- 354', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 526): Code='TRM-354', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 354' vs 'TRM-354', Unit: 'Pieces' vs 'PCS'
+
+243. Item Name: 'Selector Switch (Auto/Manual)'
+   Odoo (Row 2693): Code='TRM- 209', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 381): Code='TRM-209', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 209' vs 'TRM-209', Unit: 'Pieces' vs 'PCS'
+
+244. Item Name: 'Servo Type Dimmer 400A,'
+   Odoo (Row 2698): Code='TRM- 228', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 400): Code='TRM-228', Unit='SET', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 228' vs 'TRM-228', Unit: 'NOS' vs 'SET'
+
+245. Item Name: 'Shafting Rod 30mm'
+   Odoo (Row 2701): Code='TRM- 163', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 336): Code='TRM-163', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 163' vs 'TRM-163'
+
+246. Item Name: 'Shafting Rod 45mm'
+   Odoo (Row 2702): Code='TRM- 164', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 337): Code='TRM-164', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 164' vs 'TRM-164'
+
+247. Item Name: 'Shafting Rod 60mm'
+   Odoo (Row 2703): Code='TRM- 165', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 338): Code='TRM-165', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 165' vs 'TRM-165'
+
+248. Item Name: 'Shafting Rod 6mm'
+   Odoo (Row 2704): Code='TRM- 412', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 584): Code='TRM-412', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 412' vs 'TRM-412'
+
+249. Item Name: 'Shill Koire Wood 300X80X12mm'
+   Odoo (Row 2718): Code='SRM- 129', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 134): Code='SRM-129', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 129' vs 'SRM-129', Unit: 'Pieces' vs 'PCS'
+
+250. Item Name: 'Shut-Off Valve for Breather'
+   Odoo (Row 2724): Code='TRM- 167', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 340): Code='TRM-167', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 167' vs 'TRM-167'
+
+251. Item Name: 'Silica Gel'
+   Odoo (Row 2725): Code='TRM- 406', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 578): Code='TRM-406', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 406' vs 'TRM-406'
+
+252. Item Name: 'Silicagel Breather 250kva'
+   Odoo (Row 2727): Code='TRM- 421', Unit='Pieces', Opening Qty=301.0, Opening Value=60669.56
+   Manual (Row 593): Code='TRM-421', Unit='PCS', Opening Qty=301, Opening Value=60669.56
+   Differences: Product Code: 'TRM- 421' vs 'TRM-421', Unit: 'Pieces' vs 'PCS'
+
+253. Item Name: 'Space Heater'
+   Odoo (Row 2759): Code='TRM- 178', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 351): Code='TRM-178', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 178' vs 'TRM-178'
+
+254. Item Name: 'Spacer Die'
+   Odoo (Row 2760): Code='TRM- 257', Unit='Unit(s)', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 429): Code='TRM-257', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 257' vs 'TRM-257', Unit: 'Unit(s)' vs 'Set'
+
+255. Item Name: 'Steel Handle Lock'
+   Odoo (Row 2826): Code='TRM- 464', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 636): Code='TRM-464', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 464' vs 'TRM-464', Unit: 'Pieces' vs 'PCS'
+
+256. Item Name: 'Steel Strap 19X0.4mm'
+   Odoo (Row 2833): Code='SRM- 117', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 122): Code='SRM-117', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 117' vs 'SRM-117'
+
+257. Item Name: 'Steel Strap 32X0.80mm'
+   Odoo (Row 2835): Code='SRM- 116', Unit='KG', Opening Qty=18061.0, Opening Value=2229630.45
+   Manual (Row 121): Code='SRM-116', Unit='KG', Opening Qty=18061, Opening Value=2229630.45
+   Differences: Product Code: 'SRM- 116' vs 'SRM-116'
+
+258. Item Name: 'Steel Strap Clip 0.9X32X50mm'
+   Odoo (Row 2836): Code='SRM- 119', Unit='Pieces', Opening Qty=93000.0, Opening Value=350870.0
+   Manual (Row 124): Code='SRM-119', Unit='PCS', Opening Qty=93000, Opening Value=350870
+   Differences: Product Code: 'SRM- 119' vs 'SRM-119', Unit: 'Pieces' vs 'PCS'
+
+259. Item Name: 'Super Enamel Copper Wire 100kva'
+   Odoo (Row 2856): Code='SRM- 162', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 167): Code='SRM-162', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 162' vs 'SRM-162'
+
+260. Item Name: 'Super Enamel Copper Wire 10no'
+   Odoo (Row 2857): Code='SRM- 134', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 139): Code='SRM-134', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 134' vs 'SRM-134'
+
+261. Item Name: 'Super Enamel Copper Wire 12no'
+   Odoo (Row 2858): Code='TRM- 159', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 332): Code='TRM-159', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 159' vs 'TRM-159'
+
+262. Item Name: 'Super Enamel Copper Wire 15.5no, Size: Ø1.7275mm without Insul.'
+   Odoo (Row 2862): Code='TRM- 491', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 663): Code='TRM-491', Unit='Kg', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 491' vs 'TRM-491'
+
+263. Item Name: 'Super Enamel Copper Wire 18.5no'
+   Odoo (Row 2865): Code='SRM- 120', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 125): Code='SRM-120', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 120' vs 'SRM-120'
+
+264. Item Name: 'Super Enamel Copper Wire 50kva'
+   Odoo (Row 2868): Code='SRM- 143', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 148): Code='SRM-143', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 143' vs 'SRM-143'
+
+265. Item Name: 'Super Enamel Copper Wire 75kva'
+   Odoo (Row 2869): Code='SRM- 161', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 166): Code='SRM-161', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'SRM- 161' vs 'SRM-161'
+
+266. Item Name: 'Surge Arrestor'
+   Odoo (Row 2897): Code='TRM- 235', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 407): Code='TRM-235', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 235' vs 'TRM-235'
+
+267. Item Name: 'Tap Changer, Off Load 30A, 11KV, 5 Position'
+   Odoo (Row 2917): Code='TRM- 446', Unit='Set', Opening Qty=98.0, Opening Value=341828.61
+   Manual (Row 618): Code='TRM-446', Unit='Set', Opening Qty=98, Opening Value=341828.61004628445
+   Differences: Product Code: 'TRM- 446' vs 'TRM-446'
+
+268. Item Name: 'Tap Changer, Off Load, 200A, 33KV, 5 Position'
+   Odoo (Row 2918): Code='TRM- 447', Unit='Pieces', Opening Qty=14.0, Opening Value=587290.2
+   Manual (Row 619): Code='TRM-447', Unit='PCS', Opening Qty=14, Opening Value=587290.2000000001
+   Differences: Product Code: 'TRM- 447' vs 'TRM-447', Unit: 'Pieces' vs 'PCS'
+
+269. Item Name: 'Temperature Meter 250kva'
+   Odoo (Row 2941): Code='TRM-13', Unit='Pieces', Opening Qty=152.0, Opening Value=185217.34
+   Manual (Row 594): Code='TRM-422', Unit='PCS', Opening Qty=18, Opening Value=92608.66778443115
+   Differences: Product Code: 'TRM-13' vs 'TRM-422', Unit: 'Pieces' vs 'PCS', Opening Qty: 152.0 vs 18, Opening Value: 185217.34 vs 92608.66778443115, Closing Qty: 152.0 vs 18, Closing Value: 185217.34 vs 92608.66778443115
+
+270. Item Name: 'Thinner T-7'
+   Odoo (Row 2975): Code='TRM- 219', Unit='Liter(s)', Opening Qty=252.0, Opening Value=74340.0
+   Manual (Row 391): Code='TRM-219', Unit='Liter', Opening Qty=252, Opening Value=74340
+   Differences: Product Code: 'TRM- 219' vs 'TRM-219', Unit: 'Liter(s)' vs 'Liter'
+
+271. Item Name: 'Tie Rod 12mm'
+   Odoo (Row 2990): Code='TRM- 129', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 302): Code='TRM-129', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 129' vs 'TRM-129'
+
+272. Item Name: 'Tie Rod 16mm'
+   Odoo (Row 2991): Code='TRM- 128', Unit='KG', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 301): Code='TRM-128', Unit='KG', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 128' vs 'TRM-128'
+
+273. Item Name: 'Tie Rod-16X480mm (Nut 4pcs, Whaser 2pcs)'
+   Odoo (Row 2992): Code='TRM- 788', Unit='Pieces', Opening Qty=4890.2, Opening Value=660177.0
+   Manual (Row 790): Code='TRM-788', Unit='Kg', Opening Qty=4890.2, Opening Value=660177
+   Differences: Product Code: 'TRM- 788' vs 'TRM-788', Unit: 'Pieces' vs 'Kg'
+
+274. Item Name: 'Top And Bottom Sampling Valve'
+   Odoo (Row 3000): Code='TRM- 171', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 344): Code='TRM-171', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 171' vs 'TRM-171'
+
+275. Item Name: 'Top-Oil Filter Valve'
+   Odoo (Row 3008): Code='TRM- 173', Unit='NOS', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 346): Code='TRM-173', Unit='NOS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 173' vs 'TRM-173'
+
+276. Item Name: 'Valve for Buchholz Relay (Globe valve 50mm, Double Flange) Flange Ø165/PCD 125, Hole 4x18mm'
+   Odoo (Row 3071): Code='TRM- 172', Unit='NOS', Opening Qty=22.0, Opening Value=273081.38
+   Manual (Row 345): Code='TRM-172', Unit='NOS', Opening Qty=22, Opening Value=273081.38
+   Differences: Product Code: 'TRM- 172' vs 'TRM-172'
+
+277. Item Name: 'Vertical Milling Machine With Rotary Table Baise'
+   Odoo (Row 3083): Code='TRM- 276', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 448): Code='TRM-276', Unit='Set', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 276' vs 'TRM-276', Unit: 'Pieces' vs 'Set'
+
+278. Item Name: 'WTI CT Ratio 1200/5Amp, Burden 15VA, 5P20'
+   Odoo (Row 3087): Code='TRM- 792', Unit='Pieces', Opening Qty=10.0, Opening Value=138313.0
+   Manual (Row 794): Code='TRM-792', Unit='PCS', Opening Qty=10, Opening Value=138313
+   Differences: Product Code: 'TRM- 792' vs 'TRM-792', Unit: 'Pieces' vs 'PCS'
+
+279. Item Name: 'Winding Temperature Indicator (WTI)'
+   Odoo (Row 3128): Code='TRM- 238', Unit='NOS', Opening Qty=1.0, Opening Value=79158.57
+   Manual (Row 410): Code='TRM-238', Unit='PCS', Opening Qty=1, Opening Value=79158.57
+   Differences: Product Code: 'TRM- 238' vs 'TRM-238', Unit: 'NOS' vs 'PCS'
+
+280. Item Name: 'Wooden Box Bushing Covering'
+   Odoo (Row 3153): Code='TRM- 230', Unit='Box', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 402): Code='TRM-230', Unit='PCS', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 230' vs 'TRM-230', Unit: 'Box' vs 'PCS'
+
+281. Item Name: 'Wooden Forma 250KVA'
+   Odoo (Row 3155): Code='TRM- 790', Unit='Pieces', Opening Qty=0.0, Opening Value=0.0
+   Manual (Row 792): Code='TRM-790', Unit='Nos', Opening Qty=0, Opening Value=0
+   Differences: Product Code: 'TRM- 790' vs 'TRM-790', Unit: 'Pieces' vs 'Nos'
+
+================================================================================
+DETAILED: Product Name matches but Unit differs
+================================================================================
+
+1. Item Name: '100kva Complete Tank With Corrugated Radiator'
+   Odoo (Row 7): Code='TRM- 322', Unit='KG'
+   Manual (Row 494): Code='TRM-322', Unit='PCS'
+   Differences: Product Code: 'TRM- 322' vs 'TRM-322', Unit: 'KG' vs 'PCS'
+
+2. Item Name: '400kva Complete Tank With Corrugated Radiator'
+   Odoo (Row 10): Code='TRM- 319', Unit='KG'
+   Manual (Row 491): Code='TRM-319', Unit='PCS'
+   Differences: Product Code: 'TRM- 319' vs 'TRM-319', Unit: 'KG' vs 'PCS'
+
+3. Item Name: 'Aluminium Supporter 12mm'
+   Odoo (Row 52): Code='TRM-15', Unit='Pieces'
+   Manual (Row 190): Code='TRM-15', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+4. Item Name: 'Amorphous Core 10kva'
+   Odoo (Row 61): Code='SRM- 149', Unit='KG'
+   Manual (Row 154): Code='SRM-149', Unit='PCS'
+   Differences: Product Code: 'SRM- 149' vs 'SRM-149', Unit: 'KG' vs 'PCS'
+
+5. Item Name: 'Amorphous Core 125kva'
+   Odoo (Row 62): Code='SRM- 155', Unit='KG'
+   Manual (Row 160): Code='SRM-155', Unit='PCS'
+   Differences: Product Code: 'SRM- 155' vs 'SRM-155', Unit: 'KG' vs 'PCS'
+
+6. Item Name: 'Amorphous Core 15kva'
+   Odoo (Row 63): Code='SRM- 150', Unit='KG'
+   Manual (Row 155): Code='SRM-150', Unit='PCS'
+   Differences: Product Code: 'SRM- 150' vs 'SRM-150', Unit: 'KG' vs 'PCS'
+
+7. Item Name: 'Amorphous Core 25kva'
+   Odoo (Row 64): Code='SRM- 151', Unit='KG'
+   Manual (Row 156): Code='SRM-151', Unit='PCS'
+   Differences: Product Code: 'SRM- 151' vs 'SRM-151', Unit: 'KG' vs 'PCS'
+
+8. Item Name: 'Amorphous Core 37.5kva'
+   Odoo (Row 65): Code='SRM- 152', Unit='KG'
+   Manual (Row 157): Code='SRM-152', Unit='PCS'
+   Differences: Product Code: 'SRM- 152' vs 'SRM-152', Unit: 'KG' vs 'PCS'
+
+9. Item Name: 'Amorphous Core 50kva'
+   Odoo (Row 66): Code='SRM- 153', Unit='KG'
+   Manual (Row 158): Code='SRM-153', Unit='PCS'
+   Differences: Product Code: 'SRM- 153' vs 'SRM-153', Unit: 'KG' vs 'PCS'
+
+10. Item Name: 'Amorphous Core 5kva'
+   Odoo (Row 67): Code='SRM- 148', Unit='KG'
+   Manual (Row 153): Code='SRM-148', Unit='PCS'
+   Differences: Product Code: 'SRM- 148' vs 'SRM-148', Unit: 'KG' vs 'PCS'
+
+11. Item Name: 'Amorphous Core 75kva'
+   Odoo (Row 68): Code='SRM- 154', Unit='KG'
+   Manual (Row 159): Code='SRM-154', Unit='PCS'
+   Differences: Product Code: 'SRM- 154' vs 'SRM-154', Unit: 'KG' vs 'PCS'
+
+12. Item Name: 'Ampere Tube 10no'
+   Odoo (Row 74): Code='SRM-68', Unit='Meter'
+   Manual (Row 73): Code='SRM-68', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+13. Item Name: 'Ampere Tube 12no'
+   Odoo (Row 75): Code='SRM-69', Unit='Meter'
+   Manual (Row 74): Code='SRM-69', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+14. Item Name: 'Ampere Tube 14no'
+   Odoo (Row 76): Code='SRM-70', Unit='Meter'
+   Manual (Row 75): Code='SRM-70', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+15. Item Name: 'Ampere Tube 16no'
+   Odoo (Row 77): Code='SRM-71', Unit='Meter'
+   Manual (Row 76): Code='SRM-71', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+16. Item Name: 'Ampere Tube 18no'
+   Odoo (Row 78): Code='SRM-72', Unit='Meter'
+   Manual (Row 77): Code='SRM-72', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+17. Item Name: 'Ampere Tube 3no'
+   Odoo (Row 81): Code='SRM- 110', Unit='Meter'
+   Manual (Row 115): Code='SRM-110', Unit='PCS'
+   Differences: Product Code: 'SRM- 110' vs 'SRM-110', Unit: 'Meter' vs 'PCS'
+
+18. Item Name: 'Ampere Tube 4no'
+   Odoo (Row 82): Code='SRM-65', Unit='Meter'
+   Manual (Row 70): Code='SRM-65', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+19. Item Name: 'Ampere Tube 5no'
+   Odoo (Row 83): Code='SRM-66', Unit='Meter'
+   Manual (Row 71): Code='SRM-66', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+20. Item Name: 'Ampere Tube 6no'
+   Odoo (Row 84): Code='SRM-67', Unit='Meter'
+   Manual (Row 72): Code='SRM-67', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+21. Item Name: 'Ampere Tube 8no'
+   Odoo (Row 85): Code='SRM-15', Unit='Meter'
+   Manual (Row 20): Code='SRM-15', Unit='PCS'
+   Differences: Unit: 'Meter' vs 'PCS'
+
+22. Item Name: 'Auto Welding Wire 1mm'
+   Odoo (Row 120): Code='SRM-55', Unit='Unit(s)'
+   Manual (Row 60): Code='SRM-55', Unit='KG'
+   Differences: Unit: 'Unit(s)' vs 'KG'
+
+23. Item Name: 'BP. C/A For Phenolic Epoxy 1L'
+   Odoo (Row 125): Code='TRM- 433', Unit='Unit(s)'
+   Manual (Row 605): Code='TRM-433', Unit='Litter'
+   Differences: Product Code: 'TRM- 433' vs 'TRM-433', Unit: 'Unit(s)' vs 'Litter'
+
+24. Item Name: 'BP. C/A for FRX A/C Coating 1 liter'
+   Odoo (Row 126): Code='TRM- 432', Unit='Unit(s)'
+   Manual (Row 604): Code='TRM-432', Unit='Litter'
+   Differences: Product Code: 'TRM- 432' vs 'TRM-432', Unit: 'Unit(s)' vs 'Litter'
+
+25. Item Name: 'BP. FRX A/C Coating Grey 4L'
+   Odoo (Row 127): Code='TRM- 434', Unit='Unit(s)'
+   Manual (Row 606): Code='TRM-434', Unit='Litter'
+   Differences: Product Code: 'TRM- 434' vs 'TRM-434', Unit: 'Unit(s)' vs 'Litter'
+
+26. Item Name: 'BP. Phenolic Epoxy HBTL Grey 3.2L'
+   Odoo (Row 128): Code='TRM- 435', Unit='Unit(s)'
+   Manual (Row 607): Code='TRM-435', Unit='Litter'
+   Differences: Product Code: 'TRM- 435' vs 'TRM-435', Unit: 'Unit(s)' vs 'Litter'
+
+27. Item Name: 'Bottom Drain Valve Flange With Pipe'
+   Odoo (Row 447): Code='TRM- 287', Unit='Pieces'
+   Manual (Row 459): Code='TRM-287', Unit='PCS'
+   Differences: Product Code: 'TRM- 287' vs 'TRM-287', Unit: 'Pieces' vs 'PCS'
+
+28. Item Name: 'Bottom Oil Drain & Filter Valve (Globe valve 50mm, Single Flange) Flange Ø150/PCD 115mm,Hole 4x18mm'
+   Odoo (Row 449): Code='TRM-57', Unit='Pieces'
+   Manual (Row 231): Code='TRM-57', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+29. Item Name: 'Buchholz Relay Set'
+   Odoo (Row 500): Code='TRM- 106', Unit='Pieces'
+   Manual (Row 280): Code='TRM-106', Unit='PCS'
+   Differences: Product Code: 'TRM- 106' vs 'TRM-106', Unit: 'Pieces' vs 'PCS'
+
+30. Item Name: 'Bushing Lock Spring 10X160/170mm'
+   Odoo (Row 509): Code='SRM-58', Unit='Pieces'
+   Manual (Row 63): Code='SRM-58', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+31. Item Name: 'Bushing Lock Spring 8X160/170mm'
+   Odoo (Row 510): Code='SRM-57', Unit='Pieces'
+   Manual (Row 62): Code='SRM-57', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+32. Item Name: 'Butterfly Valve'
+   Odoo (Row 512): Code='TRM- 305', Unit='NOS'
+   Manual (Row 477): Code='TRM-305', Unit='PCS'
+   Differences: Product Code: 'TRM- 305' vs 'TRM-305', Unit: 'NOS' vs 'PCS'
+
+33. Item Name: 'CT Terminal Brass Fitting (Cast Resin)'
+   Odoo (Row 579): Code='TRM- 380', Unit='Pieces'
+   Manual (Row 552): Code='TRM-380', Unit='PCS'
+   Differences: Product Code: 'TRM- 380' vs 'TRM-380', Unit: 'Pieces' vs 'PCS'
+
+34. Item Name: 'Cable Gland, PG-29'
+   Odoo (Row 600): Code='Sub-09', Unit='Pieces'
+   Manual (Row 678): Code='Sub-09', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+35. Item Name: 'Cable Gland, PG-36'
+   Odoo (Row 601): Code='Sub-10', Unit='Pieces'
+   Manual (Row 679): Code='Sub-10', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+36. Item Name: 'Cable Gland, PG-42'
+   Odoo (Row 602): Code='Sub-11', Unit='Pieces'
+   Manual (Row 680): Code='Sub-11', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+37. Item Name: 'Cable Lug 1.5rm "U" Type'
+   Odoo (Row 605): Code='Sub-19', Unit='Pieces'
+   Manual (Row 688): Code='Sub-19', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+38. Item Name: 'Cable Lug 1.5rm Pin Type'
+   Odoo (Row 606): Code='Sub-20', Unit='Pieces'
+   Manual (Row 689): Code='Sub-20', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+39. Item Name: 'Cable Lug 2.5rm (I Type)'
+   Odoo (Row 618): Code='Sub-27', Unit='Pieces'
+   Manual (Row 696): Code='Sub-27', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+40. Item Name: 'Cable Lug 2.5rm (Ring Type)'
+   Odoo (Row 619): Code='Sub-21', Unit='Pieces'
+   Manual (Row 690): Code='Sub-21', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+41. Item Name: 'Cable Lug 2.5rm (Socket Type)'
+   Odoo (Row 620): Code='Sub-22', Unit='Pieces'
+   Manual (Row 691): Code='Sub-22', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+42. Item Name: 'Cable Lug 2.5rm (Y Type)'
+   Odoo (Row 621): Code='Sub-26', Unit='Pieces'
+   Manual (Row 695): Code='Sub-26', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+43. Item Name: 'Capacitor 10 KVAR'
+   Odoo (Row 655): Code='Sub-41', Unit='Pieces'
+   Manual (Row 710): Code='Sub-41', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+44. Item Name: 'Capacitor 12.5 KVAR'
+   Odoo (Row 656): Code='Sub-40', Unit='Pieces'
+   Manual (Row 709): Code='Sub-40', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+45. Item Name: 'Capacitor 2.5 KVAR'
+   Odoo (Row 660): Code='Sub-43', Unit='Pieces'
+   Manual (Row 712): Code='Sub-43', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+46. Item Name: 'Capacitor 20 KVAR'
+   Odoo (Row 662): Code='Sub-80', Unit='Pieces'
+   Manual (Row 749): Code='Sub-80', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+47. Item Name: 'Capacitor 25 KVAR'
+   Odoo (Row 664): Code='Con- 1881', Unit='Pieces'
+   Manual (Row 707): Code='Sub-38', Unit='PCS'
+   Differences: Product Code: 'Con- 1881' vs 'Sub-38', Unit: 'Pieces' vs 'PCS'
+
+48. Item Name: 'Capacitor 3 KVAR'
+   Odoo (Row 667): Code='Sub-81', Unit='Pieces'
+   Manual (Row 750): Code='Sub-81', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+49. Item Name: 'Capacitor 5 KVAR'
+   Odoo (Row 679): Code='Sub-42', Unit='Pieces'
+   Manual (Row 711): Code='Sub-42', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+50. Item Name: 'Capacitor 7.5 KVAR'
+   Odoo (Row 683): Code='Sub-79', Unit='Pieces'
+   Manual (Row 748): Code='Sub-79', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+51. Item Name: 'Channel (150X75X6mm)'
+   Odoo (Row 727): Code='TRM-96', Unit='KG'
+   Manual (Row 270): Code='TRM-96', Unit='PCS'
+   Differences: Unit: 'KG' vs 'PCS'
+
+52. Item Name: 'Com Bus DP'
+   Odoo (Row 755): Code='Sub-05', Unit='Pieces'
+   Manual (Row 674): Code='Sub-05', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+53. Item Name: 'Com Bus SP'
+   Odoo (Row 756): Code='Sub-04', Unit='Pieces'
+   Manual (Row 673): Code='Sub-04', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+54. Item Name: 'Com Bus TP'
+   Odoo (Row 757): Code='Sub-06', Unit='Pieces'
+   Manual (Row 675): Code='Sub-06', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+55. Item Name: 'Conservator Cap'
+   Odoo (Row 773): Code='TRM-18', Unit='Pieces'
+   Manual (Row 193): Code='TRM-18', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+56. Item Name: 'Contract Plate 250KVA (BPDP)'
+   Odoo (Row 777): Code='TRM- 5543', Unit='Pieces'
+   Manual (Row 798): Code='TRM-5543', Unit='PCS'
+   Differences: Product Code: 'TRM- 5543' vs 'TRM-5543', Unit: 'Pieces' vs 'PCS'
+
+57. Item Name: 'Cooling Fan Safety Guard'
+   Odoo (Row 793): Code='TRM- 367', Unit='Pieces'
+   Manual (Row 539): Code='TRM-367', Unit='Set'
+   Differences: Product Code: 'TRM- 367' vs 'TRM-367', Unit: 'Pieces' vs 'Set'
+
+58. Item Name: 'Copper Pipe'
+   Odoo (Row 814): Code='TRM- 232', Unit='KG'
+   Manual (Row 404): Code='TRM-232', Unit='Feet'
+   Differences: Product Code: 'TRM- 232' vs 'TRM-232', Unit: 'KG' vs 'Feet'
+
+59. Item Name: 'Cork Sheet RC 80C (900X600X10mm)'
+   Odoo (Row 847): Code='TRM-44', Unit='Pieces'
+   Manual (Row 218): Code='TRM-44', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+60. Item Name: 'Cotton Tape 1" (27 Yard)'
+   Odoo (Row 865): Code='SRM-18', Unit='Pieces'
+   Manual (Row 23): Code='SRM-18', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+61. Item Name: 'Crimping Tool With Tensioner'
+   Odoo (Row 883): Code='SRM- 130', Unit='Pieces'
+   Manual (Row 135): Code='SRM-130', Unit='PCS'
+   Differences: Product Code: 'SRM- 130' vs 'SRM-130', Unit: 'Pieces' vs 'PCS'
+
+62. Item Name: 'Densified Wood Board 4'X8'X6mm'
+   Odoo (Row 929): Code='SRM- 121', Unit='Pieces'
+   Manual (Row 126): Code='SRM-121', Unit='KG'
+   Differences: Product Code: 'SRM- 121' vs 'SRM-121', Unit: 'Pieces' vs 'KG'
+
+63. Item Name: 'Densified Wood Ring (50x480x800mm)'
+   Odoo (Row 930): Code='TRM- 458', Unit='Pieces'
+   Manual (Row 630): Code='TRM-458', Unit='PCS'
+   Differences: Product Code: 'TRM- 458' vs 'TRM-458', Unit: 'Pieces' vs 'PCS'
+
+64. Item Name: 'Densified Wood Sheet (2000mmX1000mmX50mm)'
+   Odoo (Row 931): Code='TRM- 495', Unit='Pieces'
+   Manual (Row 667): Code='TRM-495', Unit='Pcs'
+   Differences: Product Code: 'TRM- 495' vs 'TRM-495', Unit: 'Pieces' vs 'Pcs'
+
+65. Item Name: 'Drain Valve Round Type'
+   Odoo (Row 1001): Code='TRM- 337', Unit='Pieces'
+   Manual (Row 509): Code='TRM-337', Unit='PCS'
+   Differences: Product Code: 'TRM- 337' vs 'TRM-337', Unit: 'Pieces' vs 'PCS'
+
+66. Item Name: 'Earthing Lug (12X38)mm'
+   Odoo (Row 1016): Code='TRM-19', Unit='Unit(s)'
+   Manual (Row 194): Code='TRM-19', Unit='Set'
+   Differences: Unit: 'Unit(s)' vs 'Set'
+
+67. Item Name: 'Electrode Rod Vortic Marine 3.2mm'
+   Odoo (Row 1029): Code='Con- 1987', Unit='Unit(s)'
+   Manual (Row 14): Code='SRM-09', Unit='Pkt'
+   Differences: Product Code: 'Con- 1987' vs 'SRM-09', Unit: 'Unit(s)' vs 'Pkt'
+
+68. Item Name: 'Enamel Paint Olive Grey'
+   Odoo (Row 1051): Code='Con- 1877', Unit='Liter(s)'
+   Manual (Row 608): Code='TRM-436', Unit='Litter'
+   Differences: Product Code: 'Con- 1877' vs 'TRM-436', Unit: 'Liter(s)' vs 'Litter'
+
+69. Item Name: 'Epoxy Resin Cast Bushing (1.1kv/5000amps)'
+   Odoo (Row 1071): Code='TRM- 274', Unit='Pieces'
+   Manual (Row 446): Code='TRM-274', Unit='Nos'
+   Differences: Product Code: 'TRM- 274' vs 'TRM-274', Unit: 'Pieces' vs 'Nos'
+
+70. Item Name: 'Exhaust Fan 5", Best Quality'
+   Odoo (Row 1074): Code='Sub-16', Unit='Pieces'
+   Manual (Row 685): Code='Sub-16', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+71. Item Name: 'Felt 12mm'
+   Odoo (Row 1082): Code='TRM- 336', Unit='lbs'
+   Manual (Row 508): Code='TRM-336', Unit='KG'
+   Differences: Product Code: 'TRM- 336' vs 'TRM-336', Unit: 'lbs' vs 'KG', Receive Qty: 100.0 vs 0, Receive Value: 127000.0 vs 0, Closing Qty: 100.0 vs 0
+
+72. Item Name: 'Ferrule'
+   Odoo (Row 1091): Code='TRM- 225', Unit='Pieces'
+   Manual (Row 397): Code='TRM-225', Unit='Box'
+   Differences: Product Code: 'TRM- 225' vs 'TRM-225', Unit: 'Pieces' vs 'Box'
+
+73. Item Name: 'Fixing Lug 12X25mm'
+   Odoo (Row 1104): Code='SRM- 109', Unit='Pieces'
+   Manual (Row 114): Code='SRM-109', Unit='PCS'
+   Differences: Product Code: 'SRM- 109' vs 'SRM-109', Unit: 'Pieces' vs 'PCS'
+
+74. Item Name: 'Flexible Cable Bare Copper 1X70rm'
+   Odoo (Row 1125): Code='TRM- 185', Unit='Meter'
+   Manual (Row 358): Code='TRM-185', Unit='Coil'
+   Differences: Product Code: 'TRM- 185' vs 'TRM-185', Unit: 'Meter' vs 'Coil'
+
+75. Item Name: 'Gate Valve'
+   Odoo (Row 1246): Code='TRM-17', Unit='Pieces'
+   Manual (Row 192): Code='TRM-17', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+76. Item Name: 'Gear Peinun 100teeth'
+   Odoo (Row 1258): Code='TRM-25', Unit='Pieces'
+   Manual (Row 200): Code='TRM-25', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+77. Item Name: 'Gear Peinun 82teeth'
+   Odoo (Row 1259): Code='TRM-26', Unit='Pieces'
+   Manual (Row 201): Code='TRM-26', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+78. Item Name: 'Gear Penium 93teeth'
+   Odoo (Row 1260): Code='TRM-33', Unit='Pieces'
+   Manual (Row 207): Code='TRM-33', Unit='Set'
+   Differences: Unit: 'Pieces' vs 'Set'
+
+79. Item Name: 'Glass Fiber'
+   Odoo (Row 1264): Code='TRM-68', Unit='KG'
+   Manual (Row 242): Code='TRM-68', Unit='PCS'
+   Differences: Unit: 'KG' vs 'PCS'
+
+80. Item Name: 'Glass Fiber Tube'
+   Odoo (Row 1268): Code='TRM-67', Unit='Pieces'
+   Manual (Row 241): Code='TRM-67', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+81. Item Name: 'HRC Fuse 16 Amp'
+   Odoo (Row 1301): Code='Sub-47', Unit='Pieces'
+   Manual (Row 716): Code='Sub-47', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+82. Item Name: 'HRC Fuse 40 Amp'
+   Odoo (Row 1302): Code='Sub-45', Unit='Pieces'
+   Manual (Row 714): Code='Sub-45', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+83. Item Name: 'HRC Fuse 80 Amp'
+   Odoo (Row 1303): Code='Sub-44', Unit='Pieces'
+   Manual (Row 713): Code='Sub-44', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+84. Item Name: 'HT Bushing'
+   Odoo (Row 1304): Code='TRM-24', Unit='Pieces'
+   Manual (Row 199): Code='TRM-24', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+85. Item Name: 'HT Bushing (10-12kv/250Amp)'
+   Odoo (Row 1305): Code='TRM-82', Unit='Pieces'
+   Manual (Row 256): Code='TRM-82', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+86. Item Name: 'HT Bushing (33-36/250A)'
+   Odoo (Row 1306): Code='TRM-38', Unit='Pieces'
+   Manual (Row 212): Code='TRM-38', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+87. Item Name: 'HT Bushing Set (250/400amps)'
+   Odoo (Row 1307): Code='SRM- 159', Unit='Pieces'
+   Manual (Row 164): Code='SRM-159', Unit='PCS'
+   Differences: Product Code: 'SRM- 159' vs 'SRM-159', Unit: 'Pieces' vs 'PCS'
+
+88. Item Name: 'HT Connecting Lead with Connector'
+   Odoo (Row 1308): Code='TRM-06', Unit='Pieces'
+   Manual (Row 181): Code='TRM-06', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+89. Item Name: 'HT Connector 10MVA'
+   Odoo (Row 1314): Code='TRM- 314', Unit='Pieces'
+   Manual (Row 486): Code='TRM-314', Unit='PCS'
+   Differences: Product Code: 'TRM- 314' vs 'TRM-314', Unit: 'Pieces' vs 'PCS'
+
+90. Item Name: 'HT Gasket'
+   Odoo (Row 1316): Code='TRM-07', Unit='Pieces'
+   Manual (Row 182): Code='TRM-07', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+91. Item Name: 'HT Lug 16rm'
+   Odoo (Row 1317): Code='SRM-43', Unit='Pieces'
+   Manual (Row 48): Code='SRM-43', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+92. Item Name: 'HT Lug 25rm'
+   Odoo (Row 1318): Code='SRM-76', Unit='Pieces'
+   Manual (Row 81): Code='SRM-76', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+93. Item Name: 'HT Lug 35rm'
+   Odoo (Row 1319): Code='SRM-42', Unit='Pieces'
+   Manual (Row 47): Code='SRM-42', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+94. Item Name: 'HT Lug 3rm'
+   Odoo (Row 1320): Code='SRM-38', Unit='Pieces'
+   Manual (Row 43): Code='SRM-38', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+95. Item Name: 'HT Lug 4rm'
+   Odoo (Row 1321): Code='SRM-39', Unit='Pieces'
+   Manual (Row 44): Code='SRM-39', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+96. Item Name: 'HT Pin Set'
+   Odoo (Row 1324): Code='TRM- 260', Unit='Pieces'
+   Manual (Row 432): Code='TRM-260', Unit='SET'
+   Differences: Product Code: 'TRM- 260' vs 'TRM-260', Unit: 'Pieces' vs 'SET'
+
+97. Item Name: 'HT Punja Set'
+   Odoo (Row 1325): Code='TRM- 233', Unit='Pieces'
+   Manual (Row 405): Code='TRM-233', Unit='PCS'
+   Differences: Product Code: 'TRM- 233' vs 'TRM-233', Unit: 'Pieces' vs 'PCS'
+
+98. Item Name: 'HT Ring'
+   Odoo (Row 1326): Code='TRM-14', Unit='Pieces'
+   Manual (Row 189): Code='TRM-14', Unit='PCS'
+   Differences: Unit: 'Pieces' vs 'PCS'
+
+99. Item Name: 'HV Bushing CT 33KV, CT 400/5 A, 15VA, 5P20'
+   Odoo (Row 1327): Code='TRM- 496', Unit='Pieces'
+   Manual (Row 668): Code='TRM-496', Unit='PCS'
+   Differences: Product Code: 'TRM- 496' vs 'TRM-496', Unit: 'Pieces' vs 'PCS'
+
+100. Item Name: 'HV Copper Strip (PICC) 9.80x3.10 (PC 0.5):10.30x3.60'
+   Odoo (Row 1329): Code='TRM- 492', Unit='Unit(s)'
+   Manual (Row 664): Code='TRM-492', Unit='Kg'
+   Differences: Product Code: 'TRM- 492' vs 'TRM-492', Unit: 'Unit(s)' vs 'Kg'
+
+================================================================================
+DETAILED: Product Name matches but Quantity/Value differs
+================================================================================
+
+1. Item Name: 'CRGO 23JGSD080'
+   Odoo (Row 549): Code='SRM- 128', Opening=3885.0/760100.25, Closing=3885.0/760100.25
+   Manual (Row 631): Code='TRM-459', Opening=0/0, Closing=0/0
+   Differences: Product Code: 'SRM- 128' vs 'TRM-459', Opening Qty: 3885.0 vs 0, Opening Value: 760100.25 vs 0, Closing Qty: 3885.0 vs 0, Closing Value: 760100.25 vs 0
+
+2. Item Name: 'Double Key Spacer 2X50X74mm'
+   Odoo (Row 994): Code='TRM- 153', Opening=37833.0/423108.0, Closing=37833.0/423108.0
+   Manual (Row 326): Code='TRM-153', Opening=25550/211553.99999999997, Closing=25550/211553.99999999997
+   Differences: Product Code: 'TRM- 153' vs 'TRM-153', Opening Qty: 37833.0 vs 25550, Opening Value: 423108.0 vs 211553.99999999997, Closing Qty: 37833.0 vs 25550, Closing Value: 423108.0 vs 211553.99999999997
+
+3. Item Name: 'Double Key Spacer 2X50X74mm'
+   Odoo (Row 994): Code='TRM- 153', Opening=37833.0/423108.0, Closing=37833.0/423108.0
+   Manual (Row 442): Code='TRM-270', Opening=12283/211553.99999999997, Closing=12283/211553.99999999997
+   Differences: Product Code: 'TRM- 153' vs 'TRM-270', Opening Qty: 37833.0 vs 12283, Opening Value: 423108.0 vs 211553.99999999997, Closing Qty: 37833.0 vs 12283, Closing Value: 423108.0 vs 211553.99999999997
+
+4. Item Name: 'Felt 12mm'
+   Odoo (Row 1082): Code='TRM- 336', Opening=0.0/0.0, Closing=100.0/127000.0
+   Manual (Row 508): Code='TRM-336', Opening=0/None, Closing=0/0
+   Differences: Product Code: 'TRM- 336' vs 'TRM-336', Unit: 'lbs' vs 'KG', Receive Qty: 100.0 vs 0, Receive Value: 127000.0 vs 0, Closing Qty: 100.0 vs 0
+
+5. Item Name: 'MCB 16A TP'
+   Odoo (Row 1720): Code='Sub-55', Opening=9.0/12821.22, Closing=9.0/12821.22
+   Manual (Row 724): Code='Sub-55', Opening=0/0, Closing=0/0
+   Differences: Unit: 'Pieces' vs 'PCS', Opening Qty: 9.0 vs 0, Opening Value: 12821.22 vs 0, Closing Qty: 9.0 vs 0, Closing Value: 12821.22 vs 0
+
+6. Item Name: 'MCB 20A TP'
+   Odoo (Row 1722): Code='Sub-57', Opening=9.0/12333.96, Closing=9.0/12333.96
+   Manual (Row 726): Code='Sub-57', Opening=0/0, Closing=0/0
+   Differences: Unit: 'Pieces' vs 'PCS', Opening Qty: 9.0 vs 0, Opening Value: 12333.96 vs 0, Closing Qty: 9.0 vs 0, Closing Value: 12333.96 vs 0
+
+7. Item Name: 'MCCB 200A TP'
+   Odoo (Row 1739): Code='Sub-75', Opening=1.0/10992.5, Closing=1.0/10992.5
+   Manual (Row 744): Code='Sub-75', Opening=0/0, Closing=0/0
+   Differences: Unit: 'Pieces' vs 'PCS', Opening Qty: 1.0 vs 0, Opening Value: 10992.5 vs 0, Closing Qty: 1.0 vs 0, Closing Value: 10992.5 vs 0
+
+8. Item Name: 'Phase Failure Relay'
+   Odoo (Row 2339): Code='TRM- 382', Opening=1.0/3000.0, Closing=1.0/3000.0
+   Manual (Row 554): Code='TRM-382', Opening=0/0, Closing=0/0
+   Differences: Product Code: 'TRM- 382' vs 'TRM-382', Unit: 'Pieces' vs 'PCS', Opening Qty: 1.0 vs 0, Opening Value: 3000.0 vs 0, Closing Qty: 1.0 vs 0
+
+9. Item Name: 'Temperature Meter 250kva'
+   Odoo (Row 2941): Code='TRM-13', Opening=152.0/185217.34, Closing=152.0/185217.34
+   Manual (Row 188): Code='TRM-13', Opening=134/92608.66778443115, Closing=134/92608.66778443115
+   Differences: Unit: 'Pieces' vs 'PCS', Opening Qty: 152.0 vs 134, Opening Value: 185217.34 vs 92608.66778443115, Closing Qty: 152.0 vs 134, Closing Value: 185217.34 vs 92608.66778443115
+
+10. Item Name: 'Temperature Meter 250kva'
+   Odoo (Row 2941): Code='TRM-13', Opening=152.0/185217.34, Closing=152.0/185217.34
+   Manual (Row 594): Code='TRM-422', Opening=18/92608.66778443115, Closing=18/92608.66778443115
+   Differences: Product Code: 'TRM-13' vs 'TRM-422', Unit: 'Pieces' vs 'PCS', Opening Qty: 152.0 vs 18, Opening Value: 185217.34 vs 92608.66778443115, Closing Qty: 152.0 vs 18
