@@ -22,6 +22,7 @@ class StockReportValidator:
         
         self.odoo_file_path = None
         self.manual_file_path = None
+        self.matching_mode = tk.StringVar(value="simple")  # Default to simple matching
         
         self.setup_ui()
     
@@ -58,6 +59,21 @@ class StockReportValidator:
         self.manual_label = tk.Label(manual_btn_frame, text="No file selected", 
                                      fg="gray", anchor=tk.W)
         self.manual_label.pack(side=tk.LEFT, padx=10, fill=tk.X, expand=True)
+        
+        # Matching mode selection
+        mode_frame = tk.Frame(self.root)
+        mode_frame.pack(pady=15, padx=20, fill=tk.X)
+        tk.Label(mode_frame, text="Matching Mode:", font=("Arial", 10, "bold")).pack(anchor=tk.W)
+        
+        mode_options_frame = tk.Frame(mode_frame)
+        mode_options_frame.pack(fill=tk.X, pady=5)
+        
+        tk.Radiobutton(mode_options_frame, text="Simple: Product Code OR Product Name", 
+                      variable=self.matching_mode, value="simple",
+                      font=("Arial", 9)).pack(anchor=tk.W, padx=20)
+        tk.Radiobutton(mode_options_frame, text="Strict: All fields must match (Code, Name, Unit, Quantities, Values)", 
+                      variable=self.matching_mode, value="strict",
+                      font=("Arial", 9)).pack(anchor=tk.W, padx=20)
         
         # Validate button
         self.validate_btn = tk.Button(self.root, text="Validate and Match", 
@@ -144,15 +160,28 @@ class StockReportValidator:
             all_manual_data = manual_rm_data + manual_consumable_data
             self.show_normalized_units(odoo_data, all_manual_data)
             
-            # Find matches for RM sheet
-            self.log_status("\nFinding matches for RM sheet...")
-            rm_matches = self.find_matches(odoo_data, manual_rm_data, prefix='RM')
-            self.log_status(f"Found {len(rm_matches)} RM matches")
-            
-            # Find matches for Consumable sheet
-            self.log_status("\nFinding matches for Consumable sheet...")
-            consumable_matches = self.find_matches(odoo_data, manual_consumable_data, prefix='CON')
-            self.log_status(f"Found {len(consumable_matches)} Consumable matches")
+            # Determine matching mode
+            matching_mode = self.matching_mode.get()
+            if matching_mode == "simple":
+                # Simple matching: Product Code OR Product Name
+                self.log_status("\nUsing SIMPLE matching mode: Product Code OR Product Name")
+                self.log_status("Finding matches for RM sheet...")
+                rm_matches = self.find_matches_simple(odoo_data, manual_rm_data, prefix='RM')
+                self.log_status(f"Found {len(rm_matches)} RM matches")
+                
+                self.log_status("Finding matches for Consumable sheet...")
+                consumable_matches = self.find_matches_simple(odoo_data, manual_consumable_data, prefix='CON')
+                self.log_status(f"Found {len(consumable_matches)} Consumable matches")
+            else:
+                # Strict matching: All fields must match
+                self.log_status("\nUsing STRICT matching mode: All fields must match")
+                self.log_status("Finding matches for RM sheet...")
+                rm_matches = self.find_matches(odoo_data, manual_rm_data, prefix='RM')
+                self.log_status(f"Found {len(rm_matches)} RM matches")
+                
+                self.log_status("Finding matches for Consumable sheet...")
+                consumable_matches = self.find_matches(odoo_data, manual_consumable_data, prefix='CON')
+                self.log_status(f"Found {len(consumable_matches)} Consumable matches")
             
             total_matches = len(rm_matches) + len(consumable_matches)
             if total_matches == 0:
@@ -171,7 +200,8 @@ class StockReportValidator:
             report_dir = os.path.dirname(self.manual_file_path) or os.path.dirname(self.odoo_file_path) or '.'
             all_matches = rm_matches + consumable_matches
             all_manual_data = manual_rm_data + manual_consumable_data
-            self.generate_analysis_report(odoo_data, all_manual_data, all_matches, rm_matches, consumable_matches, report_dir)
+            matching_mode = self.matching_mode.get()
+            self.generate_analysis_report(odoo_data, all_manual_data, all_matches, rm_matches, consumable_matches, report_dir, matching_mode)
             
             self.log_status("\n" + "=" * 60)
             self.log_status("VALIDATION COMPLETED SUCCESSFULLY!")
@@ -323,25 +353,26 @@ class StockReportValidator:
             self.log_status("No units found in data.")
     
     def read_odoo_data(self, file_path):
-        """Read all data rows from Odoo file"""
+        """Read all data rows from Odoo file
+        Structure:
+        - Row 1: Date range in A1
+        - Row 2: Header row (SL No, Product Code, Product Name, etc.)
+        - Row 3+: Continuous data rows (no metadata, no repeated headers)
+        """
         wb = openpyxl.load_workbook(file_path)
         ws = wb.active
         
-        # Check if Match ID column exists
-        has_match_id = str(ws.cell(5, 1).value or '').strip() == 'Match ID'
-        
         data_rows = []
         
-        # Find all header rows
-        header_rows = [5]
-        sl_col = 2 if has_match_id else 1
-        for i in range(6, ws.max_row + 1):
-            first_cell = str(ws.cell(i, sl_col).value or '').strip()
-            if first_cell == 'SL\nNo' or first_cell == 'SL No' or first_cell == 'SL':
-                header_rows.append(i)
+        # Header row is always row 2 for Detailed Stock Report
+        header_row = 2
+        
+        # Check if Match ID column exists (in case file was already processed)
+        has_match_id = str(ws.cell(header_row, 1).value or '').strip() == 'Match ID'
         
         # Adjust column indices if Match ID column exists
         if has_match_id:
+            sl_col = 2
             code_col = 3
             name_col = 4
             unit_col = 6
@@ -354,6 +385,7 @@ class StockReportValidator:
             closing_qty_col = 13
             closing_value_col = 14
         else:
+            sl_col = 1
             code_col = 2
             name_col = 3
             unit_col = 5
@@ -366,48 +398,44 @@ class StockReportValidator:
             closing_qty_col = 12
             closing_value_col = 13
         
-        # Read data from each page
-        for page_idx in range(len(header_rows)):
-            header_start = header_rows[page_idx]
-            header_next = header_rows[page_idx + 1] if page_idx + 1 < len(header_rows) else ws.max_row + 1
+        # Read all data rows from after header to end of file
+        for row_num in range(header_row + 1, ws.max_row + 1):
+            sl_val = ws.cell(row_num, sl_col).value
+            # Check if it's a data row (has numeric SL)
+            if sl_val is None:
+                continue
+            sl_str = str(sl_val).strip()
+            if not (sl_str.isdigit() or (isinstance(sl_val, (int, float)))):
+                continue
             
-            for row_num in range(header_start + 1, header_next):
-                sl_val = ws.cell(row_num, sl_col).value
-                # Check if it's a data row (has numeric SL)
-                if sl_val is None:
-                    continue
-                sl_str = str(sl_val).strip()
-                if not (sl_str.isdigit() or (isinstance(sl_val, (int, float)))):
-                    continue
-                
-                # Read values using correct column indices
-                product_code = self.normalize_text(ws.cell(row_num, code_col).value)
-                product_name = self.normalize_text(ws.cell(row_num, name_col).value)
-                unit = self.normalize_text(ws.cell(row_num, unit_col).value)
-                opening_qty = ws.cell(row_num, opening_qty_col).value
-                opening_value = ws.cell(row_num, opening_value_col).value
-                receive_qty = ws.cell(row_num, receive_qty_col).value
-                receive_value = ws.cell(row_num, receive_value_col).value
-                issue_qty = ws.cell(row_num, issue_qty_col).value
-                issue_value = ws.cell(row_num, issue_value_col).value
-                closing_qty = ws.cell(row_num, closing_qty_col).value
-                closing_value = ws.cell(row_num, closing_value_col).value
-                
-                if product_code or product_name:
-                    data_rows.append({
-                        'row_num': row_num,
-                        'product_code': product_code,
-                        'product_name': product_name,
-                        'unit': unit,
-                        'opening_qty': opening_qty,
-                        'opening_value': opening_value,
-                        'receive_qty': receive_qty,
-                        'receive_value': receive_value,
-                        'issue_qty': issue_qty,
-                        'issue_value': issue_value,
-                        'closing_qty': closing_qty,
-                        'closing_value': closing_value
-                    })
+            # Read values using correct column indices
+            product_code = self.normalize_text(ws.cell(row_num, code_col).value)
+            product_name = self.normalize_text(ws.cell(row_num, name_col).value)
+            unit = self.normalize_text(ws.cell(row_num, unit_col).value)
+            opening_qty = ws.cell(row_num, opening_qty_col).value
+            opening_value = ws.cell(row_num, opening_value_col).value
+            receive_qty = ws.cell(row_num, receive_qty_col).value
+            receive_value = ws.cell(row_num, receive_value_col).value
+            issue_qty = ws.cell(row_num, issue_qty_col).value
+            issue_value = ws.cell(row_num, issue_value_col).value
+            closing_qty = ws.cell(row_num, closing_qty_col).value
+            closing_value = ws.cell(row_num, closing_value_col).value
+            
+            if product_code or product_name:
+                data_rows.append({
+                    'row_num': row_num,
+                    'product_code': product_code,
+                    'product_name': product_name,
+                    'unit': unit,
+                    'opening_qty': opening_qty,
+                    'opening_value': opening_value,
+                    'receive_qty': receive_qty,
+                    'receive_value': receive_value,
+                    'issue_qty': issue_qty,
+                    'issue_value': issue_value,
+                    'closing_qty': closing_qty,
+                    'closing_value': closing_value
+                })
         
         wb.close()
         return data_rows
@@ -631,9 +659,59 @@ class StockReportValidator:
         num2 = self.normalize_numeric(val2)
         return num1 == num2
     
+    def find_matches_simple(self, odoo_data, manual_data, prefix='RM'):
+        """Find matching rows with simple logic: match if Product Code OR Product Name matches
+        This is a simpler matching mode that only considers Product Code or Product Name.
+        Other fields (Unit, quantities, values) are NOT considered for matching.
+        
+        Args:
+            odoo_data: List of Odoo data rows
+            manual_data: List of Manual data rows
+            prefix: Prefix for match IDs ('RM' or 'CON')
+        
+        Returns:
+            List of matched records with match_id, odoo_row_num, manual_row_num, product_code, name
+        """
+        matches = []
+        match_id_counter = 1
+        
+        for odoo_row in odoo_data:
+            for manual_row in manual_data:
+                # Check Product Code match
+                odoo_code_normalized = self.normalize_product_code(odoo_row['product_code'])
+                manual_code_normalized = self.normalize_product_code(manual_row['product_code'])
+                product_code_match = (odoo_code_normalized and manual_code_normalized and 
+                                     odoo_code_normalized == manual_code_normalized)
+                
+                # Check Product Name match
+                product_name_match = (odoo_row['product_name'] and manual_row['items_name'] and 
+                                     odoo_row['product_name'] == manual_row['items_name'])
+                
+                # Match if EITHER Product Code OR Product Name matches
+                if product_code_match or product_name_match:
+                    match_id = f'{prefix}{str(match_id_counter).zfill(4)}'
+                    matches.append({
+                        'match_id': match_id,
+                        'odoo_row_num': odoo_row['row_num'],
+                        'manual_row_num': manual_row['row_num'],
+                        'product_code': odoo_row['product_code'],
+                        'name': odoo_row['product_name']
+                    })
+                    match_id_counter += 1
+                    break  # Found match, move to next odoo row
+        
+        return matches
+    
     def find_matches(self, odoo_data, manual_data, prefix='RM'):
         """Find matching rows with specified prefix (RM or CON)
-        Matches on: Product Code, Product Name, Unit, and all Qty/Value fields"""
+        IMPORTANT: ALL criteria must match for a record to be considered a match:
+        - Product Code (case-insensitive, spaces ignored)
+        - Product Name (exact match)
+        - Unit (case-insensitive, with alias mappings)
+        - All quantity/value fields (Opening, Receive, Issue, Closing - Qty & Value)
+        
+        Records will NOT match if only Product Code and/or Item Name match.
+        All fields must match exactly (after normalization)."""
         matches = []
         match_id_counter = 1
         
@@ -714,12 +792,17 @@ class StockReportValidator:
         return matches
     
     def adjust_formulas_after_insert(self, ws, inserted_col=1):
-        """Adjust formulas after inserting a column - shift column references right by 1"""
+        """Adjust formulas after inserting a column - shift column references right by 1
+        Note: openpyxl's insert_cols() should automatically adjust formulas, but we do this
+        explicitly to ensure all formulas are correctly updated, especially in columns N and O+
+        """
         self.log_status("Adjusting formulas...")
         formula_count = 0
         
         # Pattern to match Excel column references (like FN6, $FN$6, FN$6, $FN6)
-        col_pattern = re.compile(r'(\$?)([A-Z]+)(\$?)(\d+)')
+        # Also handles sheet references like 'RM'!G6 or RM!G6
+        col_pattern = re.compile(r"(\$?)([A-Z]+)(\$?)(\d+)")
+        sheet_ref_pattern = re.compile(r"(['\w\s]+'?!)")
         
         def shift_column(match):
             """Shift column reference by inserted_col positions"""
@@ -733,8 +816,10 @@ class StockReportValidator:
             for char in col_letters:
                 col_num = col_num * 26 + (ord(char) - ord('A') + 1)
             
-            # Shift column
-            new_col_num = col_num + inserted_col
+            # When inserting at column 1, ALL columns shift right by 1
+            # So column A becomes B, B becomes C, etc.
+            # We need to shift ALL column references by 1
+            new_col_num = col_num + 1
             
             # Convert back to letters
             new_col_letters = ''
@@ -752,12 +837,13 @@ class StockReportValidator:
                     try:
                         formula = str(cell.value)
                         # Adjust column references in formula
+                        # Note: openpyxl should have already done this, but we verify/adjust
                         new_formula = col_pattern.sub(shift_column, formula)
                         cell.value = new_formula
                         formula_count += 1
                     except Exception as e:
                         # If adjustment fails, log warning but keep original
-                        self.log_status(f"Warning: Could not adjust formula in {cell.coordinate}")
+                        self.log_status(f"Warning: Could not adjust formula in {cell.coordinate}: {str(e)}")
         
         self.log_status(f"Adjusted {formula_count} formulas")
     
@@ -845,6 +931,17 @@ class StockReportValidator:
         # Insert Match ID column in Odoo file only for first sheet
         if is_first_sheet:
             self.log_status(f"Inserting Match ID column in Odoo file...")
+            
+            # Find header row dynamically
+            odoo_header_row = None
+            for row_num in range(1, min(10, odoo_ws.max_row + 1)):
+                first_cell = str(odoo_ws.cell(row_num, 1).value or '').strip()
+                if first_cell in ('Match ID', 'SL\nNo', 'SL No', 'SL'):
+                    odoo_header_row = row_num
+                    break
+            if odoo_header_row is None:
+                odoo_header_row = 1  # Default to row 1
+            
             # Preserve column widths for Odoo file
             odoo_col_widths = {}
             default_width = odoo_ws.column_dimensions.group_width if hasattr(odoo_ws.column_dimensions, 'group_width') else None
@@ -869,10 +966,10 @@ class StockReportValidator:
             match_id_width = odoo_col_widths.get(1, 12.0)
             odoo_ws.column_dimensions['A'].width = max(match_id_width, 12.0)
             
-            # Copy font format from existing header cell (row 5, col 2) to new Match ID header
-            if odoo_ws.cell(5, 2).value is not None:
-                self.copy_cell_format(odoo_ws.cell(5, 2), odoo_ws.cell(5, 1))
-            odoo_ws.cell(5, 1).value = 'Match ID'
+            # Copy font format from existing header cell to new Match ID header
+            if odoo_ws.cell(odoo_header_row, 2).value is not None:
+                self.copy_cell_format(odoo_ws.cell(odoo_header_row, 2), odoo_ws.cell(odoo_header_row, 1))
+            odoo_ws.cell(odoo_header_row, 1).value = 'Match ID'
         
         # Insert Match ID column in Manual sheet
         self.log_status(f"Inserting Match ID column in {sheet_name} sheet...")
@@ -892,6 +989,10 @@ class StockReportValidator:
                 # Column uses default width
                 manual_col_widths[col_idx] = default_width
         
+        # Preserve merged cells before insertion
+        merged_ranges_before = list(manual_ws.merged_cells.ranges)
+        
+        # Insert column - openpyxl will automatically shift all columns, merged cells, formulas, etc.
         manual_ws.insert_cols(1)
         
         # Restore ALL column widths (shifted by 1)
@@ -900,17 +1001,72 @@ class StockReportValidator:
             new_col_letter = openpyxl.utils.get_column_letter(new_col_idx)
             manual_ws.column_dimensions[new_col_letter].width = width
         
-        # Set width for new Match ID column (use width of original column A or default)
+        # Set width for new Match ID column
         match_id_width = manual_col_widths.get(1, 12.0)
-        manual_ws.column_dimensions['A'].width = max(match_id_width, 12.0)  # At least 12 for match IDs
+        manual_ws.column_dimensions['A'].width = max(match_id_width, 12.0)
         
-        # Copy font format from existing header cell (row 5, col 2) to new Match ID header
+        # Copy font format from existing header cell to new Match ID header
         if manual_ws.cell(5, 2).value is not None:
             self.copy_cell_format(manual_ws.cell(5, 2), manual_ws.cell(5, 1))
         manual_ws.cell(5, 1).value = 'Match ID'
         
-        # Adjust formulas in Manual file (which has formulas)
+        # openpyxl's insert_cols(1) shifts formulas but doesn't always adjust column references correctly
+        # We need to manually adjust formulas to ensure column references are updated
         self.adjust_formulas_after_insert(manual_ws, inserted_col=1)
+        
+        # IMPORTANT: openpyxl's insert_cols() shifts cells but doesn't correctly update merged cell ranges
+        # We need to fix all merged ranges by unmerging current ones and re-merging with correct shifted positions
+        # But first, we need to preserve the values from the top-left cell of each merged range
+        self.log_status("Fixing merged cell ranges...")
+        current_merged_ranges = list(manual_ws.merged_cells.ranges)
+        
+        # Preserve values from merged ranges before unmerging
+        # IMPORTANT: openpyxl shifts CELL VALUES but merged range definitions may not be updated correctly
+        # Strategy: Match current merged ranges to original ranges, then read value from shifted position
+        merged_values = {}
+        for orig_r in merged_ranges_before:
+            # Find the corresponding current merged range (same row, similar column position)
+            # The value should be in the shifted position: original_col + 1
+            shifted_col = orig_r.min_col + 1
+            value = manual_ws.cell(orig_r.min_row, shifted_col).value
+            if value is not None:
+                merged_values[(orig_r.min_col, orig_r.min_row)] = value
+        
+        # Unmerge all current ranges (they may be in wrong positions)
+        for r in current_merged_ranges:
+            manual_ws.unmerge_cells(str(r))
+        
+        # Re-merge using the ORIGINAL ranges (before insertion) shifted right by 1 column
+        # And restore the values
+        for r in merged_ranges_before:
+            new_min_col = r.min_col + 1
+            new_max_col = r.max_col + 1
+            new_min_row = r.min_row
+            new_max_row = r.max_row
+            new_min_letter = openpyxl.utils.get_column_letter(new_min_col)
+            new_max_letter = openpyxl.utils.get_column_letter(new_max_col)
+            new_range = f"{new_min_letter}{new_min_row}:{new_max_letter}{new_max_row}"
+            
+            # Restore value from preserved values (use original position to find the value)
+            # The value should be in the shifted position (r.min_col + 1, r.min_row)
+            shifted_col = r.min_col + 1
+            if (r.min_col, r.min_row) in merged_values:
+                # Set the value in the top-left cell before merging
+                manual_ws.cell(new_min_row, new_min_col).value = merged_values[(r.min_col, r.min_row)]
+            
+            manual_ws.merge_cells(new_range)
+        
+        self.log_status(f"Fixed {len(merged_ranges_before)} merged cell ranges")
+        
+        # IMPORTANT: Ensure column N (now column O, row 4) remains unmerged
+        # In input file, column N row 4 has "Rate(Tk)" and is NOT merged
+        # After insertion, it becomes column O row 4, and must remain unmerged
+        for r in list(manual_ws.merged_cells.ranges):
+            if r.min_col <= 15 <= r.max_col and r.min_row <= 4 <= r.max_row:
+                # Column O row 4 is part of a merged range - this is wrong!
+                # Unmerge it to preserve the original structure
+                self.log_status(f"Unmerging column O row 4 (original column N) from range {r}")
+                manual_ws.unmerge_cells(str(r))
         
         # Apply match IDs and highlight
         self.log_status(f"Applying match IDs and highlighting rows for {sheet_name} sheet...")
@@ -930,10 +1086,10 @@ class StockReportValidator:
     
     def process_files(self, odoo_file, manual_file, rm_matches, consumable_matches):
         """Process and update files for both RM and Consumable sheets"""
-        # Load files with formulas preserved (data_only=False is default)
-        self.log_status("Loading files (preserving formulas)...")
-        odoo_wb = openpyxl.load_workbook(odoo_file, data_only=False)
-        manual_wb = openpyxl.load_workbook(manual_file, data_only=False)
+        # Load files with all features preserved (formulas, formatting, merged cells, etc.)
+        self.log_status("Loading files (preserving all features: formulas, formatting, merged cells)...")
+        odoo_wb = openpyxl.load_workbook(odoo_file, data_only=False, keep_links=False)
+        manual_wb = openpyxl.load_workbook(manual_file, data_only=False, keep_links=False)
         
         # Process RM sheet (first sheet - inserts Odoo Match ID column)
         if rm_matches:
@@ -955,7 +1111,7 @@ class StockReportValidator:
         odoo_wb.close()
         manual_wb.close()
     
-    def generate_analysis_report(self, odoo_data, manual_data, matches, rm_matches, consumable_matches, output_dir='.'):
+    def generate_analysis_report(self, odoo_data, manual_data, matches, rm_matches, consumable_matches, output_dir='.', matching_mode='simple'):
         """Generate analysis report of unmatched records
         Args:
             odoo_data: List of Odoo data rows
@@ -964,12 +1120,19 @@ class StockReportValidator:
             rm_matches: List of RM matched records
             consumable_matches: List of Consumable matched records
             output_dir: Directory where to save the report (default: current directory)
+            matching_mode: Matching mode used ('simple' or 'strict')
         """
         import os
         from datetime import datetime
         
+        # Use different filename based on matching mode
+        if matching_mode == 'simple':
+            report_filename = 'match_analysis_report_simple_match.txt'
+        else:
+            report_filename = 'match_analysis_report.txt'
+        
         # Use the provided output directory (same folder as loaded files)
-        report_path = os.path.join(output_dir, 'match_analysis_report.txt')
+        report_path = os.path.join(output_dir, report_filename)
         
         # Get matched product codes and names
         matched_codes = {m['product_code'] for m in matches}
