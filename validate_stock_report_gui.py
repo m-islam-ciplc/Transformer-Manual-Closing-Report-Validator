@@ -761,6 +761,59 @@ class StockReportValidator:
         
         self.log_status(f"Adjusted {formula_count} formulas")
     
+    def clean_odoo_file(self, odoo_wb):
+        """Remove blank rows and images from Odoo workbook"""
+        odoo_ws = odoo_wb.active
+        
+        # Remove images from all sheets
+        total_images = 0
+        for sheet in odoo_wb.worksheets:
+            if hasattr(sheet, '_images'):
+                image_count = len(sheet._images)
+                sheet._images = []
+                total_images += image_count
+        if total_images > 0:
+            self.log_status(f"  Removed {total_images} image(s)")
+        
+        # Remove blank rows (rows with no data)
+        # Start from the bottom to avoid index shifting issues
+        rows_to_delete = []
+        max_row = odoo_ws.max_row
+        
+        # Find all header rows first (to preserve them)
+        header_rows = set()
+        for row_num in range(1, max_row + 1):
+            first_cell = str(odoo_ws.cell(row_num, 1).value or '').strip()
+            if first_cell == 'SL\nNo' or first_cell == 'SL No' or first_cell == 'Match ID':
+                header_rows.add(row_num)
+        
+        # Check each row (skip header rows and first 5 rows which might contain title/header info)
+        for row_num in range(max_row, 5, -1):
+            if row_num in header_rows:
+                continue  # Skip header rows
+            
+            # Check if row is empty (all cells are None or empty)
+            is_empty = True
+            for col in range(1, odoo_ws.max_column + 1):
+                cell_value = odoo_ws.cell(row_num, col).value
+                if cell_value is not None:
+                    # Check if it's not just whitespace
+                    if isinstance(cell_value, str) and cell_value.strip():
+                        is_empty = False
+                        break
+                    elif not isinstance(cell_value, str):
+                        is_empty = False
+                        break
+            
+            if is_empty:
+                rows_to_delete.append(row_num)
+        
+        # Delete blank rows
+        if rows_to_delete:
+            for row_num in rows_to_delete:
+                odoo_ws.delete_rows(row_num)
+            self.log_status(f"  Removed {len(rows_to_delete)} blank row(s)")
+    
     def copy_cell_format(self, source_cell, target_cell):
         """Copy font formatting from source cell to target cell"""
         if source_cell.font:
@@ -889,6 +942,10 @@ class StockReportValidator:
         # Process Consumable sheet (second sheet - Odoo Match ID already exists)
         if consumable_matches:
             self.process_sheet(odoo_wb, manual_wb, 'Consumable', consumable_matches, is_first_sheet=False)
+        
+        # Clean Odoo file (remove blank rows and images)
+        self.log_status("Cleaning Odoo file (removing blank rows and images)...")
+        self.clean_odoo_file(odoo_wb)
         
         # Save files
         self.log_status("Saving files...")
