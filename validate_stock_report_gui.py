@@ -7,7 +7,8 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, scrolledtext
 import threading
 import openpyxl
-from openpyxl.styles import PatternFill, Font, Alignment
+from openpyxl.styles import PatternFill, Font, Alignment, Border, GradientFill
+from copy import copy
 import re
 import os
 
@@ -901,7 +902,7 @@ class StockReportValidator:
             self.log_status(f"  Removed {len(rows_to_delete)} blank row(s)")
     
     def copy_cell_format(self, source_cell, target_cell):
-        """Copy font formatting from source cell to target cell"""
+        """Copy cell formatting from source cell to target cell, including borders"""
         if source_cell.font:
             target_cell.font = Font(
                 name=source_cell.font.name,
@@ -918,6 +919,51 @@ class StockReportValidator:
                 vertical=source_cell.alignment.vertical,
                 wrap_text=source_cell.alignment.wrap_text
             )
+        # Preserve borders - create new Border object to avoid StyleProxy issues
+        if source_cell.border:
+            target_cell.border = Border(
+                left=copy(source_cell.border.left),
+                right=copy(source_cell.border.right),
+                top=copy(source_cell.border.top),
+                bottom=copy(source_cell.border.bottom),
+                diagonal=copy(source_cell.border.diagonal),
+                diagonal_direction=source_cell.border.diagonal_direction,
+                vertical=copy(source_cell.border.vertical),
+                horizontal=copy(source_cell.border.horizontal)
+            )
+        # Preserve fill - create new Fill object to avoid StyleProxy issues
+        if source_cell.fill:
+            try:
+                # Check fill type by accessing fill_type attribute
+                fill_type = getattr(source_cell.fill, 'fill_type', None)
+                if fill_type is not None:
+                    # PatternFill
+                    target_cell.fill = PatternFill(
+                        fill_type=source_cell.fill.fill_type,
+                        start_color=source_cell.fill.start_color,
+                        end_color=source_cell.fill.end_color,
+                        patternType=getattr(source_cell.fill, 'patternType', None)
+                    )
+                else:
+                    # GradientFill or other - check for type attribute
+                    grad_type = getattr(source_cell.fill, 'type', None)
+                    if grad_type is not None:
+                        target_cell.fill = GradientFill(
+                            type=source_cell.fill.type,
+                            degree=getattr(source_cell.fill, 'degree', None),
+                            left=getattr(source_cell.fill, 'left', None),
+                            right=getattr(source_cell.fill, 'right', None),
+                            top=getattr(source_cell.fill, 'top', None),
+                            bottom=getattr(source_cell.fill, 'bottom', None),
+                            stop=getattr(source_cell.fill, 'stop', None)
+                        )
+            except (AttributeError, TypeError):
+                # If we can't determine the fill type, skip it
+                # The cell will keep its default fill
+                pass
+        # Preserve number format
+        if source_cell.number_format:
+            target_cell.number_format = source_cell.number_format
     
     def process_sheet(self, odoo_wb, manual_wb, sheet_name, matches, is_first_sheet=False):
         """Process a single sheet (RM or Consumable)"""
@@ -1020,24 +1066,41 @@ class StockReportValidator:
         self.log_status("Fixing merged cell ranges...")
         current_merged_ranges = list(manual_ws.merged_cells.ranges)
         
-        # Preserve values from merged ranges before unmerging
+        # Preserve values and borders from merged ranges before unmerging
         # IMPORTANT: openpyxl shifts CELL VALUES but merged range definitions may not be updated correctly
         # Strategy: Match current merged ranges to original ranges, then read value from shifted position
         merged_values = {}
+        merged_borders = {}  # Store border information for merged ranges
+        
         for orig_r in merged_ranges_before:
-            # Find the corresponding current merged range (same row, similar column position)
             # The value should be in the shifted position: original_col + 1
             shifted_col = orig_r.min_col + 1
-            value = manual_ws.cell(orig_r.min_row, shifted_col).value
+            shifted_row = orig_r.min_row
+            cell = manual_ws.cell(shifted_row, shifted_col)
+            value = cell.value
             if value is not None:
                 merged_values[(orig_r.min_col, orig_r.min_row)] = value
+            
+            # Preserve border from the top-left cell of the merged range
+            # Create a new Border object to avoid StyleProxy issues
+            if cell.border:
+                merged_borders[(orig_r.min_col, orig_r.min_row)] = Border(
+                    left=copy(cell.border.left),
+                    right=copy(cell.border.right),
+                    top=copy(cell.border.top),
+                    bottom=copy(cell.border.bottom),
+                    diagonal=copy(cell.border.diagonal),
+                    diagonal_direction=cell.border.diagonal_direction,
+                    vertical=copy(cell.border.vertical),
+                    horizontal=copy(cell.border.horizontal)
+                )
         
         # Unmerge all current ranges (they may be in wrong positions)
         for r in current_merged_ranges:
             manual_ws.unmerge_cells(str(r))
         
         # Re-merge using the ORIGINAL ranges (before insertion) shifted right by 1 column
-        # And restore the values
+        # And restore the values and borders
         for r in merged_ranges_before:
             new_min_col = r.min_col + 1
             new_max_col = r.max_col + 1
@@ -1047,12 +1110,12 @@ class StockReportValidator:
             new_max_letter = openpyxl.utils.get_column_letter(new_max_col)
             new_range = f"{new_min_letter}{new_min_row}:{new_max_letter}{new_max_row}"
             
-            # Restore value from preserved values (use original position to find the value)
-            # The value should be in the shifted position (r.min_col + 1, r.min_row)
-            shifted_col = r.min_col + 1
+            # Restore value and border
+            top_left_cell = manual_ws.cell(new_min_row, new_min_col)
             if (r.min_col, r.min_row) in merged_values:
-                # Set the value in the top-left cell before merging
-                manual_ws.cell(new_min_row, new_min_col).value = merged_values[(r.min_col, r.min_row)]
+                top_left_cell.value = merged_values[(r.min_col, r.min_row)]
+            if (r.min_col, r.min_row) in merged_borders:
+                top_left_cell.border = merged_borders[(r.min_col, r.min_row)]
             
             manual_ws.merge_cells(new_range)
         
