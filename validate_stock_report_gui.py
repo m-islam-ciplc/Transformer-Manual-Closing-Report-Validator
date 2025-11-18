@@ -156,9 +156,17 @@ class StockReportValidator:
             manual_consumable_data = self.read_manual_consumable_data(self.manual_file_path)
             self.log_status(f"Found {len(manual_consumable_data)} data rows in Manual Consumable sheet")
             
+            self.log_status("\nReading Manual Spare parts sheet...")
+            manual_spare_parts_data = self.read_manual_spare_parts_data(self.manual_file_path)
+            self.log_status(f"Found {len(manual_spare_parts_data)} data rows in Manual Spare parts sheet")
+            
+            self.log_status("\nReading Manual Re-usable sheet...")
+            manual_reusable_data = self.read_manual_reusable_data(self.manual_file_path)
+            self.log_status(f"Found {len(manual_reusable_data)} data rows in Manual Re-usable sheet")
+            
             # Show all normalized units
             self.log_status("\nCollecting unique units...")
-            all_manual_data = manual_rm_data + manual_consumable_data
+            all_manual_data = manual_rm_data + manual_consumable_data + manual_spare_parts_data + manual_reusable_data
             self.show_normalized_units(odoo_data, all_manual_data)
             
             # Determine matching mode
@@ -173,6 +181,14 @@ class StockReportValidator:
                 self.log_status("Finding matches for Consumable sheet...")
                 consumable_matches = self.find_matches_simple(odoo_data, manual_consumable_data, prefix='CON')
                 self.log_status(f"Found {len(consumable_matches)} Consumable matches")
+                
+                self.log_status("Finding matches for Spare parts sheet...")
+                spare_parts_matches = self.find_matches_simple(odoo_data, manual_spare_parts_data, prefix='SP')
+                self.log_status(f"Found {len(spare_parts_matches)} Spare parts matches")
+                
+                self.log_status("Finding matches for Re-usable sheet...")
+                reusable_matches = self.find_matches_simple(odoo_data, manual_reusable_data, prefix='RE')
+                self.log_status(f"Found {len(reusable_matches)} Re-usable matches")
             else:
                 # Strict matching: All fields must match
                 self.log_status("\nUsing STRICT matching mode: All fields must match")
@@ -183,8 +199,16 @@ class StockReportValidator:
                 self.log_status("Finding matches for Consumable sheet...")
                 consumable_matches = self.find_matches(odoo_data, manual_consumable_data, prefix='CON')
                 self.log_status(f"Found {len(consumable_matches)} Consumable matches")
+                
+                self.log_status("Finding matches for Spare parts sheet...")
+                spare_parts_matches = self.find_matches(odoo_data, manual_spare_parts_data, prefix='SP')
+                self.log_status(f"Found {len(spare_parts_matches)} Spare parts matches")
+                
+                self.log_status("Finding matches for Re-usable sheet...")
+                reusable_matches = self.find_matches(odoo_data, manual_reusable_data, prefix='RE')
+                self.log_status(f"Found {len(reusable_matches)} Re-usable matches")
             
-            total_matches = len(rm_matches) + len(consumable_matches)
+            total_matches = len(rm_matches) + len(consumable_matches) + len(spare_parts_matches) + len(reusable_matches)
             if total_matches == 0:
                 self.log_status("\nNo matches found!")
                 messagebox.showinfo("No Matches", "No matching records found between the two files.")
@@ -193,16 +217,16 @@ class StockReportValidator:
             
             # Process files
             self.log_status("\nProcessing files...")
-            self.process_files(self.odoo_file_path, self.manual_file_path, rm_matches, consumable_matches)
+            self.process_files(self.odoo_file_path, self.manual_file_path, rm_matches, consumable_matches, spare_parts_matches, reusable_matches)
             
             # Generate analysis report in the same folder as loaded files
             self.log_status("\nGenerating analysis report...")
             import os
             report_dir = os.path.dirname(self.manual_file_path) or os.path.dirname(self.odoo_file_path) or '.'
-            all_matches = rm_matches + consumable_matches
-            all_manual_data = manual_rm_data + manual_consumable_data
+            all_matches = rm_matches + consumable_matches + spare_parts_matches + reusable_matches
+            all_manual_data = manual_rm_data + manual_consumable_data + manual_spare_parts_data + manual_reusable_data
             matching_mode = self.matching_mode.get()
-            self.generate_analysis_report(odoo_data, all_manual_data, all_matches, rm_matches, consumable_matches, report_dir, matching_mode)
+            self.generate_analysis_report(odoo_data, all_manual_data, all_matches, rm_matches, consumable_matches, spare_parts_matches, reusable_matches, report_dir, matching_mode)
             
             self.log_status("\n" + "=" * 60)
             self.log_status("VALIDATION COMPLETED SUCCESSFULLY!")
@@ -210,6 +234,8 @@ class StockReportValidator:
             self.log_status(f"\nTotal matches found: {total_matches}")
             self.log_status(f"  - RM matches: {len(rm_matches)}")
             self.log_status(f"  - Consumable matches: {len(consumable_matches)}")
+            self.log_status(f"  - Spare parts matches: {len(spare_parts_matches)}")
+            self.log_status(f"  - Re-usable matches: {len(reusable_matches)}")
             self.log_status("\nMatch Summary (first 10):")
             for match in all_matches[:10]:
                 name_preview = match['name'][:40] + "..." if len(match['name']) > 40 else match['name']
@@ -220,7 +246,9 @@ class StockReportValidator:
             messagebox.showinfo("Success", 
                               f"Validation completed!\n\nFound {total_matches} matches:\n"
                               f"- RM: {len(rm_matches)} matches\n"
-                              f"- Consumable: {len(consumable_matches)} matches\n\n"
+                              f"- Consumable: {len(consumable_matches)} matches\n"
+                              f"- Spare parts: {len(spare_parts_matches)} matches\n"
+                              f"- Re-usable: {len(reusable_matches)} matches\n\n"
                               "Both files have been updated with:\n"
                               "- Match IDs in the first column\n"
                               "- Highlighted matching rows in light yellow\n\n"
@@ -321,6 +349,7 @@ class StockReportValidator:
         for row in odoo_data:
             original_unit = str(row.get('unit', '') or '').strip()
             if original_unit:
+                
                 normalized = self.normalize_unit(original_unit)
                 if normalized not in units_map:
                     units_map[normalized] = set()
@@ -540,6 +569,180 @@ class StockReportValidator:
         # Load with data_only=True to get calculated values (not formulas)
         wb = openpyxl.load_workbook(file_path, data_only=True)
         ws = wb['Consumable']
+        
+        data_rows = []
+        
+        # Adjust column indices if Match ID column exists
+        if has_match_id:
+            sl_col = 2
+            code_col = 3
+            name_col = 5
+            unit_col = 6
+            opening_qty_col = 7
+            opening_value_col = 8
+            receive_qty_col = 9
+            receive_value_col = 10
+            issue_qty_col = 11
+            issue_value_col = 12
+            closing_qty_col = 13
+            closing_value_col = 14
+        else:
+            sl_col = 1
+            code_col = 2
+            name_col = 4
+            unit_col = 5
+            opening_qty_col = 6
+            opening_value_col = 7
+            receive_qty_col = 8
+            receive_value_col = 9
+            issue_qty_col = 10
+            issue_value_col = 11
+            closing_qty_col = 12
+            closing_value_col = 13
+        
+        for row_num in range(6, ws.max_row + 1):
+            sl_val = ws.cell(row_num, sl_col).value
+            # Check if it's a data row (has numeric SL)
+            if sl_val is None:
+                continue
+            sl_str = str(sl_val).strip()
+            if not (sl_str.isdigit() or (isinstance(sl_val, (int, float)))):
+                continue
+            
+            # Read values using correct column indices
+            product_code = self.normalize_text(ws.cell(row_num, code_col).value)
+            items_name = self.normalize_text(ws.cell(row_num, name_col).value)
+            unit = self.normalize_text(ws.cell(row_num, unit_col).value)
+            opening_qty = ws.cell(row_num, opening_qty_col).value
+            opening_value = ws.cell(row_num, opening_value_col).value
+            receive_qty = ws.cell(row_num, receive_qty_col).value
+            receive_value = ws.cell(row_num, receive_value_col).value
+            issue_qty = ws.cell(row_num, issue_qty_col).value
+            issue_value = ws.cell(row_num, issue_value_col).value
+            closing_qty = ws.cell(row_num, closing_qty_col).value
+            closing_value = ws.cell(row_num, closing_value_col).value
+            
+            if product_code or items_name:
+                data_rows.append({
+                    'row_num': row_num,
+                    'product_code': product_code,
+                    'items_name': items_name,
+                    'unit': unit,
+                    'opening_qty': opening_qty,
+                    'opening_value': opening_value,
+                    'receive_qty': receive_qty,
+                    'receive_value': receive_value,
+                    'issue_qty': issue_qty,
+                    'issue_value': issue_value,
+                    'closing_qty': closing_qty,
+                    'closing_value': closing_value
+                })
+        
+        wb.close()
+        return data_rows
+    
+    def read_manual_spare_parts_data(self, file_path):
+        """Read all data rows from Manual Spare parts sheet
+        Uses data_only=True to get calculated values from formulas for comparison"""
+        # Check if file has Match ID column (already processed)
+        wb_check = openpyxl.load_workbook(file_path, data_only=True)
+        if 'Spare parts' not in wb_check.sheetnames:
+            wb_check.close()
+            return []  # Spare parts sheet doesn't exist
+        ws_check = wb_check['Spare parts']
+        has_match_id = str(ws_check.cell(5, 1).value or '').strip() == 'Match ID'
+        wb_check.close()
+        
+        # Load with data_only=True to get calculated values (not formulas)
+        wb = openpyxl.load_workbook(file_path, data_only=True)
+        ws = wb['Spare parts']
+        
+        data_rows = []
+        
+        # Adjust column indices if Match ID column exists
+        if has_match_id:
+            sl_col = 2
+            code_col = 3
+            name_col = 5
+            unit_col = 6
+            opening_qty_col = 7
+            opening_value_col = 8
+            receive_qty_col = 9
+            receive_value_col = 10
+            issue_qty_col = 11
+            issue_value_col = 12
+            closing_qty_col = 13
+            closing_value_col = 14
+        else:
+            sl_col = 1
+            code_col = 2
+            name_col = 4
+            unit_col = 5
+            opening_qty_col = 6
+            opening_value_col = 7
+            receive_qty_col = 8
+            receive_value_col = 9
+            issue_qty_col = 10
+            issue_value_col = 11
+            closing_qty_col = 12
+            closing_value_col = 13
+        
+        for row_num in range(6, ws.max_row + 1):
+            sl_val = ws.cell(row_num, sl_col).value
+            # Check if it's a data row (has numeric SL)
+            if sl_val is None:
+                continue
+            sl_str = str(sl_val).strip()
+            if not (sl_str.isdigit() or (isinstance(sl_val, (int, float)))):
+                continue
+            
+            # Read values using correct column indices
+            product_code = self.normalize_text(ws.cell(row_num, code_col).value)
+            items_name = self.normalize_text(ws.cell(row_num, name_col).value)
+            unit = self.normalize_text(ws.cell(row_num, unit_col).value)
+            opening_qty = ws.cell(row_num, opening_qty_col).value
+            opening_value = ws.cell(row_num, opening_value_col).value
+            receive_qty = ws.cell(row_num, receive_qty_col).value
+            receive_value = ws.cell(row_num, receive_value_col).value
+            issue_qty = ws.cell(row_num, issue_qty_col).value
+            issue_value = ws.cell(row_num, issue_value_col).value
+            closing_qty = ws.cell(row_num, closing_qty_col).value
+            closing_value = ws.cell(row_num, closing_value_col).value
+            
+            if product_code or items_name:
+                data_rows.append({
+                    'row_num': row_num,
+                    'product_code': product_code,
+                    'items_name': items_name,
+                    'unit': unit,
+                    'opening_qty': opening_qty,
+                    'opening_value': opening_value,
+                    'receive_qty': receive_qty,
+                    'receive_value': receive_value,
+                    'issue_qty': issue_qty,
+                    'issue_value': issue_value,
+                    'closing_qty': closing_qty,
+                    'closing_value': closing_value
+                })
+        
+        wb.close()
+        return data_rows
+    
+    def read_manual_reusable_data(self, file_path):
+        """Read all data rows from Manual Re-usable sheet
+        Uses data_only=True to get calculated values from formulas for comparison"""
+        # Check if file has Match ID column (already processed)
+        wb_check = openpyxl.load_workbook(file_path, data_only=True)
+        if 'Re-usable' not in wb_check.sheetnames:
+            wb_check.close()
+            return []  # Re-usable sheet doesn't exist
+        ws_check = wb_check['Re-usable']
+        has_match_id = str(ws_check.cell(5, 1).value or '').strip() == 'Match ID'
+        wb_check.close()
+        
+        # Load with data_only=True to get calculated values (not formulas)
+        wb = openpyxl.load_workbook(file_path, data_only=True)
+        ws = wb['Re-usable']
         
         data_rows = []
         
@@ -1147,8 +1350,8 @@ class StockReportValidator:
             for col in range(1, 15):
                 manual_ws.cell(manual_row, col).fill = HIGHLIGHT_FILL
     
-    def process_files(self, odoo_file, manual_file, rm_matches, consumable_matches):
-        """Process and update files for both RM and Consumable sheets"""
+    def process_files(self, odoo_file, manual_file, rm_matches, consumable_matches, spare_parts_matches, reusable_matches):
+        """Process and update files for RM, Consumable, Spare parts, and Re-usable sheets"""
         # Load files with all features preserved (formulas, formatting, merged cells, etc.)
         self.log_status("Loading files (preserving all features: formulas, formatting, merged cells)...")
         odoo_wb = openpyxl.load_workbook(odoo_file, data_only=False, keep_links=False)
@@ -1162,6 +1365,14 @@ class StockReportValidator:
         if consumable_matches:
             self.process_sheet(odoo_wb, manual_wb, 'Consumable', consumable_matches, is_first_sheet=False)
         
+        # Process Spare parts sheet (third sheet - Odoo Match ID already exists)
+        if spare_parts_matches:
+            self.process_sheet(odoo_wb, manual_wb, 'Spare parts', spare_parts_matches, is_first_sheet=False)
+        
+        # Process Re-usable sheet (fourth sheet - Odoo Match ID already exists)
+        if reusable_matches:
+            self.process_sheet(odoo_wb, manual_wb, 'Re-usable', reusable_matches, is_first_sheet=False)
+        
         # Clean Odoo file (remove blank rows and images)
         self.log_status("Cleaning Odoo file (removing blank rows and images)...")
         self.clean_odoo_file(odoo_wb)
@@ -1174,14 +1385,16 @@ class StockReportValidator:
         odoo_wb.close()
         manual_wb.close()
     
-    def generate_analysis_report(self, odoo_data, manual_data, matches, rm_matches, consumable_matches, output_dir='.', matching_mode='simple'):
+    def generate_analysis_report(self, odoo_data, manual_data, matches, rm_matches, consumable_matches, spare_parts_matches, reusable_matches, output_dir='.', matching_mode='simple'):
         """Generate analysis report of unmatched records
         Args:
             odoo_data: List of Odoo data rows
             manual_data: List of Manual data rows
-            matches: List of all matched records (RM + Consumable)
+            matches: List of all matched records (RM + Consumable + Spare parts + Re-usable)
             rm_matches: List of RM matched records
             consumable_matches: List of Consumable matched records
+            spare_parts_matches: List of Spare parts matched records
+            reusable_matches: List of Re-usable matched records
             output_dir: Directory where to save the report (default: current directory)
             matching_mode: Matching mode used ('simple' or 'strict')
         """
@@ -1197,9 +1410,9 @@ class StockReportValidator:
         # Use the provided output directory (same folder as loaded files)
         report_path = os.path.join(output_dir, report_filename)
         
-        # Get matched product codes and names
-        matched_codes = {m['product_code'] for m in matches}
-        matched_names = {m['name'] for m in matches}
+        # Get matched row numbers for quick lookup
+        matched_odoo_row_nums = {m['odoo_row_num'] for m in matches}
+        matched_manual_row_nums = {m['manual_row_num'] for m in matches}
         
         # Find unmatched records
         unmatched_odoo = []
@@ -1210,23 +1423,27 @@ class StockReportValidator:
             odoo_code_norm = self.normalize_product_code(odoo_row['product_code'])
             odoo_name = odoo_row['product_name']
             
-            # Check if this record was matched
-            is_matched = False
-            for match in matches:
-                if (self.normalize_product_code(match['product_code']) == odoo_code_norm and
-                    match['name'] == odoo_name):
-                    is_matched = True
-                    break
+            # Check if this record was matched (by checking if row number is in matches)
+            is_matched = odoo_row['row_num'] in matched_odoo_row_nums
             
             if not is_matched:
-                # Check if there's a name match but other differences
+                # Check if there's a name match in manual data (for reporting differences)
                 name_match_found = False
+                code_match_found = False
                 for manual_row in manual_data:
-                    if odoo_name == manual_row['items_name']:
+                    manual_code_norm = self.normalize_product_code(manual_row['product_code'])
+                    manual_name = manual_row['items_name']
+                    
+                    # Check if code matches
+                    if odoo_code_norm == manual_code_norm:
+                        code_match_found = True
+                    
+                    # Check if name matches
+                    if odoo_name == manual_name:
                         name_match_found = True
                         # Check differences
                         differences = []
-                        if self.normalize_product_code(odoo_row['product_code']) != self.normalize_product_code(manual_row['product_code']):
+                        if odoo_code_norm != manual_code_norm:
                             differences.append(f"Product Code: '{odoo_row['product_code']}' vs '{manual_row['product_code']}'")
                         if self.normalize_unit(odoo_row['unit']) != self.normalize_unit(manual_row['unit']):
                             differences.append(f"Unit: '{odoo_row['unit']}' vs '{manual_row['unit']}'")
@@ -1255,26 +1472,35 @@ class StockReportValidator:
                             })
                         break
                 
-                if not name_match_found:
-                    unmatched_odoo.append(odoo_row)
+                # In simple mode: unmatched if neither code nor name matches any manual record
+                # In strict mode: unmatched if name doesn't match (code match alone doesn't count)
+                if matching_mode == 'simple':
+                    if not code_match_found and not name_match_found:
+                        unmatched_odoo.append(odoo_row)
+                else:
+                    if not name_match_found:
+                        unmatched_odoo.append(odoo_row)
         
         # Find unmatched manual records
         for manual_row in manual_data:
             manual_code_norm = self.normalize_product_code(manual_row['product_code'])
             manual_name = manual_row['items_name']
             
-            is_matched = False
-            for match in matches:
-                if (self.normalize_product_code(match['product_code']) == manual_code_norm and
-                    match['name'] == manual_name):
-                    is_matched = True
-                    break
+            # Check if this record was matched (by checking if row number is in matches)
+            is_matched = manual_row['row_num'] in matched_manual_row_nums
             
             if not is_matched:
-                # Check if name exists in Odoo
-                name_exists = any(odoo_row['product_name'] == manual_name for odoo_row in odoo_data)
-                if not name_exists:
-                    unmatched_manual.append(manual_row)
+                # Check if code or name exists in Odoo
+                if matching_mode == 'simple':
+                    code_exists = any(self.normalize_product_code(odoo_row['product_code']) == manual_code_norm 
+                                     for odoo_row in odoo_data)
+                    name_exists = any(odoo_row['product_name'] == manual_name for odoo_row in odoo_data)
+                    if not code_exists and not name_exists:
+                        unmatched_manual.append(manual_row)
+                else:
+                    name_exists = any(odoo_row['product_name'] == manual_name for odoo_row in odoo_data)
+                    if not name_exists:
+                        unmatched_manual.append(manual_row)
         
         # Write report
         with open(report_path, 'w', encoding='utf-8') as f:
@@ -1289,6 +1515,8 @@ class StockReportValidator:
             f.write(f"Full matches (all criteria): {len(matches)}\n")
             f.write(f"  - RM matches: {len(rm_matches)}\n")
             f.write(f"  - Consumable matches: {len(consumable_matches)}\n")
+            f.write(f"  - Spare parts matches: {len(spare_parts_matches)}\n")
+            f.write(f"  - Re-usable matches: {len(reusable_matches)}\n")
             f.write(f"Name matches but other differences: {len(name_matches_but_different)}\n")
             f.write(f"Unmatched Odoo records (no name match): {len(unmatched_odoo)}\n")
             f.write(f"Unmatched Manual records (no name match): {len(unmatched_manual)}\n\n")

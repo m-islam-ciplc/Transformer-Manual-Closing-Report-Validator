@@ -1,17 +1,19 @@
 MATCH ANALYSIS REPORT
 ================================================================================
-Generated: 2025-11-18 01:35:39
+Generated: 2025-11-18 11:56:49
 
 SUMMARY
 --------------------------------------------------------------------------------
 Total Odoo records: 2591
-Total Manual records: 2878
-Full matches (all criteria): 2325
+Total Manual records: 3204
+Full matches (all criteria): 2612
   - RM matches: 505
   - Consumable matches: 1820
+  - Spare parts matches: 287
+  - Re-usable matches: 0
 Name matches but other differences: 0
-Unmatched Odoo records (no name match): 286
-Unmatched Manual records (no name match): 551
+Unmatched Odoo records (no name match): 0
+Unmatched Manual records (no name match): 221
 
 ================================================================================
 RECORDS WITH MATCHING NAMES BUT DIFFERENT VALUES
@@ -26,212 +28,110 @@ Quantity/Value differences: 0
 UNMATCHED ODOO RECORDS (No matching name in Manual)
 ================================================================================
 
-1. Row 73: Code='SP-71', Name='Analog Combo...', Unit='Pieces', Opening=0/0
-2. Row 78: Code='SP-108', Name='Annealing Pot with Nuprene Rubber Gasket...', Unit='NOS', Opening=0/0
-3. Row 79: Code='SP-268', Name='Anti Back Oil Valve...', Unit='Pieces', Opening=2/39932.16
-4. Row 107: Code='SP-285', Name='Ball Bearing Center...', Unit='Pieces', Opening=2/4400
-5. Row 112: Code='SP-138', Name='Base Spring...', Unit='Pieces', Opening=2/2700
-6. Row 121: Code='SP-181', Name='Bearing 1206...', Unit='Pieces', Opening=5/4200
-7. Row 122: Code='SP-11', Name='Bearing 1305...', Unit='Pieces', Opening=5/4450
-8. Row 123: Code='SP-211', Name='Bearing 16008...', Unit='Pieces', Opening=2/2000
-9. Row 124: Code='SP-06', Name='Bearing 204 UC...', Unit='Pieces', Opening=3/2550
-10. Row 125: Code='SP-95', Name='Bearing 205 UC...', Unit='Pieces', Opening=10/7320
-11. Row 126: Code='SP-141', Name='Bearing 206 NU...', Unit='Pieces', Opening=10/7933.7
-12. Row 127: Code='SP-235', Name='Bearing 207 NU...', Unit='Pieces', Opening=25/29807.69
-13. Row 128: Code='SP-19', Name='Bearing 207 UC...', Unit='Pieces', Opening=5/4680.56
-14. Row 129: Code='SP-36', Name='Bearing 207-20 UC...', Unit='Pieces', Opening=4/3800
-15. Row 130: Code='SP-310', Name='Bearing 207-2F YAR...', Unit='Pieces', Opening=1/850
-16. Row 131: Code='SP-140', Name='Bearing 208 NU...', Unit='Pieces', Opening=14/15845
-17. Row 132: Code='SP-25', Name='Bearing 208 UC...', Unit='Pieces', Opening=9/8100
-18. Row 133: Code='SP-236', Name='Bearing 209 NU...', Unit='Pieces', Opening=3/4290
-19. Row 134: Code='SP-144', Name='Bearing 209 UC...', Unit='Pieces', Opening=30/28548.39
-20. Row 135: Code='SP-275', Name='Bearing 21017...', Unit='Pieces', Opening=0/0
-21. Row 136: Code='SP-167', Name='Bearing 211 UC...', Unit='Pieces', Opening=2/3200
-22. Row 137: Code='SP-216', Name='Bearing 212 UC...', Unit='Pieces', Opening=5/16000
-23. Row 138: Code='SP-287', Name='Bearing 22209...', Unit='Pieces', Opening=3/12900
-24. Row 139: Code='SP-214', Name='Bearing 22210 E...', Unit='Pieces', Opening=0/0
-25. Row 140: Code='SP-39', Name='Bearing 22308EA...', Unit='Pieces', Opening=4/12800
-26. Row 141: Code='SP-96', Name='Bearing 22314...', Unit='Pieces', Opening=1/9700
-27. Row 142: Code='SP-149', Name='Bearing 22318 EAE4 NSK...', Unit='Pieces', Opening=4/52000
-28. Row 143: Code='SP-179', Name='Bearing 23022...', Unit='Pieces', Opening=1/18000
-29. Row 144: Code='SP-180', Name='Bearing 23024...', Unit='Pieces', Opening=1/26000
-30. Row 145: Code='SP-168', Name='Bearing 2306...', Unit='Pieces', Opening=1/2500
-31. Row 146: Code='SP-218', Name='Bearing 2307...', Unit='Pieces', Opening=1/2600
-32. Row 147: Code='SP-219', Name='Bearing 2309...', Unit='Pieces', Opening=3/13500
-33. Row 148: Code='SP-220', Name='Bearing 2311...', Unit='Pieces', Opening=3/19500
-34. Row 149: Code='SP-178', Name='Bearing 2520 NKI...', Unit='Pieces', Opening=0/0
-35. Row 150: Code='SP-182', Name='Bearing 254020 NBI...', Unit='Pieces', Opening=4/4200
-36. Row 151: Code='SP-290', Name='Bearing 30207...', Unit='Pieces', Opening=1/700
-37. Row 152: Code='SP-116', Name='Bearing 30208...', Unit='Pieces', Opening=2/1700
-38. Row 153: Code='SP-29', Name='Bearing 30213...', Unit='Pieces', Opening=5/9500
-39. Row 154: Code='SP-158', Name='Bearing 307 RN...', Unit='Pieces', Opening=0/0
-40. Row 155: Code='SP-157', Name='Bearing 312 RN...', Unit='Pieces', Opening=2/5400
-41. Row 156: Code='SP-97', Name='Bearing 314...', Unit='Pieces', Opening=1/6800
-42. Row 157: Code='SP-270', Name='Bearing 316 UC...', Unit='Pieces', Opening=0/0
-43. Row 158: Code='SP-148', Name='Bearing 32006 NSK...', Unit='Pieces', Opening=4/3000
-44. Row 159: Code='SP-161', Name='Bearing 3206/5206...', Unit='Pieces', Opening=7/9800
-45. Row 160: Code='SP-162', Name='Bearing 32210...', Unit='Pieces', Opening=3/3600
-46. Row 161: Code='SP-30', Name='Bearing 32213...', Unit='Pieces', Opening=5/9800
-47. Row 162: Code='SP-117', Name='Bearing 4904...', Unit='Pieces', Opening=0/0
-48. Row 163: Code='SP-118', Name='Bearing 4906...', Unit='Pieces', Opening=6/4800
-49. Row 164: Code='SP-187', Name='Bearing 4916 NA...', Unit='Pieces', Opening=8/54350
-50. Row 165: Code='SP-74', Name='Bearing 51100...', Unit='Pieces', Opening=0/0
-51. Row 166: Code='SP-119', Name='Bearing 51104...', Unit='Pieces', Opening=1/550
-52. Row 167: Code='SP-09', Name='Bearing 51105...', Unit='Pieces', Opening=5/1750
-53. Row 168: Code='SP-113', Name='Bearing 51111...', Unit='Pieces', Opening=0/0
-54. Row 169: Code='SP-143', Name='Bearing 51112...', Unit='Pieces', Opening=8/9066.67
-55. Row 170: Code='SP-234', Name='Bearing 51113...', Unit='Pieces', Opening=5/9000
-56. Row 171: Code='SP-221', Name='Bearing 51205 NSK...', Unit='Pieces', Opening=0/0
-57. Row 172: Code='SP-147', Name='Bearing 51206 NSK...', Unit='Pieces', Opening=4/3200
-58. Row 173: Code='SP-03', Name='Bearing 6001...', Unit='Pieces', Opening=1/130
-59. Row 174: Code='SP-76', Name='Bearing 6003...', Unit='Pieces', Opening=117/18112.77
-60. Row 175: Code='SP-01', Name='Bearing 6004...', Unit='Pieces', Opening=64/11323.08
-61. Row 176: Code='SP-34', Name='Bearing 6005...', Unit='Pieces', Opening=43/10302.6
-62. Row 177: Code='SP-114', Name='Bearing 6006...', Unit='Pieces', Opening=207/51741.46
-63. Row 178: Code='SP-50', Name='Bearing 6007...', Unit='Pieces', Opening=3/990
-64. Row 179: Code='SP-21', Name='Bearing 6008...', Unit='Pieces', Opening=13/5920.27
-65. Row 180: Code='SP-23', Name='Bearing 6009...', Unit='Pieces', Opening=25/8953.12
-66. Row 181: Code='SP-51', Name='Bearing 6010...', Unit='Pieces', Opening=13/8060
-67. Row 182: Code='SP-22', Name='Bearing 6011...', Unit='Pieces', Opening=21/20076
-68. Row 183: Code='SP-232', Name='Bearing 608 ZZ...', Unit='Pieces', Opening=8/960
-69. Row 184: Code='SP-15', Name='Bearing 6200...', Unit='Pieces', Opening=72/7920
-70. Row 185: Code='SP-20', Name='Bearing 6201...', Unit='Pieces', Opening=73/8687
-71. Row 186: Code='SP-14', Name='Bearing 6202...', Unit='Pieces', Opening=7/1078.64
-72. Row 187: Code='SP-10', Name='Bearing 6203...', Unit='Pieces', Opening=38/6018.82
-73. Row 188: Code='SP-16', Name='Bearing 6204...', Unit='Pieces', Opening=7/1391.39
-74. Row 189: Code='SP-12', Name='Bearing 6205...', Unit='Pieces', Opening=126/31539.2
-75. Row 190: Code='SP-17', Name='Bearing 6206...', Unit='Pieces', Opening=8/2760
-76. Row 191: Code='SP-24', Name='Bearing 6207...', Unit='Pieces', Opening=12/6600
-77. Row 192: Code='SP-79', Name='Bearing 6208...', Unit='Pieces', Opening=27/22950
-78. Row 193: Code='SP-223', Name='Bearing 6209...', Unit='Pieces', Opening=8/6800
-79. Row 194: Code='SP-35', Name='Bearing 6210...', Unit='Pieces', Opening=4/4200
-80. Row 195: Code='SP-08', Name='Bearing 6211...', Unit='Pieces', Opening=21/19950
-81. Row 196: Code='SP-159', Name='Bearing 6212 ZZ...', Unit='Pieces', Opening=1/1150
-82. Row 197: Code='SP-142', Name='Bearing 6213/6313...', Unit='Pieces', Opening=3/3900
-83. Row 198: Code='SP-213', Name='Bearing 6217 ZZ...', Unit='Pieces', Opening=0/0
-84. Row 199: Code='SP-249', Name='Bearing 6303...', Unit='Pieces', Opening=13/3250
-85. Row 200: Code='SP-05', Name='Bearing 6304...', Unit='Pieces', Opening=16/5600
-86. Row 201: Code='SP-191', Name='Bearing 6305 ZZ...', Unit='Pieces', Opening=20/5973
-87. Row 202: Code='SP-02', Name='Bearing 6306...', Unit='Pieces', Opening=10/5517.78
-88. Row 203: Code='SP-07', Name='Bearing 6307...', Unit='Pieces', Opening=10/7312.5
-89. Row 204: Code='SP-48', Name='Bearing 6308...', Unit='Pieces', Opening=3/3900
-90. Row 205: Code='SP-115', Name='Bearing 6309...', Unit='Pieces', Opening=8/9200
-91. Row 206: Code='SP-38', Name='Bearing 6310...', Unit='Pieces', Opening=12/12600
-92. Row 207: Code='SP-273', Name='Bearing 6312...', Unit='Pieces', Opening=12/31200
-93. Row 208: Code='SP-286', Name='Bearing 6316...', Unit='Pieces', Opening=1/7200
-94. Row 209: Code='SP-32', Name='Bearing 6317...', Unit='Pieces', Opening=5/34166.67
-95. Row 210: Code='SP-33', Name='Bearing 6318...', Unit='Pieces', Opening=10/66800
-96. Row 211: Code='SP-160', Name='Bearing 6403...', Unit='Pieces', Opening=1/1600
-97. Row 212: Code='SP-18', Name='Bearing 6406...', Unit='Pieces', Opening=12/26400
-98. Row 213: Code='SP-94', Name='Bearing 6704...', Unit='Pieces', Opening=0/0
-99. Row 214: Code='SP-120', Name='Bearing 6904 NA...', Unit='Pieces', Opening=0/0
-100. Row 215: Code='SP-75', Name='Bearing 7009...', Unit='Pieces', Opening=5/15500
-
-... and 186 more unmatched Odoo records
 
 ================================================================================
 UNMATCHED MANUAL RECORDS (No matching name in Odoo)
 ================================================================================
 
-1. Row 7: Code='SRM-02', Name='CRGO B23R085 + 23R080...', Unit='KG', Opening=0/0
-2. Row 12: Code='SRM-07', Name='MS Sheet 2-2.99mm...', Unit='KG', Opening=0/0
-3. Row 21: Code='SRM-16', Name='Carton Tape 1"...', Unit='PCS', Opening=3224/71010.88847575488
-4. Row 22: Code='SRM-17', Name='Carton Tape 1.5"...', Unit='PCS', Opening=6898/217964.02642576417
-5. Row 36: Code='SRM-31', Name='LT-HT Bushing Set 400amp...', Unit='SET', Opening=0/0
-6. Row 49: Code='SRM-44', Name='Gardoclean 444...', Unit='KG', Opening=425/122425
-7. Row 51: Code='SRM-46', Name='CC NO 1...', Unit='KG', Opening=0/0
-8. Row 54: Code='SRM-49', Name='Cartoon Tape 2"...', Unit='PCS', Opening=0/0
-9. Row 90: Code='SRM-85', Name='Super Enamel Copper Wire 18no...', Unit='KG', Opening=0/0
-10. Row 94: Code='SRM-89', Name='Super Enamel Copper Wire 19no...', Unit='KG', Opening=0/0
-11. Row 107: Code='SRM-102', Name='Super Enamel Copper Wire 16.25 no...', Unit='KG', Opening=0/None
-12. Row 111: Code='SRM-106', Name='CRGO B23P085...', Unit='KG', Opening=186124/56256214.41817616
-13. Row 117: Code='SRM-112', Name='CRGO ZDKH85...', Unit='KG', Opening=0/0
-14. Row 123: Code='SRM-118', Name='Steel Strap Clip 0.6X19X38mm...', Unit='PCS', Opening=0/0
-15. Row 136: Code='SRM-131', Name='Super Enamel Copper Wire...', Unit='MT', Opening=0/0
-16. Row 140: Code='SRM-135', Name='Copper Strip 250kva...', Unit='KG', Opening=0/0
-17. Row 149: Code='SRM-144', Name='CRGO 23JGSD075 (900mm-1050mm)...', Unit='KG', Opening=23925/11529936
-18. Row 169: Code='SRM-164', Name='CRGO JGHO85 (130)...', Unit='KG', Opening=0/0
-19. Row 175: Code='SRM-170', Name='Super Enamel Copper wire...', Unit='KG', Opening=0/0
-20. Row 177: Code='TRM-02', Name='S.S Nut Bolt 12X60mm...', Unit='PCS', Opening=0/0
-21. Row 183: Code='TRM-08', Name='HT Gutka...', Unit='PCS', Opening=0/0
-22. Row 195: Code='TRM-20', Name='Silicagel Breather 3500kva...', Unit='PCS', Opening=0/0
-23. Row 196: Code='TRM-21', Name='Bend Pipe /Breather Pipe...', Unit='PCS', Opening=0/0
-24. Row 215: Code='TRM-41', Name='Radiator Valve/Butterfly Valve...', Unit='SET', Opening=0/0
-25. Row 217: Code='TRM-43', Name='Cork Sheet 8mm...', Unit='PCS', Opening=0/0
-26. Row 221: Code='TRM-47', Name='Name Plate 100kva (3Phase)...', Unit='PCS', Opening=0/0
-27. Row 222: Code='TRM-48', Name='Name Plate 200kva (3Phase)...', Unit='PCS', Opening=0/0
-28. Row 224: Code='TRM-50', Name='Glass Fiber Rod 10mm...', Unit='PCS', Opening=0/0
-29. Row 225: Code='TRM-51', Name='Glass Fiber Nut 10mm...', Unit='PCS', Opening=0/0
-30. Row 226: Code='TRM-52', Name='Glass Fiber Rod 12mm...', Unit='PCS', Opening=0/0
-31. Row 227: Code='TRM-53', Name='Glass Fiber Nut 12mm...', Unit='PCS', Opening=0/0
-32. Row 228: Code='TRM-54', Name='Globe Valve 15mm One Side Flanged...', Unit='PCS', Opening=0/0
-33. Row 229: Code='TRM-55', Name='Globe Valve 25mm One Side Flanged...', Unit='PCS', Opening=0/0
-34. Row 230: Code='TRM-56', Name='Globe Valve 25mm both side flanged...', Unit='PCS', Opening=34/115255.24
-35. Row 232: Code='TRM-58', Name='Globe Valve 50mm Both Side Flanged...', Unit='PCS', Opening=1/7100.97
-36. Row 233: Code='TRM-59', Name='MS Sheet 3mm...', Unit='KG', Opening=0/0
-37. Row 238: Code='TRM-64', Name='MS Nut Bolt 25X75mm...', Unit='KG', Opening=0/0
-38. Row 245: Code='TRM-71', Name='MS Nut 36mm...', Unit='KG', Opening=0/0
-39. Row 250: Code='TRM-76', Name='Shafting Rod 16mm...', Unit='KG', Opening=0/0
-40. Row 253: Code='TRM-79', Name='LT Coil Winding Machine...', Unit='SET', Opening=0/0
-41. Row 262: Code='TRM-88', Name='Tie Rod 25X1290mm (Both end Thread 400mm, 1 Bolt + 4 Plain W...', Unit='KG', Opening=0/0
-42. Row 263: Code='TRM-89', Name='Tie Rod 20X720mm (Both end Thread 130mm, 1 Bolt + 4 Plain Wa...', Unit='KG', Opening=0/0
-43. Row 267: Code='TRM-93', Name='Channel (75X40X5mm)...', Unit='KG', Opening=0/0
-44. Row 268: Code='TRM-94', Name='Channel (100X50X5mm)...', Unit='PCS', Opening=0/0
-45. Row 269: Code='TRM-95', Name='Channel (125X65X6mm)...', Unit='PCS', Opening=0/0
-46. Row 271: Code='TRM-97', Name='Channel (200X75X6mm)...', Unit='PCS', Opening=0/0
-47. Row 272: Code='TRM-98', Name='Channel (300X90X9mm)...', Unit='KG', Opening=0/0
-48. Row 277: Code='TRM-103', Name='Copper Strip (Beared: 13.5X2.9mm, Covered: 14X3.4mm)...', Unit='KG', Opening=0/0
-49. Row 278: Code='TRM-104', Name='Copper Strip (Beared: 15.4X4mm, Covered: 15.9X4.5mm)...', Unit='KG', Opening=0/0
-50. Row 281: Code='TRM-107', Name='Aluminium Plate 4'X8'X16mm...', Unit='KG', Opening=0/0
-51. Row 282: Code='TRM-108', Name='Copper Strip (Beard: 13.5X3.5mm, Covered: 14.1X4.1mm)...', Unit='KG', Opening=0/0
-52. Row 283: Code='TRM-109', Name='Copper Strip (Beard: 11.5X2.8mm) (Covered: 12.0X3.3mm)...', Unit='KG', Opening=0/0
-53. Row 286: Code='TRM-112', Name='S.S Nut Bolt 12X80mm...', Unit='PCS', Opening=0/0
-54. Row 293: Code='TRM-119', Name='HT Switch Gear (VCB)...', Unit='Set', Opening=0/0
-55. Row 296: Code='TRM-122', Name='Heat Shrinkable Kit...', Unit='Set', Opening=0/0
-56. Row 297: Code='TRM-123', Name='Terminal Block (TB)/ Cable Connector 4rm...', Unit='PCS', Opening=0/0
-57. Row 298: Code='TRM-124', Name='Terminal Block (TB)/ Cable Connector Lock...', Unit='PCS', Opening=0/0
-58. Row 300: Code='TRM-127', Name='Aluminium Channel...', Unit='PCS', Opening=0/0
-59. Row 306: Code='TRM-133', Name='211.1RV Radiator Valve...', Unit='PCS', Opening=56/89397.245
-60. Row 309: Code='TRM-136', Name='Earthing Copper Sheet 50X0.5mm...', Unit='KG', Opening=0/0
-61. Row 315: Code='TRM-142', Name='Name Plate 5"X2.5"...', Unit='PCS', Opening=11/1347.5
-62. Row 328: Code='TRM-155', Name='Cylinder 3X458X877mm...', Unit='Nos', Opening=0/0
-63. Row 329: Code='TRM-156', Name='Cylinder 3X627X804mm...', Unit='Nos', Opening=0/0
-64. Row 330: Code='TRM-157', Name='Cylinder 3X641X804mm...', Unit='Nos', Opening=0/0
-65. Row 331: Code='TRM-158', Name='Crepe Paper Pad (3.0)...', Unit='KG', Opening=0/0
-66. Row 333: Code='TRM-160', Name='Panel Gasket (Indoor) [Tube Type]...', Unit='Feet', Opening=0/0
-67. Row 335: Code='TRM-162', Name='Tie Rod 25X1200mm (Both end Thread 400mm, 1 Bolt + 2 Plain W...', Unit='KG', Opening=0/0
-68. Row 339: Code='TRM-166', Name='Magnetic Contactor, 9.5A, AC-3...', Unit='PCS', Opening=0/0
-69. Row 342: Code='TRM-169', Name='Conservator Drain Valve...', Unit='NOS', Opening=0/0
-70. Row 352: Code='TRM-179', Name='Aircell Bag (L-2496mmXD-1296mmXLoop-1000mm)...', Unit='NOS', Opening=9/351450
-71. Row 356: Code='TRM-183', Name='MCB 10A, 6KA, SP...', Unit='PCS', Opening=0/0
-72. Row 357: Code='TRM-184', Name='MK Multi Socket with Board...', Unit='PCS', Opening=0/0
-73. Row 359: Code='TRM-186', Name='MCB 6A, 3KA, SP...', Unit='PCS', Opening=0/0
-74. Row 360: Code='TRM-187', Name='MCB 10A, 6KA, TP...', Unit='PCS', Opening=0/0
-75. Row 361: Code='TRM-188', Name='MCB 20A, 3KA, SP...', Unit='PCS', Opening=0/0
-76. Row 362: Code='TRM-189', Name='MCB 6A, 3KA, TP...', Unit='PCS', Opening=0/0
-77. Row 380: Code='TRM-208', Name='Cable Gland (PG-22)...', Unit='PCS', Opening=0/0
-78. Row 382: Code='TRM-210', Name='Thermer Overload Relay, 0.56-0.7, 0.84A...', Unit='PCS', Opening=0/0
-79. Row 383: Code='TRM-211', Name='Panel Heater...', Unit='PCS', Opening=0/0
-80. Row 384: Code='TRM-212', Name='Selector Switch [Motor Control] (On/Off)...', Unit='PCS', Opening=0/0
-81. Row 385: Code='TRM-213', Name='Panel Lock (Push, Big)...', Unit='PCS', Opening=0/0
-82. Row 386: Code='TRM-214', Name='PVC Cable Duct 50X40mm...', Unit='Feet', Opening=0/0
-83. Row 396: Code='TRM-224', Name='LT Rod 50X300mm...', Unit='Set', Opening=0/0
-84. Row 403: Code='TRM-231', Name='Teflon Sheet 3mm...', Unit='Pound', Opening=0/0
-85. Row 411: Code='TRM-239', Name='Copper Strip (Beard: 13.5X3.00mm) (Covered: 13.40X3.40mm)...', Unit='KG', Opening=0/0
-86. Row 425: Code='TRM-253', Name='Aramid Paper/Insulation Paper 0.05mm...', Unit='KG', Opening=0/0
-87. Row 426: Code='TRM-254', Name='Aramid Paper/Insulation Paper 0.08mm...', Unit='KG', Opening=0/0
-88. Row 433: Code='TRM-261', Name='Dovetail Runner 3X40X65X5mm...', Unit='Nos', Opening=0/0
-89. Row 434: Code='TRM-262', Name='Dovetail Runner 2X40X65.5mm...', Unit='Nos', Opening=0/0
-90. Row 435: Code='TRM-263', Name='Dovetail Runner 1.5X40X65.5mm...', Unit='Nos', Opening=0/0
-91. Row 437: Code='TRM-265', Name='IV Cylinder 3X877X1558mm...', Unit='Nos', Opening=0/0
-92. Row 438: Code='TRM-266', Name='IV Cylinder 3X804X2089mm...', Unit='Nos', Opening=0/0
-93. Row 445: Code='TRM-273', Name='MS Tie Rod 16X480mm (Both Side Thread 75mm) (Seven Colour)...', Unit='KG', Opening=0/0
-94. Row 447: Code='TRM-275', Name='CRGO Lamination 250kva...', Unit='SET', Opening=0/0
-95. Row 449: Code='TRM-277', Name='Tie Rod 30X1790mm (Both end Thread, 6 Bolt + 8 Plain Washer)...', Unit='KG', Opening=0/0
-96. Row 450: Code='TRM-278', Name='Tie Rod 25X560mm (Both end Thread, 6 Bolt + 8 Plain Washer)...', Unit='KG', Opening=0/0
-97. Row 451: Code='TRM-279', Name='Tie Rod 25X1480mm) (Both end Thread, 6 Bolt + 8 Plain Washer...', Unit='KG', Opening=0/0
-98. Row 452: Code='TRM-280', Name='Tie Rod 25X400mm (Both end Thread, 6 Bolt + 8 Plain Washer)...', Unit='KG', Opening=0/0
-99. Row 453: Code='TRM-281', Name='Tie Rod 25X1790mm (Both end Thread, 6 Bolt + 8 Plain Washer)...', Unit='KG', Opening=0/0
-100. Row 454: Code='TRM-282', Name='Tie Rod 20X600mm (Both end Thread, 6 Bolt + 8 Plain Washer)...', Unit='KG', Opening=0/0
+1. Row 300: Code='TRM-127', Name='Aluminium Channel...', Unit='PCS', Opening=0/0
+2. Row 425: Code='TRM-253', Name='Aramid Paper/Insulation Paper 0.05mm...', Unit='KG', Opening=0/0
+3. Row 445: Code='TRM-273', Name='MS Tie Rod 16X480mm (Both Side Thread 75mm) (Seven Colour)...', Unit='KG', Opening=0/0
+4. Row 493: Code='TRM-321', Name='LT Set 500kva...', Unit='Set', Opening=0/0
+5. Row 514: Code='TRM-342', Name='HV & LV Connector 630kva (HV=3x2 & LV=1x2) HV Dia 16mm & LV ...', Unit='PCS', Opening=0/0
+6. Row 517: Code='TRM-345', Name='HT Set 1500kva, 16mm...', Unit='Set', Opening=0/0
+7. Row 532: Code='TRM-360', Name='MS Tie Rod 16X830mm, Both End Thread 210mm (Tie Rod 1PCS, Nu...', Unit='SET', Opening=0/0
+8. Row 534: Code='TRM-362', Name='MS Core Bolt 16X280mm, Both End Thread 40mm (Tie Rod 1PCS, N...', Unit='SET', Opening=0/0
+9. Row 598: Code='TRM-426', Name='MS Plate 4'X8'X25mm...', Unit='KG', Opening=0/0
+10. Row 620: Code='TRM-448', Name='Tap Changer, Off Load 150A, 11KV, 7 Position...', Unit='PCS', Opening=0/0
+11. Row 638: Code='TRM-466', Name='Hand Drill Machine 1.5mm-13mm...', Unit='PCS', Opening=0/0
+12. Row 652: Code='TRM-480', Name='Spacer 3X50X74.5mm...', Unit='Nos', Opening=0/0
+13. Row 660: Code='TRM-488', Name='Super Enamel Copper Wire 14.5 no (250KVA)...', Unit='Kg', Opening=0/0
+14. Row 684: Code='Sub-15', Name='Indicating Lamp Green, Best Quality...', Unit='PCS', Opening=0/0
+15. Row 697: Code='Sub-28', Name='Abonite Sheets (4'X8'X10mm)...', Unit='PCS', Opening=0/0
+16. Row 725: Code='Sub-56', Name='MCB 25A TP...', Unit='PCS', Opening=0/0
+17. Row 775: Code='Sub-106', Name='Sub-Station of 500KVA Mayer Doya Rotor Spinning Mills Ltd....', Unit='Nos', Opening=0/0
+18. Row 784: Code='Sub-115', Name='2500KVA Substation of CIL-GEO textile Factory....', Unit='Nos', Opening=0/0
+19. Row 300: Code='Con-295', Name='Karbon Paper...', Unit='PACKET', Opening=0/0
+20. Row 425: Code='Con-420', Name='Cable Lug 185rm...', Unit='PCS', Opening=0/0
+21. Row 445: Code='Con-440', Name='Cutting Disk 7"...', Unit='PCS', Opening=60/4097.29197232594
+22. Row 493: Code='Con-488', Name='Capacitor 1.5 UF...', Unit='PCS', Opening=0/0
+23. Row 514: Code='Con-509', Name='Carbon Brush Renult...', Unit='PCS', Opening=0/0
+24. Row 517: Code='Con-512', Name='Sheet cutter 12"...', Unit='PCS', Opening=6/3300
+25. Row 532: Code='Con-527', Name='SS Drill bit 14mm...', Unit='PCS', Opening=2/2360
+26. Row 534: Code='Con-529', Name='SS Drill bit 18mm...', Unit='PCS', Opening=4/6600
+27. Row 598: Code='Con-594', Name='S.S Rod 5/6mm...', Unit='Feet', Opening=0/0
+28. Row 620: Code='Con-616', Name='Tie Rod...', Unit='PCS', Opening=0/0
+29. Row 652: Code='Con-648', Name='O-Ring 1-22mm,T-3mm...', Unit='PCS', Opening=0/0
+30. Row 660: Code='Con-656', Name='S.S Electrode 2.5mm...', Unit='Packet', Opening=0/0
+31. Row 684: Code='Con-680', Name='Paper File...', Unit='PCS', Opening=324/6091.06329113924
+32. Row 697: Code='Con-693', Name='KV Selector Switch 3PH 3 Wire  10 Amp...', Unit='PCS', Opening=13/5512.13541666667
+33. Row 725: Code='Con-721', Name='Solenoid Valve with Coil...', Unit='PCS', Opening=5/11342.3356946084
+34. Row 775: Code='Con-771', Name='Sub-Mersible Pump...', Unit='PCS', Opening=0/0
+35. Row 811: Code='Con-807', Name='Circlip Pleir  Inner 8"...', Unit='PCS', Opening=0/0
+36. Row 812: Code='Con-808', Name='Circlip Pleir  Outer 8"...', Unit='PCS', Opening=0/0
+37. Row 817: Code='Con-813', Name='Flatebar 3/4"X3mm...', Unit='KG', Opening=0/0
+38. Row 818: Code='Con-814', Name='Polythine Normal...', Unit='Pound', Opening=0/0
+39. Row 828: Code='Con-824', Name='Flexible Pipe 3/4"...', Unit='Feet', Opening=0/0
+40. Row 846: Code='Con-842', Name='Grinding M/C 4"...', Unit='Pcs', Opening=0/0
+41. Row 856: Code='Con-852', Name='Fire Extinguisher CO2...', Unit='Pcs', Opening=0/0
+42. Row 858: Code='Con-854', Name='MCB 32A SP...', Unit='Pcs', Opening=0/0
+43. Row 882: Code='Con-878', Name='Sprit Level 1'...', Unit='PCS', Opening=0/0
+44. Row 892: Code='Con-888', Name='Plastic Bobbin...', Unit='Pcs', Opening=0/0
+45. Row 895: Code='Con-891', Name='Break Motor...', Unit='Pcs', Opening=0/0
+46. Row 903: Code='Con-899', Name='Stater...', Unit='Pcs', Opening=7/63
+47. Row 907: Code='Con-903', Name='Hand Trolly 3ton...', Unit='Pcs', Opening=0/0
+48. Row 908: Code='Con-904', Name='Variac 05kva...', Unit='Pcs', Opening=0/0
+49. Row 909: Code='Con-905', Name='Vacuum Pressure Gauge...', Unit='Pcs', Opening=14/8523.9
+50. Row 911: Code='Con-907', Name='Digital Micro Meter...', Unit='Pcs', Opening=0/0
+51. Row 922: Code='Con-918', Name='SS Drill bit 30mm...', Unit='Pcs', Opening=2/9200
+52. Row 934: Code='Con-930', Name='Mig Welding M/C Set...', Unit='Feet', Opening=0/0
+53. Row 941: Code='Con-937', Name='Colling Fan 5"...', Unit='Pcs', Opening=0/0
+54. Row 943: Code='Con-939', Name='Colling Fan 7"...', Unit='Pcs', Opening=0/0
+55. Row 945: Code='Con-941', Name='Energy Bulb 24w (Thread Type)...', Unit='Pcs', Opening=0/0
+56. Row 946: Code='Con-942', Name='Energy Bulb 24w (Pin Type)...', Unit='Pcs', Opening=0/0
+57. Row 947: Code='Con-943', Name='S.S Palte 6mm...', Unit='KG', Opening=0/0
+58. Row 949: Code='Con-945', Name='Die 2.90mm...', Unit='Pcs', Opening=0/0
+59. Row 960: Code='Con-956', Name='Angle Slote Cutting Dice for HT...', Unit='Set', Opening=0/0
+60. Row 975: Code='Con-971', Name='Sand Sylhet...', Unit='CFT', Opening=0/0
+61. Row 977: Code='Con-973', Name='Spaner Set Main Key...', Unit='Pcs', Opening=0/0
+62. Row 990: Code='Con-986', Name='Mat...', Unit='Yard', Opening=0/0
+63. Row 1012: Code='Con-1008', Name='LT Winding  M/C...', Unit='Pcs', Opening=0/0
+64. Row 1018: Code='Con-1014', Name='Aluminium Forma 10kva...', Unit='Set', Opening=0/0
+65. Row 1025: Code='Con-1021', Name='S.S Ball Valve 3"...', Unit='Pcs', Opening=0/0
+66. Row 1035: Code='Con-1031', Name='Top Cover  Die 75kva...', Unit='Set', Opening=0/0
+67. Row 1040: Code='Con-1036', Name='Energy Bulb 32w (Pin Type)...', Unit='PCS', Opening=0/0
+68. Row 1044: Code='Con-1040', Name='Generator Repair...', Unit='Nos', Opening=0/0
+69. Row 1049: Code='Con-1045', Name='S.S Nut Bolt 10X125mm...', Unit='PCS', Opening=0/0
+70. Row 1075: Code='Con-1071', Name='Floor Tiles...', Unit='SFT', Opening=0/0
+71. Row 1076: Code='Con-1072', Name='Wall Tiles...', Unit='SFT', Opening=0/0
+72. Row 1081: Code='Con-1077', Name='SS Drill bit 6.5-6.8mm...', Unit='PCS', Opening=1/160
+73. Row 1094: Code='Con-1090', Name='Matum 24"...', Unit='PCS', Opening=0/0
+74. Row 1099: Code='Con-1095', Name='Die 4.30mm...', Unit='PCS', Opening=0/0
+75. Row 1104: Code='Con-1100', Name='Water Heater 2kw...', Unit='PCS', Opening=0/0
+76. Row 1105: Code='Con-1101', Name='Colling Fan 8.5"...', Unit='PCS', Opening=0/0
+77. Row 1120: Code='Con-1116', Name='Fire Extinguisher ABC Refill (5kg)...', Unit='PCS', Opening=10/5650
+78. Row 1121: Code='Con-1117', Name='Fire Extinguisher Ball/Fire Ball...', Unit='PCS', Opening=0/0
+79. Row 1123: Code='Con-1119', Name='0...', Unit='PCS', Opening=0/0
+80. Row 1146: Code='Con-1142', Name='Hose Pipe 1.5"...', Unit='Feet', Opening=0/0
+81. Row 1155: Code='Con-1151', Name='Spanner Set 10-11mm...', Unit='PCS', Opening=7/875
+82. Row 1156: Code='Con-1152', Name='Spanner Set...', Unit='PCS', Opening=0/0
+83. Row 1179: Code='Con-1175', Name='Cable 3X35rm NYY...', Unit='Meter', Opening=0/0
+84. Row 1181: Code='Con-1177', Name='0...', Unit='PCS', Opening=0/0
+85. Row 1182: Code='Con-1178', Name='0...', Unit='PCS', Opening=0/0
+86. Row 1199: Code='Con-1195', Name='PVC Elbow 2.5"...', Unit='PCS', Opening=0/0
+87. Row 1206: Code='Con-1202', Name='Belt...', Unit='PCS', Opening=0/0
+88. Row 1208: Code='Con-1204', Name='MS Plate 4'X8'X12mm...', Unit='KG', Opening=0/0
+89. Row 1227: Code='Con-1223', Name='Spaner 30X32mm...', Unit='PCS', Opening=0/0
+90. Row 1251: Code='Con-1247', Name='CT Ration 2500/05amp...', Unit='PCS', Opening=3/2700
+91. Row 1255: Code='Con-1251', Name='Digital OHM Meter...', Unit='PCS', Opening=0/0
+92. Row 1277: Code='Con-1273', Name='Drain Valve  Convartor...', Unit='PCS', Opening=0/0
+93. Row 1281: Code='Con-1277', Name='Magnet...', Unit='PCS', Opening=0/0
+94. Row 1284: Code='Con-1280', Name='S.S Nut Bolt 15X250mm...', Unit='PCS', Opening=0/0
+95. Row 1293: Code='Con-1289', Name='S.S Nut Bolt with Washer 10X25mm...', Unit='PCS', Opening=0/0
+96. Row 1294: Code='Con-1290', Name='S.S Nut Bolt with Washer 16X40mm...', Unit='PCS', Opening=0/0
+97. Row 1295: Code='Con-1291', Name='S.S Nut Bolt with Washer 10X40mm...', Unit='PCS', Opening=0/0
+98. Row 1303: Code='Con-1299', Name='Thermic Fluid Oil...', Unit='Liter', Opening=0/0
+99. Row 1321: Code='Con-1317', Name='Die 7.00mm...', Unit='PCS', Opening=0/0
+100. Row 1334: Code='Con-1330', Name='Sprial Binder...', Unit='PCS', Opening=0/0
 
-... and 451 more unmatched Manual records
+... and 121 more unmatched Manual records
